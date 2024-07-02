@@ -85,7 +85,7 @@ class SeshatAPI:
             The exception created from the response.
         """
         try:
-            response.json()
+            data = response.json()
         except JSONDecodeError:
             data = response.text
 
