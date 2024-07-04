@@ -126,10 +126,14 @@ class SeshatAPI:
             response.raise_for_status()
         except requests.exceptions.HTTPError as e:
             if e.response.status_code == 403:
-                message = "API rate limit exceeded or user not logged in"
+                message = "User is not logged in. Did you pass a username and "
+                message += "password to the client?"
 
             if e.response.status_code == 404:
                 message = "API endpoint not found"
+
+            if e.response.status_code == 429:
+                message = "API rate limit exceeded"
 
             raise self.__createException(endpoint, e.response, message) from None
 
