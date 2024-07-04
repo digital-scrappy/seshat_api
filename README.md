@@ -2,9 +2,9 @@
 
 > [!CAUTION]
 > ⚠️ **This package is currently in the very early stages of development and is not yet functional. We are actively working on building and testing the core features, and many components are either incomplete or subject to significant changes.**
-> 
+>
 > Please do not use this package in any production environment as it may contain numerous bugs, lack essential features, and undergo frequent breaking changes. We welcome contributions and feedback, but users should proceed with caution and understand the current limitations.
-> 
+>
 > Thank you for your understanding and patience as we work towards a stable release.
 
 This is the Python binding for the Seshat API. The Seshat API is a RESTful API
@@ -31,7 +31,7 @@ it to interact with the database. Here is an example of how to set up a client:
 from seshat_api import SeshatAPI
 
 # Set up a client
-client = SeshatAPI(username="<USERNAME>", password="<TEST>")
+client = SeshatAPI(username="<USERNAME>", password="<PASSWORD>")
 ```
 
 Here is an example of how to use the API to retrieve data from the database:
