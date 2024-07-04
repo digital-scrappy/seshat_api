@@ -135,7 +135,8 @@ class Regions(BaseAPICall):
 
 class NGAs(BaseAPICall):
     """
-    A class for interacting with the NGAs endpoint of the Seshat API.
+    A class for interacting with the NGAs (Natural Geographic Areas) endpoint
+    of the Seshat API.
 
     Parameters
     ----------
@@ -195,8 +196,8 @@ class Capitals(BaseAPICall):
 
 class NGAPolityRelations(BaseAPICall):
     """
-    A class for interacting with the NGA polity relations endpoint of the
-    Seshat API.
+    A class for interacting with the NGA–polity relations (relations between a
+    Natural Geographic Areas, NGA, and a polity) endpoint of the Seshat API.
 
     Parameters
     ----------
