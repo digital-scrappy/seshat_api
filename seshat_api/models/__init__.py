@@ -94,9 +94,9 @@ from .rt import (
     GovernmentRestrictionsOnConstructionOfReligiousBuilding,
     GovernmentRestrictionsOnReligiousEducation,
     GovernmentRestrictionsOnCirculationOfReligiousLiterature,
-    GovernmentDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunction,
+    GovernmentDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunction,  # noqa
     FrequencyOfSocietalViolenceAgainstReligiousGroup,
-    SocietalDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunction,
+    SocietalDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunction,  # noqa
     SocietalPressureToConvertOrAgainstConversion,
 )
 
@@ -324,9 +324,9 @@ __all__ = [
     "GovernmentRestrictionsOnConstructionOfReligiousBuilding",
     "GovernmentRestrictionsOnReligiousEducation",
     "GovernmentRestrictionsOnCirculationOfReligiousLiterature",
-    "GovernmentDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunction",
+    "GovernmentDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunction",  # noqa
     "FrequencyOfSocietalViolenceAgainstReligiousGroup",
-    "SocietalDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunction",
+    "SocietalDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunction",  # noqa
     "SocietalPressureToConvertOrAgainstConversion",
     # sc
     "ResearchAssistant",

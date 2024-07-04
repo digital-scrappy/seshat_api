@@ -4,6 +4,18 @@ __all__ = ["BaseModel"]
 
 
 class BaseModel:
+    """
+    A base model for all models in the API.
+
+    Parameters
+    ----------
+    data : dict
+        The data to use in the model.
+    count : int, optional
+        The total count of items in the API.
+    name : str, optional
+        The name of the API.
+    """
     def __init__(
         self,
         data: dict,

@@ -1,6 +1,5 @@
 from ..base_model import BaseAPICall
 from ..models import (
-    Polity,
     PrivateComment,
     PrivateCommentPart,
     MacroRegion,
