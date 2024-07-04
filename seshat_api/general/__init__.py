@@ -29,6 +29,36 @@ from ..models import (
     PolityReligiousTradition,
 )
 
+__all__ = [
+    "PolityResearchAssistants",
+    "PolityOriginalNames",
+    "PolityAlternativeNames",
+    "PolityDurations",
+    "PolityPeakYears",
+    "PolityDegreeOfCentralizations",
+    "PolitySuprapolities",
+    "PolityUTMTimezones",
+    "PolityCapitals",
+    "PolityLanguages",
+    "PolityLinguisticFamilies",
+    "PolityLanguageGenuses",
+    "PolityReligionGenuses",
+    "PolityReligionFamilies",
+    "PolityReligions",
+    "PolityRelationshipToPrecedingEntities",
+    "PolityPrecedingEntities",
+    "PolitySucceedingEntities",
+    "PolitySupraculturalEntities",
+    "PolityScaleOfSupraculturalInteractions",
+    "PolityAlternateReligionGenuses",
+    "PolityAlternateReligionFamilies",
+    "PolityAlternateReligions",
+    "PolityExperts",
+    "PolityEditors",
+    "PolityReligiousTraditions",
+]
+
+
 class PolityResearchAssistants(BaseAPICall):
     ENDPOINT = "/general/polity-research-assistants"
     SINGLE_MODEL = PolityResearchAssistant

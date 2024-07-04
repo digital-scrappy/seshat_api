@@ -24,6 +24,31 @@ from ..models import (
     SocietalPressureToConvertOrAgainstConversion,
 )
 
+__all__ = [
+    "WidespreadReligions",
+    "OfficialReligions",
+    "ElitesReligions",
+    "TheologicalSyncretismOfDifferentReligions",
+    "SyncretismOfReligiousPracticesAtTheLevelOfIndividualBelievers",
+    "ReligiousFragmentations",
+    "FrequencyOfGovernmentalViolenceAgainstReligiousGroups",
+    "GovernmentRestrictionsOnPublicWorships",
+    "GovernmentRestrictionsOnPublicProselytizings",
+    "GovernmentRestrictionsOnConversions",
+    "GovernmentPressureToConverts",
+    "GovernmentRestrictionsOnPropertyOwnershipForAdherentsOfAndReligiousGroups",
+    "TaxesBasedOnReligiousAdherenceOrOnReligiousActivitiesAndInstitutions",
+    "GovernmentalObligationsForReligiousGroupsToApplyForOfficialRecognitions",
+    "GovernmentRestrictionsOnConstructionOfReligiousBuildings",
+    "GovernmentRestrictionsOnReligiousEducations",
+    "GovernmentRestrictionsOnCirculationOfReligiousLiteratures",
+    "GovernmentDiscriminationAgainstReligiousGroupsTakingUpCertainOccupationsOrFunctions",
+    "FrequencyOfSocietalViolenceAgainstReligiousGroups",
+    "SocietalDiscriminationAgainstReligiousGroupsTakingUpCertainOccupationsOrFunctions",
+    "SocietalPressureToConvertOrAgainstConversions",
+]
+
+
 class WidespreadReligions(BaseAPICall):
     ENDPOINT = "/rt/widespread-religions"
     SINGLE_MODEL = WidespreadReligion

@@ -25,6 +25,32 @@ from ..models import (
     GADMProvince,
 )
 
+__all__ = [
+    "Polities",
+    "PrivateComments",
+    "PrivateCommentParts",
+    "MacroRegions",
+    "Regions",
+    "NGAs",
+    "Polities",
+    "Capitals",
+    "NGAPolityRelations",
+    "Countries",
+    "Sections",
+    "Subsections",
+    "VariableHierarchies",
+    "References",
+    "Citations",
+    "Comments",
+    "CommentParts",
+    "CommentPartsThroughCitations",
+    "Religions",
+    "VideoShapefiles",
+    "GADMShapefiles",
+    "GADMCountries",
+    "GADMProvinces",
+]
+
 
 class PrivateComments(BaseAPICall):
     ENDPOINT = "/core/private-comments"

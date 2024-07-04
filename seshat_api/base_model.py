@@ -3,6 +3,8 @@ from typing import Optional, Union
 from .constants import BASE_URL
 from .models._base import BaseModel
 
+__all__ = ["BaseAPICall"]
+
 
 class _Paginated:
     """

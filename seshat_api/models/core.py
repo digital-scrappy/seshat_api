@@ -1,5 +1,31 @@
 from ._base import BaseModel
 
+__all__ = [
+    "Polity",
+    "PrivateComment",
+    "PrivateCommentPart",
+    "MacroRegion",
+    "Region",
+    "NGA",
+    "Polity",
+    "Capital",
+    "NGAPolityRelation",
+    "Country",
+    "Section",
+    "Subsection",
+    "VariableHierarchy",
+    "Reference",
+    "Citation",
+    "Comment",
+    "CommentPart",
+    "CommentPartThroughCitation",
+    "Religion",
+    "VideoShapefile",
+    "GADMShapefile",
+    "GADMCountry",
+    "GADMProvince",
+]
+
 
 class Polity(BaseModel):
     pass

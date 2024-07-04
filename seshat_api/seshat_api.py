@@ -1,11 +1,12 @@
 from .constants import BASE_URL, TOKEN_ENDPOINT
 from .exceptions import SeshatAPIException
-# from .core import Polities
 
 import requests
 
 from typing import Optional
 from json import JSONDecodeError
+
+__all__ = ["SeshatAPI"]
 
 
 class SeshatAPI:
@@ -135,7 +136,9 @@ class SeshatAPI:
             if e.response.status_code == 429:
                 message = "API rate limit exceeded"
 
-            raise self.__createException(endpoint, e.response, message) from None
+            raise self.__createException(
+                endpoint, e.response, message
+            ) from None
 
         # Return JSON-coded data
         return response.json()

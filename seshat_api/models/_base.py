@@ -1,5 +1,7 @@
 from typing import Optional
 
+__all__ = ["BaseModel"]
+
 
 class BaseModel:
     def __init__(

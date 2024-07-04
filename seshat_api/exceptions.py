@@ -1,6 +1,10 @@
 from typing import Dict, Any, Optional
 import json
 
+__all__ = [
+    "SeshatAPIException",
+]
+
 
 class SeshatAPIException(Exception):
     """

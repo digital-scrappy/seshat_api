@@ -1,8 +1,33 @@
 from ._base import BaseModel
 
-
-class USLocation(BaseModel):
-    pass
+__all__ = [
+    "PolityResearchAssistant",
+    "PolityOriginalName",
+    "PolityAlternativeName",
+    "PolityDuration",
+    "PolityPeakYear",
+    "PolityDegreeOfCentralization",
+    "PolitySuprapolity",
+    "PolityUTMTimezone",
+    "PolityCapital",
+    "PolityLanguage",
+    "PolityLinguisticFamily",
+    "PolityLanguageGenus",
+    "PolityReligionGenus",
+    "PolityReligionFamily",
+    "PolityReligion",
+    "PolityRelationshipToPrecedingEntity",
+    "PolityPrecedingEntity",
+    "PolitySucceedingEntity",
+    "PolitySupraculturalEntity",
+    "PolityScaleOfSupraculturalInteraction",
+    "PolityAlternateReligionGenus",
+    "PolityAlternateReligionFamily",
+    "PolityAlternateReligion",
+    "PolityExpert",
+    "PolityEditor",
+    "PolityReligiousTradition",
+]
 
 
 class PolityResearchAssistant(BaseModel):
