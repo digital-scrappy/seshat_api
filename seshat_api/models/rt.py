@@ -18,9 +18,9 @@ __all__ = [
     "GovernmentRestrictionsOnConstructionOfReligiousBuilding",
     "GovernmentRestrictionsOnReligiousEducation",
     "GovernmentRestrictionsOnCirculationOfReligiousLiterature",
-    "GovernmentDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunction",
+    "GovernmentDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunction",  # noqa
     "FrequencyOfSocietalViolenceAgainstReligiousGroup",
-    "SocietalDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunction",
+    "SocietalDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunction",  # noqa
     "SocietalPressureToConvertOrAgainstConversion",
 ]
 
@@ -99,7 +99,7 @@ class GovernmentRestrictionsOnCirculationOfReligiousLiterature(BaseModel):
     pass
 
 
-class GovernmentDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunction(
+class GovernmentDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunction(  # noqa
     BaseModel
 ):
     pass
@@ -109,7 +109,7 @@ class FrequencyOfSocietalViolenceAgainstReligiousGroup(BaseModel):
     pass
 
 
-class SocietalDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunction(
+class SocietalDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunction(  # noqa
     BaseModel
 ):
     pass

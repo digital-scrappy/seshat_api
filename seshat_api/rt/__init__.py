@@ -18,9 +18,9 @@ from ..models import (
     GovernmentRestrictionsOnConstructionOfReligiousBuilding,
     GovernmentRestrictionsOnReligiousEducation,
     GovernmentRestrictionsOnCirculationOfReligiousLiterature,
-    GovernmentDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunction,
+    GovernmentDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunction,  # noqa
     FrequencyOfSocietalViolenceAgainstReligiousGroup,
-    SocietalDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunction,
+    SocietalDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunction,  # noqa
     SocietalPressureToConvertOrAgainstConversion,
 )
 
@@ -42,16 +42,17 @@ __all__ = [
     "GovernmentRestrictionsOnConstructionOfReligiousBuildings",
     "GovernmentRestrictionsOnReligiousEducations",
     "GovernmentRestrictionsOnCirculationOfReligiousLiteratures",
-    "GovernmentDiscriminationAgainstReligiousGroupsTakingUpCertainOccupationsOrFunctions",
+    "GovernmentDiscriminationAgainstReligiousGroupsTakingUpCertainOccupationsOrFunctions",  # noqa
     "FrequencyOfSocietalViolenceAgainstReligiousGroups",
-    "SocietalDiscriminationAgainstReligiousGroupsTakingUpCertainOccupationsOrFunctions",
+    "SocietalDiscriminationAgainstReligiousGroupsTakingUpCertainOccupationsOrFunctions",  # noqa
     "SocietalPressureToConvertOrAgainstConversions",
 ]
 
 
 class WidespreadReligions(BaseAPICall):
     """
-    A class for interacting with the widespread religions endpoint of the Seshat API.
+    A class for interacting with the widespread religions endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -71,7 +72,8 @@ class WidespreadReligions(BaseAPICall):
 
 class OfficialReligions(BaseAPICall):
     """
-    A class for interacting with the official religions endpoint of the Seshat API.
+    A class for interacting with the official religions endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -91,7 +93,8 @@ class OfficialReligions(BaseAPICall):
 
 class ElitesReligions(BaseAPICall):
     """
-    A class for interacting with the elites religions endpoint of the Seshat API.
+    A class for interacting with the elites religions endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -111,7 +114,8 @@ class ElitesReligions(BaseAPICall):
 
 class TheologicalSyncretismOfDifferentReligions(BaseAPICall):
     """
-    A class for interacting with the theological syncretism of different religions endpoint of the Seshat API.
+    A class for interacting with the theological syncretism of different
+    religions endpoint of the Seshat API.
 
     Parameters
     ----------
@@ -132,13 +136,14 @@ class TheologicalSyncretismOfDifferentReligions(BaseAPICall):
 class SyncretismOfReligiousPracticesAtTheLevelOfIndividualBelievers(
     BaseAPICall
 ):
-    ENDPOINT = "/rt/syncretism-of-religious-practices-at-the-level-of-individual-believers"
+    ENDPOINT = "/rt/syncretism-of-religious-practices-at-the-level-of-individual-believers"  # noqa
     SINGLE_MODEL = SyncretismOfReligiousPracticesAtTheLevelOfIndividualBeliever
 
 
 class ReligiousFragmentations(BaseAPICall):
     """
-    A class for interacting with the religious fragmentations endpoint of the Seshat API.
+    A class for interacting with the religious fragmentations endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -158,7 +163,8 @@ class ReligiousFragmentations(BaseAPICall):
 
 class FrequencyOfGovernmentalViolenceAgainstReligiousGroups(BaseAPICall):
     """
-    A class for interacting with the frequency of governmental violence against religious groups endpoint of the Seshat API.
+    A class for interacting with the frequency of governmental violence against
+    religious groups endpoint of the Seshat API.
 
     Parameters
     ----------
@@ -180,7 +186,8 @@ class FrequencyOfGovernmentalViolenceAgainstReligiousGroups(BaseAPICall):
 
 class GovernmentRestrictionsOnPublicWorships(BaseAPICall):
     """
-    A class for interacting with the government restrictions on public worships endpoint of the Seshat API.
+    A class for interacting with the government restrictions on public worships
+    endpoint of the Seshat API.
 
     Parameters
     ----------
@@ -200,7 +207,8 @@ class GovernmentRestrictionsOnPublicWorships(BaseAPICall):
 
 class GovernmentRestrictionsOnPublicProselytizings(BaseAPICall):
     """
-    A class for interacting with the government restrictions on public proselytizings endpoint of the Seshat API.
+    A class for interacting with the government restrictions on public
+    proselytizings endpoint of the Seshat API.
 
     Parameters
     ----------
@@ -220,7 +228,8 @@ class GovernmentRestrictionsOnPublicProselytizings(BaseAPICall):
 
 class GovernmentRestrictionsOnConversions(BaseAPICall):
     """
-    A class for interacting with the government restrictions on conversions endpoint of the Seshat API.
+    A class for interacting with the government restrictions on conversions
+    endpoint of the Seshat API.
 
     Parameters
     ----------
@@ -240,7 +249,8 @@ class GovernmentRestrictionsOnConversions(BaseAPICall):
 
 class GovernmentPressureToConverts(BaseAPICall):
     """
-    A class for interacting with the government pressure to converts endpoint of the Seshat API.
+    A class for interacting with the government pressure to converts endpoint
+    of the Seshat API.
 
     Parameters
     ----------
@@ -258,17 +268,17 @@ class GovernmentPressureToConverts(BaseAPICall):
     SINGLE_MODEL = GovernmentPressureToConvert
 
 
-class GovernmentRestrictionsOnPropertyOwnershipForAdherentsOfAndReligiousGroups(
+class GovernmentRestrictionsOnPropertyOwnershipForAdherentsOfAndReligiousGroups(  # noqa
     BaseAPICall
 ):
     ENDPOINT = "/rt/government-restrictions-on-property-ownership-for-adherents-of-and-religious-groups"
-    SINGLE_MODEL = GovernmentRestrictionsOnPropertyOwnershipForAdherentsOfAndReligiousGroup
+    SINGLE_MODEL = GovernmentRestrictionsOnPropertyOwnershipForAdherentsOfAndReligiousGroup  # noqa
 
 
 class TaxesBasedOnReligiousAdherenceOrOnReligiousActivitiesAndInstitutions(
     BaseAPICall
 ):
-    ENDPOINT = "/rt/taxes-based-on-religious-adherence-or-on-religious-activities-and-institutions"
+    ENDPOINT = "/rt/taxes-based-on-religious-adherence-or-on-religious-activities-and-institutions"  # noqa
     SINGLE_MODEL = (
         TaxesBasedOnReligiousAdherenceOrOnReligiousActivityAndInstitution
     )
@@ -277,7 +287,7 @@ class TaxesBasedOnReligiousAdherenceOrOnReligiousActivitiesAndInstitutions(
 class GovernmentalObligationsForReligiousGroupsToApplyForOfficialRecognitions(
     BaseAPICall
 ):
-    ENDPOINT = "/rt/governmental-obligations-for-religious-groups-to-apply-for-official-recognitions"
+    ENDPOINT = "/rt/governmental-obligations-for-religious-groups-to-apply-for-official-recognitions"  # noqa
     SINGLE_MODEL = (
         GovernmentalObligationsForReligiousGroupToApplyForOfficialRecognition
     )
@@ -285,7 +295,8 @@ class GovernmentalObligationsForReligiousGroupsToApplyForOfficialRecognitions(
 
 class GovernmentRestrictionsOnConstructionOfReligiousBuildings(BaseAPICall):
     """
-    A class for interacting with the government restrictions on construction of religious buildings endpoint of the Seshat API.
+    A class for interacting with the government restrictions on construction of
+    religious buildings endpoint of the Seshat API.
 
     Parameters
     ----------
@@ -307,7 +318,8 @@ class GovernmentRestrictionsOnConstructionOfReligiousBuildings(BaseAPICall):
 
 class GovernmentRestrictionsOnReligiousEducations(BaseAPICall):
     """
-    A class for interacting with the government restrictions on religious educations endpoint of the Seshat API.
+    A class for interacting with the government restrictions on religious
+    educations endpoint of the Seshat API.
 
     Parameters
     ----------
@@ -327,7 +339,8 @@ class GovernmentRestrictionsOnReligiousEducations(BaseAPICall):
 
 class GovernmentRestrictionsOnCirculationOfReligiousLiteratures(BaseAPICall):
     """
-    A class for interacting with the government restrictions on circulation of religious literatures endpoint of the Seshat API.
+    A class for interacting with the government restrictions on circulation of
+    religious literatures endpoint of the Seshat API.
 
     Parameters
     ----------
@@ -347,16 +360,17 @@ class GovernmentRestrictionsOnCirculationOfReligiousLiteratures(BaseAPICall):
     SINGLE_MODEL = GovernmentRestrictionsOnCirculationOfReligiousLiterature
 
 
-class GovernmentDiscriminationAgainstReligiousGroupsTakingUpCertainOccupationsOrFunctions(
+class GovernmentDiscriminationAgainstReligiousGroupsTakingUpCertainOccupationsOrFunctions(  # noqa
     BaseAPICall
 ):
     ENDPOINT = "/rt/government-discrimination-against-religious-groups-taking-up-certain-occupations-or-functions"
-    SINGLE_MODEL = GovernmentDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunction
+    SINGLE_MODEL = GovernmentDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunction  # noqa
 
 
 class FrequencyOfSocietalViolenceAgainstReligiousGroups(BaseAPICall):
     """
-    A class for interacting with the frequency of societal violence against religious groups endpoint of the Seshat API.
+    A class for interacting with the frequency of societal violence against
+    religious groups endpoint of the Seshat API.
 
     Parameters
     ----------
@@ -374,16 +388,17 @@ class FrequencyOfSocietalViolenceAgainstReligiousGroups(BaseAPICall):
     SINGLE_MODEL = FrequencyOfSocietalViolenceAgainstReligiousGroup
 
 
-class SocietalDiscriminationAgainstReligiousGroupsTakingUpCertainOccupationsOrFunctions(
+class SocietalDiscriminationAgainstReligiousGroupsTakingUpCertainOccupationsOrFunctions(  # noqa
     BaseAPICall
 ):
-    ENDPOINT = "/rt/societal-discrimination-against-religious-groups-taking-up-certain-occupations-or-functions"
-    SINGLE_MODEL = SocietalDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunction
+    ENDPOINT = "/rt/societal-discrimination-against-religious-groups-taking-up-certain-occupations-or-functions"  # noqa
+    SINGLE_MODEL = SocietalDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunction  # noqa
 
 
 class SocietalPressureToConvertOrAgainstConversions(BaseAPICall):
     """
-    A class for interacting with the societal pressure to convert or against conversions endpoint of the Seshat API.
+    A class for interacting with the societal pressure to convert or against
+    conversions endpoint of the Seshat API.
 
     Parameters
     ----------

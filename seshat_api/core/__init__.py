@@ -54,7 +54,8 @@ __all__ = [
 
 class PrivateComments(BaseAPICall):
     """
-    A class for interacting with the private comments endpoint of the Seshat API.
+    A class for interacting with the private comments endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -74,7 +75,8 @@ class PrivateComments(BaseAPICall):
 
 class PrivateCommentParts(BaseAPICall):
     """
-    A class for interacting with the private comment parts endpoint of the Seshat API.
+    A class for interacting with the private comment parts endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -194,7 +196,8 @@ class Capitals(BaseAPICall):
 
 class NGAPolityRelations(BaseAPICall):
     """
-    A class for interacting with the NGA polity relations endpoint of the Seshat API.
+    A class for interacting with the NGA polity relations endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -274,7 +277,8 @@ class Subsections(BaseAPICall):
 
 class VariableHierarchies(BaseAPICall):
     """
-    A class for interacting with the variable hierarchies endpoint of the Seshat API.
+    A class for interacting with the variable hierarchies endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -374,7 +378,8 @@ class CommentParts(BaseAPICall):
 
 class CommentPartsThroughCitations(BaseAPICall):
     """
-    A class for interacting with the comment parts through citations endpoint of the Seshat API.
+    A class for interacting with the comment parts through citations endpoint
+    of the Seshat API.
 
     Parameters
     ----------
@@ -414,7 +419,8 @@ class Religions(BaseAPICall):
 
 class VideoShapefiles(BaseAPICall):
     """
-    A class for interacting with the video shapefiles endpoint of the Seshat API.
+    A class for interacting with the video shapefiles endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -434,7 +440,8 @@ class VideoShapefiles(BaseAPICall):
 
 class GADMShapefiles(BaseAPICall):
     """
-    A class for interacting with the GADM shapefiles endpoint of the Seshat API.
+    A class for interacting with the GADM shapefiles endpoint of the Seshat
+    API.
 
     Parameters
     ----------

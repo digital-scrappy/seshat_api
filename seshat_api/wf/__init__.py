@@ -327,7 +327,8 @@ class Crossbows(BaseAPICall):
 
 class TensionSiegeEngines(BaseAPICall):
     """
-    A class for interacting with the tension siege engines endpoint of the Seshat API.
+    A class for interacting with the tension siege engines endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -347,7 +348,8 @@ class TensionSiegeEngines(BaseAPICall):
 
 class SlingSiegeEngines(BaseAPICall):
     """
-    A class for interacting with the sling siege engines endpoint of the Seshat API.
+    A class for interacting with the sling siege engines endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -367,7 +369,8 @@ class SlingSiegeEngines(BaseAPICall):
 
 class GunpowderSiegeArtilleries(BaseAPICall):
     """
-    A class for interacting with the gunpowder siege artilleries endpoint of the Seshat API.
+    A class for interacting with the gunpowder siege artilleries endpoint of
+    the Seshat API.
 
     Parameters
     ----------
@@ -387,7 +390,8 @@ class GunpowderSiegeArtilleries(BaseAPICall):
 
 class HandheldFirearms(BaseAPICall):
     """
-    A class for interacting with the handheld firearms endpoint of the Seshat API.
+    A class for interacting with the handheld firearms endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -727,7 +731,8 @@ class Breastplates(BaseAPICall):
 
 class LimbProtections(BaseAPICall):
     """
-    A class for interacting with the limb protections endpoint of the Seshat API.
+    A class for interacting with the limb protections endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -807,7 +812,8 @@ class PlateArmors(BaseAPICall):
 
 class SmallVesselsCanoesEtc(BaseAPICall):
     """
-    A class for interacting with the small vessels, canoes, etc. endpoint of the Seshat API.
+    A class for interacting with the small vessels, canoes, etc. endpoint of
+    the Seshat API.
 
     Parameters
     ----------
@@ -827,7 +833,8 @@ class SmallVesselsCanoesEtc(BaseAPICall):
 
 class MerchantShipsPressedIntoService(BaseAPICall):
     """
-    A class for interacting with the merchant ships pressed into service endpoint of the Seshat API.
+    A class for interacting with the merchant ships pressed into service
+    endpoint of the Seshat API.
 
     Parameters
     ----------
@@ -847,7 +854,8 @@ class MerchantShipsPressedIntoService(BaseAPICall):
 
 class SpecializedMilitaryVessels(BaseAPICall):
     """
-    A class for interacting with the specialized military vessels endpoint of the Seshat API.
+    A class for interacting with the specialized military vessels endpoint of
+    the Seshat API.
 
     Parameters
     ----------
@@ -867,7 +875,8 @@ class SpecializedMilitaryVessels(BaseAPICall):
 
 class SettlementInDefensivePositions(BaseAPICall):
     """
-    A class for interacting with the settlement in defensive positions endpoint of the Seshat API.
+    A class for interacting with the settlement in defensive positions endpoint
+    of the Seshat API.
 
     Parameters
     ----------
@@ -887,7 +896,8 @@ class SettlementInDefensivePositions(BaseAPICall):
 
 class WoodenPalisades(BaseAPICall):
     """
-    A class for interacting with the wooden palisades endpoint of the Seshat API.
+    A class for interacting with the wooden palisades endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -967,7 +977,8 @@ class Moats(BaseAPICall):
 
 class StoneWallsNonMortared(BaseAPICall):
     """
-    A class for interacting with the stone walls non-mortared endpoint of the Seshat API.
+    A class for interacting with the stone walls non-mortared endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -987,7 +998,8 @@ class StoneWallsNonMortared(BaseAPICall):
 
 class StoneWallsMortared(BaseAPICall):
     """
-    A class for interacting with the stone walls mortared endpoint of the Seshat API.
+    A class for interacting with the stone walls mortared endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -1007,7 +1019,8 @@ class StoneWallsMortared(BaseAPICall):
 
 class FortifiedCamps(BaseAPICall):
     """
-    A class for interacting with the fortified camps endpoint of the Seshat API.
+    A class for interacting with the fortified camps endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -1027,7 +1040,8 @@ class FortifiedCamps(BaseAPICall):
 
 class ComplexFortifications(BaseAPICall):
     """
-    A class for interacting with the complex fortifications endpoint of the Seshat API.
+    A class for interacting with the complex fortifications endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -1047,7 +1061,8 @@ class ComplexFortifications(BaseAPICall):
 
 class ModernFortifications(BaseAPICall):
     """
-    A class for interacting with the modern fortifications endpoint of the Seshat API.
+    A class for interacting with the modern fortifications endpoint of the
+    Seshat API.
 
     Parameters
     ----------

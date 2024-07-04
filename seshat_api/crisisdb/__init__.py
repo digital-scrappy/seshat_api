@@ -71,7 +71,8 @@ class USLocations(BaseAPICall):
 
 class USViolenceDataSources(BaseAPICall):
     """
-    A class for interacting with the US violence data sources endpoint of the Seshat API.
+    A class for interacting with the US violence data sources endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -91,7 +92,8 @@ class USViolenceDataSources(BaseAPICall):
 
 class CrisisConsequences(BaseAPICall):
     """
-    A class for interacting with the crisis consequences endpoint of the Seshat API.
+    A class for interacting with the crisis consequences endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -111,7 +113,8 @@ class CrisisConsequences(BaseAPICall):
 
 class PowerTransitions(BaseAPICall):
     """
-    A class for interacting with the power transitions endpoint of the Seshat API.
+    A class for interacting with the power transitions endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -131,7 +134,8 @@ class PowerTransitions(BaseAPICall):
 
 class HumanSacrifices(BaseAPICall):
     """
-    A class for interacting with the human sacrifices endpoint of the Seshat API.
+    A class for interacting with the human sacrifices endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -151,7 +155,8 @@ class HumanSacrifices(BaseAPICall):
 
 class ExternalConflicts(BaseAPICall):
     """
-    A class for interacting with the external conflicts endpoint of the Seshat API.
+    A class for interacting with the external conflicts endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -171,7 +176,8 @@ class ExternalConflicts(BaseAPICall):
 
 class ExternalConflictSides(BaseAPICall):
     """
-    A class for interacting with the external conflict sides endpoint of the Seshat API.
+    A class for interacting with the external conflict sides endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -191,7 +197,8 @@ class ExternalConflictSides(BaseAPICall):
 
 class AgriculturalPopulationsArableLands(BaseAPICall):
     """
-    A class for interacting with the agricultural populations arable lands endpoint of the Seshat API.
+    A class for interacting with the agricultural populations arable lands
+    endpoint of the Seshat API.
 
     Parameters
     ----------
@@ -211,7 +218,8 @@ class AgriculturalPopulationsArableLands(BaseAPICall):
 
 class GrossGrainSharedPerAgriculturalPopulation(BaseAPICall):
     """
-    A class for interacting with the gross grain shared per agricultural population endpoint of the Seshat API.
+    A class for interacting with the gross grain shared per agricultural
+    population endpoint of the Seshat API.
 
     Parameters
     ----------
@@ -231,7 +239,8 @@ class GrossGrainSharedPerAgriculturalPopulation(BaseAPICall):
 
 class NetGrainSharedPerAgriculturalPopulation(BaseAPICall):
     """
-    A class for interacting with the net grain shared per agricultural population endpoint of the Seshat API.
+    A class for interacting with the net grain shared per agricultural
+    population endpoint of the Seshat API.
 
     Parameters
     ----------
@@ -251,7 +260,8 @@ class NetGrainSharedPerAgriculturalPopulation(BaseAPICall):
 
 class MilitaryExpenses(BaseAPICall):
     """
-    A class for interacting with the military expenses endpoint of the Seshat API.
+    A class for interacting with the military expenses endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -311,7 +321,8 @@ class SilverStocks(BaseAPICall):
 
 class TotalPopulations(BaseAPICall):
     """
-    A class for interacting with the total populations endpoint of the Seshat API.
+    A class for interacting with the total populations endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -331,7 +342,8 @@ class TotalPopulations(BaseAPICall):
 
 class GDPPerCapitas(BaseAPICall):
     """
-    A class for interacting with the GDP per capitas endpoint of the Seshat API.
+    A class for interacting with the GDP per capitas endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -391,7 +403,8 @@ class LocustEvents(BaseAPICall):
 
 class SocioeconomicTurmoilEvents(BaseAPICall):
     """
-    A class for interacting with the socioeconomic turmoil events endpoint of the Seshat API.
+    A class for interacting with the socioeconomic turmoil events endpoint of
+    the Seshat API.
 
     Parameters
     ----------
@@ -411,7 +424,8 @@ class SocioeconomicTurmoilEvents(BaseAPICall):
 
 class CropFailureEvents(BaseAPICall):
     """
-    A class for interacting with the crop failure events endpoint of the Seshat API.
+    A class for interacting with the crop failure events endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -451,7 +465,8 @@ class FamineEvents(BaseAPICall):
 
 class DiseaseOutbreaks(BaseAPICall):
     """
-    A class for interacting with the disease outbreaks endpoint of the Seshat API.
+    A class for interacting with the disease outbreaks endpoint of the Seshat
+    API.
 
     Parameters
     ----------

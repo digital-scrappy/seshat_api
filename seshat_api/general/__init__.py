@@ -61,7 +61,8 @@ __all__ = [
 
 class PolityResearchAssistants(BaseAPICall):
     """
-    A class for interacting with the polity research assistants endpoint of the Seshat API.
+    A class for interacting with the polity research assistants endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -81,7 +82,8 @@ class PolityResearchAssistants(BaseAPICall):
 
 class PolityOriginalNames(BaseAPICall):
     """
-    A class for interacting with the polity original names endpoint of the Seshat API.
+    A class for interacting with the polity original names endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -101,7 +103,8 @@ class PolityOriginalNames(BaseAPICall):
 
 class PolityAlternativeNames(BaseAPICall):
     """
-    A class for interacting with the polity alternative names endpoint of the Seshat API.
+    A class for interacting with the polity alternative names endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -121,7 +124,8 @@ class PolityAlternativeNames(BaseAPICall):
 
 class PolityDurations(BaseAPICall):
     """
-    A class for interacting with the polity durations endpoint of the Seshat API.
+    A class for interacting with the polity durations endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -141,7 +145,8 @@ class PolityDurations(BaseAPICall):
 
 class PolityPeakYears(BaseAPICall):
     """
-    A class for interacting with the polity peak years endpoint of the Seshat API.
+    A class for interacting with the polity peak years endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -161,7 +166,8 @@ class PolityPeakYears(BaseAPICall):
 
 class PolityDegreeOfCentralizations(BaseAPICall):
     """
-    A class for interacting with the polity degree of centralizations endpoint of the Seshat API.
+    A class for interacting with the polity degree of centralizations endpoint
+    of the Seshat API.
 
     Parameters
     ----------
@@ -181,7 +187,8 @@ class PolityDegreeOfCentralizations(BaseAPICall):
 
 class PolitySuprapolities(BaseAPICall):
     """
-    A class for interacting with the polity suprapolities endpoint of the Seshat API.
+    A class for interacting with the polity suprapolities endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -201,7 +208,8 @@ class PolitySuprapolities(BaseAPICall):
 
 class PolityUTMTimezones(BaseAPICall):
     """
-    A class for interacting with the polity UTM timezones endpoint of the Seshat API.
+    A class for interacting with the polity UTM timezones endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -221,7 +229,8 @@ class PolityUTMTimezones(BaseAPICall):
 
 class PolityCapitals(BaseAPICall):
     """
-    A class for interacting with the polity capitals endpoint of the Seshat API.
+    A class for interacting with the polity capitals endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -241,7 +250,8 @@ class PolityCapitals(BaseAPICall):
 
 class PolityLanguages(BaseAPICall):
     """
-    A class for interacting with the polity languages endpoint of the Seshat API.
+    A class for interacting with the polity languages endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -261,7 +271,8 @@ class PolityLanguages(BaseAPICall):
 
 class PolityLinguisticFamilies(BaseAPICall):
     """
-    A class for interacting with the polity linguistic families endpoint of the Seshat API.
+    A class for interacting with the polity linguistic families endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -281,7 +292,8 @@ class PolityLinguisticFamilies(BaseAPICall):
 
 class PolityLanguageGenuses(BaseAPICall):
     """
-    A class for interacting with the polity language genuses endpoint of the Seshat API.
+    A class for interacting with the polity language genuses endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -301,7 +313,8 @@ class PolityLanguageGenuses(BaseAPICall):
 
 class PolityReligionGenuses(BaseAPICall):
     """
-    A class for interacting with the polity religion genuses endpoint of the Seshat API.
+    A class for interacting with the polity religion genuses endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -321,7 +334,8 @@ class PolityReligionGenuses(BaseAPICall):
 
 class PolityReligionFamilies(BaseAPICall):
     """
-    A class for interacting with the polity religion families endpoint of the Seshat API.
+    A class for interacting with the polity religion families endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -341,7 +355,8 @@ class PolityReligionFamilies(BaseAPICall):
 
 class PolityReligions(BaseAPICall):
     """
-    A class for interacting with the polity religions endpoint of the Seshat API.
+    A class for interacting with the polity religions endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -361,7 +376,8 @@ class PolityReligions(BaseAPICall):
 
 class PolityRelationshipToPrecedingEntities(BaseAPICall):
     """
-    A class for interacting with the polity relationship to preceding entities endpoint of the Seshat API.
+    A class for interacting with the polity relationship to preceding entities
+    endpoint of the Seshat API.
 
     Parameters
     ----------
@@ -381,7 +397,8 @@ class PolityRelationshipToPrecedingEntities(BaseAPICall):
 
 class PolityPrecedingEntities(BaseAPICall):
     """
-    A class for interacting with the polity preceding entities endpoint of the Seshat API.
+    A class for interacting with the polity preceding entities endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -401,7 +418,8 @@ class PolityPrecedingEntities(BaseAPICall):
 
 class PolitySucceedingEntities(BaseAPICall):
     """
-    A class for interacting with the polity succeeding entities endpoint of the Seshat API.
+    A class for interacting with the polity succeeding entities endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -421,7 +439,8 @@ class PolitySucceedingEntities(BaseAPICall):
 
 class PolitySupraculturalEntities(BaseAPICall):
     """
-    A class for interacting with the polity supracultural entities endpoint of the Seshat API.
+    A class for interacting with the polity supracultural entities endpoint of
+    the Seshat API.
 
     Parameters
     ----------
@@ -441,7 +460,8 @@ class PolitySupraculturalEntities(BaseAPICall):
 
 class PolityScaleOfSupraculturalInteractions(BaseAPICall):
     """
-    A class for interacting with the polity scale of supracultural interactions endpoint of the Seshat API.
+    A class for interacting with the polity scale of supracultural interactions
+    endpoint of the Seshat API.
 
     Parameters
     ----------
@@ -461,7 +481,8 @@ class PolityScaleOfSupraculturalInteractions(BaseAPICall):
 
 class PolityAlternateReligionGenuses(BaseAPICall):
     """
-    A class for interacting with the polity alternate religion genuses endpoint of the Seshat API.
+    A class for interacting with the polity alternate religion genuses endpoint
+    of the Seshat API.
 
     Parameters
     ----------
@@ -481,7 +502,8 @@ class PolityAlternateReligionGenuses(BaseAPICall):
 
 class PolityAlternateReligionFamilies(BaseAPICall):
     """
-    A class for interacting with the polity alternate religion families endpoint of the Seshat API.
+    A class for interacting with the polity alternate religion families
+    endpoint of the Seshat API.
 
     Parameters
     ----------
@@ -501,7 +523,8 @@ class PolityAlternateReligionFamilies(BaseAPICall):
 
 class PolityAlternateReligions(BaseAPICall):
     """
-    A class for interacting with the polity alternate religions endpoint of the Seshat API.
+    A class for interacting with the polity alternate religions endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -561,7 +584,8 @@ class PolityEditors(BaseAPICall):
 
 class PolityReligiousTraditions(BaseAPICall):
     """
-    A class for interacting with the polity religious traditions endpoint of the Seshat API.
+    A class for interacting with the polity religious traditions endpoint of
+    the Seshat API.
 
     Parameters
     ----------

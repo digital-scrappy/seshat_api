@@ -165,7 +165,8 @@ __all__ = [
 
 class ResearchAssistants(BaseAPICall):
     """
-    A class for interacting with the research assistants endpoint of the Seshat API.
+    A class for interacting with the research assistants endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -185,7 +186,8 @@ class ResearchAssistants(BaseAPICall):
 
 class PolityTerritories(BaseAPICall):
     """
-    A class for interacting with the polity territories endpoint of the Seshat API.
+    A class for interacting with the polity territories endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -205,7 +207,8 @@ class PolityTerritories(BaseAPICall):
 
 class PolityPopulations(BaseAPICall):
     """
-    A class for interacting with the polity populations endpoint of the Seshat API.
+    A class for interacting with the polity populations endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -225,7 +228,8 @@ class PolityPopulations(BaseAPICall):
 
 class PopulationOfTheLargestSettlements(BaseAPICall):
     """
-    A class for interacting with the population of the largest settlements endpoint of the Seshat API.
+    A class for interacting with the population of the largest settlements
+    endpoint of the Seshat API.
 
     Parameters
     ----------
@@ -245,7 +249,8 @@ class PopulationOfTheLargestSettlements(BaseAPICall):
 
 class SettlementHierarchies(BaseAPICall):
     """
-    A class for interacting with the settlement hierarchies endpoint of the Seshat API.
+    A class for interacting with the settlement hierarchies endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -265,7 +270,8 @@ class SettlementHierarchies(BaseAPICall):
 
 class AdministrativeLevels(BaseAPICall):
     """
-    A class for interacting with the administrative levels endpoint of the Seshat API.
+    A class for interacting with the administrative levels endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -285,7 +291,8 @@ class AdministrativeLevels(BaseAPICall):
 
 class ReligiousLevels(BaseAPICall):
     """
-    A class for interacting with the religious levels endpoint of the Seshat API.
+    A class for interacting with the religious levels endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -305,7 +312,8 @@ class ReligiousLevels(BaseAPICall):
 
 class MilitaryLevels(BaseAPICall):
     """
-    A class for interacting with the military levels endpoint of the Seshat API.
+    A class for interacting with the military levels endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -325,7 +333,8 @@ class MilitaryLevels(BaseAPICall):
 
 class ProfessionalMilitaryOfficers(BaseAPICall):
     """
-    A class for interacting with the professional military officers endpoint of the Seshat API.
+    A class for interacting with the professional military officers endpoint of
+    the Seshat API.
 
     Parameters
     ----------
@@ -345,7 +354,8 @@ class ProfessionalMilitaryOfficers(BaseAPICall):
 
 class ProfessionalSoldiers(BaseAPICall):
     """
-    A class for interacting with the professional soldiers endpoint of the Seshat API.
+    A class for interacting with the professional soldiers endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -365,7 +375,8 @@ class ProfessionalSoldiers(BaseAPICall):
 
 class ProfessionalPriesthoods(BaseAPICall):
     """
-    A class for interacting with the professional priesthoods endpoint of the Seshat API.
+    A class for interacting with the professional priesthoods endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -385,7 +396,8 @@ class ProfessionalPriesthoods(BaseAPICall):
 
 class FullTimeBureaucrats(BaseAPICall):
     """
-    A class for interacting with the full-time bureaucrats endpoint of the Seshat API.
+    A class for interacting with the full-time bureaucrats endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -405,7 +417,8 @@ class FullTimeBureaucrats(BaseAPICall):
 
 class ExaminationSystems(BaseAPICall):
     """
-    A class for interacting with the examination systems endpoint of the Seshat API.
+    A class for interacting with the examination systems endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -425,7 +438,8 @@ class ExaminationSystems(BaseAPICall):
 
 class MeritPromotions(BaseAPICall):
     """
-    A class for interacting with the merit promotions endpoint of the Seshat API.
+    A class for interacting with the merit promotions endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -445,7 +459,8 @@ class MeritPromotions(BaseAPICall):
 
 class SpecializedGovernmentBuildings(BaseAPICall):
     """
-    A class for interacting with the specialized government buildings endpoint of the Seshat API.
+    A class for interacting with the specialized government buildings endpoint
+    of the Seshat API.
 
     Parameters
     ----------
@@ -465,7 +480,8 @@ class SpecializedGovernmentBuildings(BaseAPICall):
 
 class FormalLegalCodes(BaseAPICall):
     """
-    A class for interacting with the formal legal codes endpoint of the Seshat API.
+    A class for interacting with the formal legal codes endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -525,7 +541,8 @@ class Courts(BaseAPICall):
 
 class ProfessionalLawyers(BaseAPICall):
     """
-    A class for interacting with the professional lawyers endpoint of the Seshat API.
+    A class for interacting with the professional lawyers endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -545,7 +562,8 @@ class ProfessionalLawyers(BaseAPICall):
 
 class IrrigationSystems(BaseAPICall):
     """
-    A class for interacting with the irrigation systems endpoint of the Seshat API.
+    A class for interacting with the irrigation systems endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -565,7 +583,8 @@ class IrrigationSystems(BaseAPICall):
 
 class DrinkingWaterSupplies(BaseAPICall):
     """
-    A class for interacting with the drinking water supplies endpoint of the Seshat API.
+    A class for interacting with the drinking water supplies endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -605,7 +624,8 @@ class Markets(BaseAPICall):
 
 class FoodStorageSites(BaseAPICall):
     """
-    A class for interacting with the food storage sites endpoint of the Seshat API.
+    A class for interacting with the food storage sites endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -705,7 +725,8 @@ class Ports(BaseAPICall):
 
 class MinesOrQuarries(BaseAPICall):
     """
-    A class for interacting with the mines or quarries endpoint of the Seshat API.
+    A class for interacting with the mines or quarries endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -725,7 +746,8 @@ class MinesOrQuarries(BaseAPICall):
 
 class MnemonicDevices(BaseAPICall):
     """
-    A class for interacting with the mnemonic devices endpoint of the Seshat API.
+    A class for interacting with the mnemonic devices endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -745,7 +767,8 @@ class MnemonicDevices(BaseAPICall):
 
 class NonwrittenRecords(BaseAPICall):
     """
-    A class for interacting with the nonwritten records endpoint of the Seshat API.
+    A class for interacting with the nonwritten records endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -765,7 +788,8 @@ class NonwrittenRecords(BaseAPICall):
 
 class WrittenRecords(BaseAPICall):
     """
-    A class for interacting with the written records endpoint of the Seshat API.
+    A class for interacting with the written records endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -805,7 +829,8 @@ class Scripts(BaseAPICall):
 
 class NonPhoneticWritings(BaseAPICall):
     """
-    A class for interacting with the non-phonetic writings endpoint of the Seshat API.
+    A class for interacting with the non-phonetic writings endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -825,7 +850,8 @@ class NonPhoneticWritings(BaseAPICall):
 
 class PhoneticAlphabeticWritings(BaseAPICall):
     """
-    A class for interacting with the phonetic alphabetic writings endpoint of the Seshat API.
+    A class for interacting with the phonetic alphabetic writings endpoint of
+    the Seshat API.
 
     Parameters
     ----------
@@ -845,7 +871,8 @@ class PhoneticAlphabeticWritings(BaseAPICall):
 
 class ListsTablesAndClassifications(BaseAPICall):
     """
-    A class for interacting with the lists, tables, and classifications endpoint of the Seshat API.
+    A class for interacting with the lists, tables, and classifications
+    endpoint of the Seshat API.
 
     Parameters
     ----------
@@ -905,7 +932,8 @@ class SacredTexts(BaseAPICall):
 
 class ReligiousLiteratures(BaseAPICall):
     """
-    A class for interacting with the religious literatures endpoint of the Seshat API.
+    A class for interacting with the religious literatures endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -925,7 +953,8 @@ class ReligiousLiteratures(BaseAPICall):
 
 class PracticalLiteratures(BaseAPICall):
     """
-    A class for interacting with the practical literatures endpoint of the Seshat API.
+    A class for interacting with the practical literatures endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -985,7 +1014,8 @@ class Philosophies(BaseAPICall):
 
 class ScientificLiteratures(BaseAPICall):
     """
-    A class for interacting with the scientific literatures endpoint of the Seshat API.
+    A class for interacting with the scientific literatures endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -1065,7 +1095,8 @@ class Tokens(BaseAPICall):
 
 class PreciousMetals(BaseAPICall):
     """
-    A class for interacting with the precious metals endpoint of the Seshat API.
+    A class for interacting with the precious metals endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -1105,7 +1136,8 @@ class ForeignCoins(BaseAPICall):
 
 class IndigenousCoins(BaseAPICall):
     """
-    A class for interacting with the indigenous coins endpoint of the Seshat API.
+    A class for interacting with the indigenous coins endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -1125,7 +1157,8 @@ class IndigenousCoins(BaseAPICall):
 
 class PaperCurrencies(BaseAPICall):
     """
-    A class for interacting with the paper currencies endpoint of the Seshat API.
+    A class for interacting with the paper currencies endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -1165,7 +1198,8 @@ class Couriers(BaseAPICall):
 
 class PostalStations(BaseAPICall):
     """
-    A class for interacting with the postal stations endpoint of the Seshat API.
+    A class for interacting with the postal stations endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -1185,7 +1219,8 @@ class PostalStations(BaseAPICall):
 
 class GeneralPostalServices(BaseAPICall):
     """
-    A class for interacting with the general postal services endpoint of the Seshat API.
+    A class for interacting with the general postal services endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -1205,7 +1240,8 @@ class GeneralPostalServices(BaseAPICall):
 
 class CommunalBuildings(BaseAPICall):
     """
-    A class for interacting with the communal buildings endpoint of the Seshat API.
+    A class for interacting with the communal buildings endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -1225,7 +1261,8 @@ class CommunalBuildings(BaseAPICall):
 
 class UtilitarianPublicBuildings(BaseAPICall):
     """
-    A class for interacting with the utilitarian public buildings endpoint of the Seshat API.
+    A class for interacting with the utilitarian public buildings endpoint of
+    the Seshat API.
 
     Parameters
     ----------
@@ -1245,7 +1282,8 @@ class UtilitarianPublicBuildings(BaseAPICall):
 
 class SymbolicBuildings(BaseAPICall):
     """
-    A class for interacting with the symbolic buildings endpoint of the Seshat API.
+    A class for interacting with the symbolic buildings endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -1265,7 +1303,8 @@ class SymbolicBuildings(BaseAPICall):
 
 class EntertainmentBuildings(BaseAPICall):
     """
-    A class for interacting with the entertainment buildings endpoint of the Seshat API.
+    A class for interacting with the entertainment buildings endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -1285,7 +1324,8 @@ class EntertainmentBuildings(BaseAPICall):
 
 class KnowledgeOrInformationBuildings(BaseAPICall):
     """
-    A class for interacting with the knowledge or information buildings endpoint of the Seshat API.
+    A class for interacting with the knowledge or information buildings
+    endpoint of the Seshat API.
 
     Parameters
     ----------
@@ -1305,7 +1345,8 @@ class KnowledgeOrInformationBuildings(BaseAPICall):
 
 class OtherUtilitarianPublicBuildings(BaseAPICall):
     """
-    A class for interacting with the other utilitarian public buildings endpoint of the Seshat API.
+    A class for interacting with the other utilitarian public buildings
+    endpoint of the Seshat API.
 
     Parameters
     ----------
@@ -1325,7 +1366,8 @@ class OtherUtilitarianPublicBuildings(BaseAPICall):
 
 class SpecialPurposeSites(BaseAPICall):
     """
-    A class for interacting with the special purpose sites endpoint of the Seshat API.
+    A class for interacting with the special purpose sites endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -1345,7 +1387,8 @@ class SpecialPurposeSites(BaseAPICall):
 
 class CeremonialSites(BaseAPICall):
     """
-    A class for interacting with the ceremonial sites endpoint of the Seshat API.
+    A class for interacting with the ceremonial sites endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -1385,7 +1428,8 @@ class BurialSites(BaseAPICall):
 
 class TradingEmporia(BaseAPICall):
     """
-    A class for interacting with the trading emporia endpoint of the Seshat API.
+    A class for interacting with the trading emporia endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -1425,7 +1469,8 @@ class Enclosures(BaseAPICall):
 
 class LengthMeasurementSystems(BaseAPICall):
     """
-    A class for interacting with the length measurement systems endpoint of the Seshat API.
+    A class for interacting with the length measurement systems endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -1445,7 +1490,8 @@ class LengthMeasurementSystems(BaseAPICall):
 
 class AreaMeasurementSystems(BaseAPICall):
     """
-    A class for interacting with the area measurement systems endpoint of the Seshat API.
+    A class for interacting with the area measurement systems endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -1465,7 +1511,8 @@ class AreaMeasurementSystems(BaseAPICall):
 
 class VolumeMeasurementSystems(BaseAPICall):
     """
-    A class for interacting with the volume measurement systems endpoint of the Seshat API.
+    A class for interacting with the volume measurement systems endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -1485,7 +1532,8 @@ class VolumeMeasurementSystems(BaseAPICall):
 
 class WeightMeasurementSystems(BaseAPICall):
     """
-    A class for interacting with the weight measurement systems endpoint of the Seshat API.
+    A class for interacting with the weight measurement systems endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -1505,7 +1553,8 @@ class WeightMeasurementSystems(BaseAPICall):
 
 class TimeMeasurementSystems(BaseAPICall):
     """
-    A class for interacting with the time measurement systems endpoint of the Seshat API.
+    A class for interacting with the time measurement systems endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -1525,7 +1574,8 @@ class TimeMeasurementSystems(BaseAPICall):
 
 class GeometricalMeasurementSystems(BaseAPICall):
     """
-    A class for interacting with the geometrical measurement systems endpoint of the Seshat API.
+    A class for interacting with the geometrical measurement systems endpoint
+    of the Seshat API.
 
     Parameters
     ----------
@@ -1545,7 +1595,8 @@ class GeometricalMeasurementSystems(BaseAPICall):
 
 class OtherMeasurementSystems(BaseAPICall):
     """
-    A class for interacting with the other measurement systems endpoint of the Seshat API.
+    A class for interacting with the other measurement systems endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -1565,7 +1616,8 @@ class OtherMeasurementSystems(BaseAPICall):
 
 class DebtAndCreditStructures(BaseAPICall):
     """
-    A class for interacting with the debt and credit structures endpoint of the Seshat API.
+    A class for interacting with the debt and credit structures endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -1585,7 +1637,8 @@ class DebtAndCreditStructures(BaseAPICall):
 
 class StoresOfWealth(BaseAPICall):
     """
-    A class for interacting with the stores of wealth endpoint of the Seshat API.
+    A class for interacting with the stores of wealth endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -1605,7 +1658,8 @@ class StoresOfWealth(BaseAPICall):
 
 class SourcesOfSupport(BaseAPICall):
     """
-    A class for interacting with the sources of support endpoint of the Seshat API.
+    A class for interacting with the sources of support endpoint of the Seshat
+    API.
 
     Parameters
     ----------
@@ -1625,7 +1679,8 @@ class SourcesOfSupport(BaseAPICall):
 
 class OccupationalComplexities(BaseAPICall):
     """
-    A class for interacting with the occupational complexities endpoint of the Seshat API.
+    A class for interacting with the occupational complexities endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -1645,7 +1700,8 @@ class OccupationalComplexities(BaseAPICall):
 
 class SpecialPurposeHouses(BaseAPICall):
     """
-    A class for interacting with the special purpose houses endpoint of the Seshat API.
+    A class for interacting with the special purpose houses endpoint of the
+    Seshat API.
 
     Parameters
     ----------
@@ -1665,7 +1721,8 @@ class SpecialPurposeHouses(BaseAPICall):
 
 class OtherSpecialPurposeSites(BaseAPICall):
     """
-    A class for interacting with the other special purpose sites endpoint of the Seshat API.
+    A class for interacting with the other special purpose sites endpoint of
+    the Seshat API.
 
     Parameters
     ----------
@@ -1685,7 +1742,8 @@ class OtherSpecialPurposeSites(BaseAPICall):
 
 class LargestCommunicationDistances(BaseAPICall):
     """
-    A class for interacting with the largest communication distances endpoint of the Seshat API.
+    A class for interacting with the largest communication distances endpoint
+    of the Seshat API.
 
     Parameters
     ----------
@@ -1705,7 +1763,8 @@ class LargestCommunicationDistances(BaseAPICall):
 
 class FastestIndividualCommunications(BaseAPICall):
     """
-    A class for interacting with the fastest individual communications endpoint of the Seshat API.
+    A class for interacting with the fastest individual communications endpoint
+    of the Seshat API.
 
     Parameters
     ----------
