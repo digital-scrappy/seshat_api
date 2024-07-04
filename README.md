@@ -42,6 +42,9 @@ from seshat_api.core import Polities
 
 polities = Polities(client)
 
+# Show me how many polities are in the database
+print(len(polities))
+
 # Iterate through the polities
 for polity in polities:
     print(polity.id, polity.name)

@@ -164,390 +164,1560 @@ __all__ = [
 
 
 class ResearchAssistants(BaseAPICall):
+    """
+    A class for interacting with the research assistants endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import ResearchAssistants
+    >>> client = SeshatAPI()
+    >>> research_assistants = ResearchAssistants(client)
+    """
     ENDPOINT = "/sc/research-assistants"
     SINGLE_MODEL = ResearchAssistant
 
 
 class PolityTerritories(BaseAPICall):
+    """
+    A class for interacting with the polity territories endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import PolityTerritories
+    >>> client = SeshatAPI()
+    >>> polity_territories = PolityTerritories(client)
+    """
     ENDPOINT = "/sc/polity-territories"
     SINGLE_MODEL = PolityTerritory
 
 
 class PolityPopulations(BaseAPICall):
+    """
+    A class for interacting with the polity populations endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import PolityPopulations
+    >>> client = SeshatAPI()
+    >>> polity_populations = PolityPopulations(client)
+    """
     ENDPOINT = "/sc/polity-populations"
     SINGLE_MODEL = PolityPopulation
 
 
 class PopulationOfTheLargestSettlements(BaseAPICall):
+    """
+    A class for interacting with the population of the largest settlements endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import PopulationOfTheLargestSettlements
+    >>> client = SeshatAPI()
+    >>> population_of_the_largest_settlements = PopulationOfTheLargestSettlements(client)
+    """
     ENDPOINT = "/sc/population-of-the-largest-settlements"
     SINGLE_MODEL = PopulationOfTheLargestSettlement
 
 
 class SettlementHierarchies(BaseAPICall):
+    """
+    A class for interacting with the settlement hierarchies endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import SettlementHierarchies
+    >>> client = SeshatAPI()
+    >>> settlement_hierarchies = SettlementHierarchies(client)
+    """
     ENDPOINT = "/sc/settlement-hierarchies"
     SINGLE_MODEL = SettlementHierarchy
 
 
 class AdministrativeLevels(BaseAPICall):
+    """
+    A class for interacting with the administrative levels endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import AdministrativeLevels
+    >>> client = SeshatAPI()
+    >>> administrative_levels = AdministrativeLevels(client)
+    """
     ENDPOINT = "/sc/administrative-levels"
     SINGLE_MODEL = AdministrativeLevel
 
 
 class ReligiousLevels(BaseAPICall):
+    """
+    A class for interacting with the religious levels endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import ReligiousLevels
+    >>> client = SeshatAPI()
+    >>> religious_levels = ReligiousLevels(client)
+    """
     ENDPOINT = "/sc/religious-levels"
     SINGLE_MODEL = ReligiousLevel
 
 
 class MilitaryLevels(BaseAPICall):
+    """
+    A class for interacting with the military levels endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import MilitaryLevels
+    >>> client = SeshatAPI()
+    >>> military_levels = MilitaryLevels(client)
+    """
     ENDPOINT = "/sc/military-levels"
     SINGLE_MODEL = MilitaryLevel
 
 
 class ProfessionalMilitaryOfficers(BaseAPICall):
+    """
+    A class for interacting with the professional military officers endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import ProfessionalMilitaryOfficers
+    >>> client = SeshatAPI()
+    >>> professional_military_officers = ProfessionalMilitaryOfficers(client)
+    """
     ENDPOINT = "/sc/professional-military-officers"
     SINGLE_MODEL = ProfessionalMilitaryOfficer
 
 
 class ProfessionalSoldiers(BaseAPICall):
+    """
+    A class for interacting with the professional soldiers endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import ProfessionalSoldiers
+    >>> client = SeshatAPI()
+    >>> professional_soldiers = ProfessionalSoldiers(client)
+    """
     ENDPOINT = "/sc/professional-soldiers"
     SINGLE_MODEL = ProfessionalSoldier
 
 
 class ProfessionalPriesthoods(BaseAPICall):
+    """
+    A class for interacting with the professional priesthoods endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import ProfessionalPriesthoods
+    >>> client = SeshatAPI()
+    >>> professional_priesthoods = ProfessionalPriesthoods(client)
+    """
     ENDPOINT = "/sc/professional-priesthoods"
     SINGLE_MODEL = ProfessionalPriesthood
 
 
 class FullTimeBureaucrats(BaseAPICall):
+    """
+    A class for interacting with the full-time bureaucrats endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import FullTimeBureaucrats
+    >>> client = SeshatAPI()
+    >>> full_time_bureaucrats = FullTimeBureaucrats(client)
+    """
     ENDPOINT = "/sc/full-time-bureaucrats"
     SINGLE_MODEL = FullTimeBureaucrat
 
 
 class ExaminationSystems(BaseAPICall):
+    """
+    A class for interacting with the examination systems endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import ExaminationSystems
+    >>> client = SeshatAPI()
+    >>> examination_systems = ExaminationSystems(client)
+    """
     ENDPOINT = "/sc/examination-systems"
     SINGLE_MODEL = ExaminationSystem
 
 
 class MeritPromotions(BaseAPICall):
+    """
+    A class for interacting with the merit promotions endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import MeritPromotions
+    >>> client = SeshatAPI()
+    >>> merit_promotions = MeritPromotions(client)
+    """
     ENDPOINT = "/sc/merit-promotions"
     SINGLE_MODEL = MeritPromotion
 
 
 class SpecializedGovernmentBuildings(BaseAPICall):
+    """
+    A class for interacting with the specialized government buildings endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import SpecializedGovernmentBuildings
+    >>> client = SeshatAPI()
+    >>> specialized_government_buildings = SpecializedGovernmentBuildings(client)
+    """
     ENDPOINT = "/sc/specialized-government-buildings"
     SINGLE_MODEL = SpecializedGovernmentBuilding
 
 
 class FormalLegalCodes(BaseAPICall):
+    """
+    A class for interacting with the formal legal codes endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import FormalLegalCodes
+    >>> client = SeshatAPI()
+    >>> formal_legal_codes = FormalLegalCodes(client)
+    """
     ENDPOINT = "/sc/formal-legal-codes"
     SINGLE_MODEL = FormalLegalCode
 
 
 class Judges(BaseAPICall):
+    """
+    A class for interacting with the judges endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import Judges
+    >>> client = SeshatAPI()
+    >>> judges = Judges(client)
+    """
     ENDPOINT = "/sc/judges"
     SINGLE_MODEL = Judge
 
 
 class Courts(BaseAPICall):
+    """
+    A class for interacting with the courts endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import Courts
+    >>> client = SeshatAPI()
+    >>> courts = Courts(client)
+    """
     ENDPOINT = "/sc/courts"
     SINGLE_MODEL = Court
 
 
 class ProfessionalLawyers(BaseAPICall):
+    """
+    A class for interacting with the professional lawyers endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import ProfessionalLawyers
+    >>> client = SeshatAPI()
+    >>> professional_lawyers = ProfessionalLawyers(client)
+    """
     ENDPOINT = "/sc/professional-lawyers"
     SINGLE_MODEL = ProfessionalLawyer
 
 
 class IrrigationSystems(BaseAPICall):
+    """
+    A class for interacting with the irrigation systems endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import IrrigationSystems
+    >>> client = SeshatAPI()
+    >>> irrigation_systems = IrrigationSystems(client)
+    """
     ENDPOINT = "/sc/irrigation-systems"
     SINGLE_MODEL = IrrigationSystem
 
 
 class DrinkingWaterSupplies(BaseAPICall):
+    """
+    A class for interacting with the drinking water supplies endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import DrinkingWaterSupplies
+    >>> client = SeshatAPI()
+    >>> drinking_water_supplies = DrinkingWaterSupplies(client)
+    """
     ENDPOINT = "/sc/drinking-water-supplies"
     SINGLE_MODEL = DrinkingWaterSupply
 
 
 class Markets(BaseAPICall):
+    """
+    A class for interacting with the markets endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import Markets
+    >>> client = SeshatAPI()
+    >>> markets = Markets(client)
+    """
     ENDPOINT = "/sc/markets"
     SINGLE_MODEL = Market
 
 
 class FoodStorageSites(BaseAPICall):
+    """
+    A class for interacting with the food storage sites endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import FoodStorageSites
+    >>> client = SeshatAPI()
+    >>> food_storage_sites = FoodStorageSites(client)
+    """
     ENDPOINT = "/sc/food-storage-sites"
     SINGLE_MODEL = FoodStorageSite
 
 
 class Roads(BaseAPICall):
+    """
+    A class for interacting with the roads endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import Roads
+    >>> client = SeshatAPI()
+    >>> roads = Roads(client)
+    """
     ENDPOINT = "/sc/roads"
     SINGLE_MODEL = Road
 
 
 class Bridges(BaseAPICall):
+    """
+    A class for interacting with the bridges endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import Bridges
+    >>> client = SeshatAPI()
+    >>> bridges = Bridges(client)
+    """
     ENDPOINT = "/sc/bridges"
     SINGLE_MODEL = Bridge
 
 
 class Canals(BaseAPICall):
+    """
+    A class for interacting with the canals endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import Canals
+    >>> client = SeshatAPI()
+    >>> canals = Canals(client)
+    """
     ENDPOINT = "/sc/canals"
     SINGLE_MODEL = Canal
 
 
 class Ports(BaseAPICall):
+    """
+    A class for interacting with the ports endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import Ports
+    >>> client = SeshatAPI()
+    >>> ports = Ports(client)
+    """
     ENDPOINT = "/sc/ports"
     SINGLE_MODEL = Port
 
 
 class MinesOrQuarries(BaseAPICall):
+    """
+    A class for interacting with the mines or quarries endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import MinesOrQuarries
+    >>> client = SeshatAPI()
+    >>> mines_or_quarries = MinesOrQuarries(client)
+    """
     ENDPOINT = "/sc/mines-or-quarries"
     SINGLE_MODEL = MineOrQuarry
 
 
 class MnemonicDevices(BaseAPICall):
+    """
+    A class for interacting with the mnemonic devices endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import MnemonicDevices
+    >>> client = SeshatAPI()
+    >>> mnemonic_devices = MnemonicDevices(client)
+    """
     ENDPOINT = "/sc/mnemonic-devices"
     SINGLE_MODEL = MnemonicDevice
 
 
 class NonwrittenRecords(BaseAPICall):
+    """
+    A class for interacting with the nonwritten records endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import NonwrittenRecords
+    >>> client = SeshatAPI()
+    >>> nonwritten_records = NonwrittenRecords(client)
+    """
     ENDPOINT = "/sc/nonwritten-records"
     SINGLE_MODEL = NonwrittenRecord
 
 
 class WrittenRecords(BaseAPICall):
+    """
+    A class for interacting with the written records endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import WrittenRecords
+    >>> client = SeshatAPI()
+    >>> written_records = WrittenRecords(client)
+    """
     ENDPOINT = "/sc/written-records"
     SINGLE_MODEL = WrittenRecord
 
 
 class Scripts(BaseAPICall):
+    """
+    A class for interacting with the scripts endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import Scripts
+    >>> client = SeshatAPI()
+    >>> scripts = Scripts(client)
+    """
     ENDPOINT = "/sc/scripts"
     SINGLE_MODEL = Script
 
 
 class NonPhoneticWritings(BaseAPICall):
+    """
+    A class for interacting with the non-phonetic writings endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import NonPhoneticWritings
+    >>> client = SeshatAPI()
+    >>> non_phonetic_writings = NonPhoneticWritings(client)
+    """
     ENDPOINT = "/sc/non-phonetic-writings"
     SINGLE_MODEL = NonPhoneticWriting
 
 
 class PhoneticAlphabeticWritings(BaseAPICall):
+    """
+    A class for interacting with the phonetic alphabetic writings endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import PhoneticAlphabeticWritings
+    >>> client = SeshatAPI()
+    >>> phonetic_alphabetic_writings = PhoneticAlphabeticWritings(client)
+    """
     ENDPOINT = "/sc/phonetic-alphabetic-writings"
     SINGLE_MODEL = PhoneticAlphabeticWriting
 
 
 class ListsTablesAndClassifications(BaseAPICall):
+    """
+    A class for interacting with the lists, tables, and classifications endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import ListsTablesAndClassifications
+    >>> client = SeshatAPI()
+    >>> lists_tables_and_classifications = ListsTablesAndClassifications(client)
+    """
     ENDPOINT = "/sc/lists-tables-and-classifications"
     SINGLE_MODEL = ListsTablesAndClassification
 
 
 class Calendars(BaseAPICall):
+    """
+    A class for interacting with the calendars endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import Calendars
+    >>> client = SeshatAPI()
+    >>> calendars = Calendars(client)
+    """
     ENDPOINT = "/sc/calendars"
     SINGLE_MODEL = Calendar
 
 
 class SacredTexts(BaseAPICall):
+    """
+    A class for interacting with the sacred texts endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import SacredTexts
+    >>> client = SeshatAPI()
+    >>> sacred_texts = SacredTexts(client)
+    """
     ENDPOINT = "/sc/sacred-texts"
     SINGLE_MODEL = SacredText
 
 
 class ReligiousLiteratures(BaseAPICall):
+    """
+    A class for interacting with the religious literatures endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import ReligiousLiteratures
+    >>> client = SeshatAPI()
+    >>> religious_literatures = ReligiousLiteratures(client)
+    """
     ENDPOINT = "/sc/religious-literatures"
     SINGLE_MODEL = ReligiousLiterature
 
 
 class PracticalLiteratures(BaseAPICall):
+    """
+    A class for interacting with the practical literatures endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import PracticalLiteratures
+    >>> client = SeshatAPI()
+    >>> practical_literatures = PracticalLiteratures(client)
+    """
     ENDPOINT = "/sc/practical-literatures"
     SINGLE_MODEL = PracticalLiterature
 
 
 class Histories(BaseAPICall):
+    """
+    A class for interacting with the histories endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import Histories
+    >>> client = SeshatAPI()
+    >>> histories = Histories(client)
+    """
     ENDPOINT = "/sc/histories"
     SINGLE_MODEL = History
 
 
 class Philosophies(BaseAPICall):
+    """
+    A class for interacting with the philosophies endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import Philosophies
+    >>> client = SeshatAPI()
+    >>> philosophies = Philosophies(client)
+    """
     ENDPOINT = "/sc/philosophies"
     SINGLE_MODEL = Philosophy
 
 
 class ScientificLiteratures(BaseAPICall):
+    """
+    A class for interacting with the scientific literatures endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import ScientificLiteratures
+    >>> client = SeshatAPI()
+    >>> scientific_literatures = ScientificLiteratures(client)
+    """
     ENDPOINT = "/sc/scientific-literatures"
     SINGLE_MODEL = ScientificLiterature
 
 
 class Fictions(BaseAPICall):
+    """
+    A class for interacting with the fictions endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import Fictions
+    >>> client = SeshatAPI()
+    >>> fictions = Fictions(client)
+    """
     ENDPOINT = "/sc/fictions"
     SINGLE_MODEL = Fiction
 
 
 class Articles(BaseAPICall):
+    """
+    A class for interacting with the articles endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import Articles
+    >>> client = SeshatAPI()
+    >>> articles = Articles(client)
+    """
     ENDPOINT = "/sc/articles"
     SINGLE_MODEL = Article
 
 
 class Tokens(BaseAPICall):
+    """
+    A class for interacting with the tokens endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import Tokens
+    >>> client = SeshatAPI()
+    >>> tokens = Tokens(client)
+    """
     ENDPOINT = "/sc/tokens"
     SINGLE_MODEL = Token
 
 
 class PreciousMetals(BaseAPICall):
+    """
+    A class for interacting with the precious metals endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import PreciousMetals
+    >>> client = SeshatAPI()
+    >>> precious_metals = PreciousMetals(client)
+    """
     ENDPOINT = "/sc/precious-metals"
     SINGLE_MODEL = PreciousMetal
 
 
 class ForeignCoins(BaseAPICall):
+    """
+    A class for interacting with the foreign coins endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import ForeignCoins
+    >>> client = SeshatAPI()
+    >>> foreign_coins = ForeignCoins(client)
+    """
     ENDPOINT = "/sc/foreign-coins"
     SINGLE_MODEL = ForeignCoin
 
 
 class IndigenousCoins(BaseAPICall):
+    """
+    A class for interacting with the indigenous coins endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import IndigenousCoins
+    >>> client = SeshatAPI()
+    >>> indigenous_coins = IndigenousCoins(client)
+    """
     ENDPOINT = "/sc/indigenous-coins"
     SINGLE_MODEL = IndigenousCoin
 
 
 class PaperCurrencies(BaseAPICall):
+    """
+    A class for interacting with the paper currencies endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import PaperCurrencies
+    >>> client = SeshatAPI()
+    >>> paper_currencies = PaperCurrencies(client)
+    """
     ENDPOINT = "/sc/paper-currencies"
     SINGLE_MODEL = PaperCurrency
 
 
 class Couriers(BaseAPICall):
+    """
+    A class for interacting with the couriers endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import Couriers
+    >>> client = SeshatAPI()
+    >>> couriers = Couriers(client)
+    """
     ENDPOINT = "/sc/couriers"
     SINGLE_MODEL = Courier
 
 
 class PostalStations(BaseAPICall):
+    """
+    A class for interacting with the postal stations endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import PostalStations
+    >>> client = SeshatAPI()
+    >>> postal_stations = PostalStations(client)
+    """
     ENDPOINT = "/sc/postal-stations"
     SINGLE_MODEL = PostalStation
 
 
 class GeneralPostalServices(BaseAPICall):
+    """
+    A class for interacting with the general postal services endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import GeneralPostalServices
+    >>> client = SeshatAPI()
+    >>> general_postal_services = GeneralPostalServices(client)
+    """
     ENDPOINT = "/sc/general-postal-services"
     SINGLE_MODEL = GeneralPostalService
 
 
 class CommunalBuildings(BaseAPICall):
+    """
+    A class for interacting with the communal buildings endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import CommunalBuildings
+    >>> client = SeshatAPI()
+    >>> communal_buildings = CommunalBuildings(client)
+    """
     ENDPOINT = "/sc/communal-buildings"
     SINGLE_MODEL = CommunalBuilding
 
 
 class UtilitarianPublicBuildings(BaseAPICall):
+    """
+    A class for interacting with the utilitarian public buildings endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import UtilitarianPublicBuildings
+    >>> client = SeshatAPI()
+    >>> utilitarian_public_buildings = UtilitarianPublicBuildings(client)
+    """
     ENDPOINT = "/sc/utilitarian-public-buildings"
     SINGLE_MODEL = UtilitarianPublicBuilding
 
 
 class SymbolicBuildings(BaseAPICall):
+    """
+    A class for interacting with the symbolic buildings endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import SymbolicBuildings
+    >>> client = SeshatAPI()
+    >>> symbolic_buildings = SymbolicBuildings(client)
+    """
     ENDPOINT = "/sc/symbolic-buildings"
     SINGLE_MODEL = SymbolicBuilding
 
 
 class EntertainmentBuildings(BaseAPICall):
+    """
+    A class for interacting with the entertainment buildings endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import EntertainmentBuildings
+    >>> client = SeshatAPI()
+    >>> entertainment_buildings = EntertainmentBuildings(client)
+    """
     ENDPOINT = "/sc/entertainment-buildings"
     SINGLE_MODEL = EntertainmentBuilding
 
 
 class KnowledgeOrInformationBuildings(BaseAPICall):
+    """
+    A class for interacting with the knowledge or information buildings endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import KnowledgeOrInformationBuildings
+    >>> client = SeshatAPI()
+    >>> knowledge_or_information_buildings = KnowledgeOrInformationBuildings(client)
+    """
     ENDPOINT = "/sc/knowledge-or-information-buildings"
     SINGLE_MODEL = KnowledgeOrInformationBuilding
 
 
 class OtherUtilitarianPublicBuildings(BaseAPICall):
+    """
+    A class for interacting with the other utilitarian public buildings endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import OtherUtilitarianPublicBuildings
+    >>> client = SeshatAPI()
+    >>> other_utilitarian_public_buildings = OtherUtilitarianPublicBuildings(client)
+    """
     ENDPOINT = "/sc/other-utilitarian-public-buildings"
     SINGLE_MODEL = OtherUtilitarianPublicBuilding
 
 
 class SpecialPurposeSites(BaseAPICall):
+    """
+    A class for interacting with the special purpose sites endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import SpecialPurposeSites
+    >>> client = SeshatAPI()
+    >>> special_purpose_sites = SpecialPurposeSites(client)
+    """
     ENDPOINT = "/sc/special-purpose-sites"
     SINGLE_MODEL = SpecialPurposeSite
 
 
 class CeremonialSites(BaseAPICall):
+    """
+    A class for interacting with the ceremonial sites endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import CeremonialSites
+    >>> client = SeshatAPI()
+    >>> ceremonial_sites = CeremonialSites(client)
+    """
     ENDPOINT = "/sc/ceremonial-sites"
     SINGLE_MODEL = CeremonialSite
 
 
 class BurialSites(BaseAPICall):
+    """
+    A class for interacting with the burial sites endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import BurialSites
+    >>> client = SeshatAPI()
+    >>> burial_sites = BurialSites(client)
+    """
     ENDPOINT = "/sc/burial-sites"
     SINGLE_MODEL = BurialSite
 
 
 class TradingEmporia(BaseAPICall):
+    """
+    A class for interacting with the trading emporia endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import TradingEmporia
+    >>> client = SeshatAPI()
+    >>> trading_emporia = TradingEmporia(client)
+    """
     ENDPOINT = "/sc/trading-emporia"
     SINGLE_MODEL = TradingEmporium
 
 
 class Enclosures(BaseAPICall):
+    """
+    A class for interacting with the enclosures endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import Enclosures
+    >>> client = SeshatAPI()
+    >>> enclosures = Enclosures(client)
+    """
     ENDPOINT = "/sc/enclosures"
     SINGLE_MODEL = Enclosure
 
 
 class LengthMeasurementSystems(BaseAPICall):
+    """
+    A class for interacting with the length measurement systems endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import LengthMeasurementSystems
+    >>> client = SeshatAPI()
+    >>> length_measurement_systems = LengthMeasurementSystems(client)
+    """
     ENDPOINT = "/sc/length-measurement-systems"
     SINGLE_MODEL = LengthMeasurementSystem
 
 
 class AreaMeasurementSystems(BaseAPICall):
+    """
+    A class for interacting with the area measurement systems endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import AreaMeasurementSystems
+    >>> client = SeshatAPI()
+    >>> area_measurement_systems = AreaMeasurementSystems(client)
+    """
     ENDPOINT = "/sc/area-measurement-systems"
     SINGLE_MODEL = AreaMeasurementSystem
 
 
 class VolumeMeasurementSystems(BaseAPICall):
+    """
+    A class for interacting with the volume measurement systems endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import VolumeMeasurementSystems
+    >>> client = SeshatAPI()
+    >>> volume_measurement_systems = VolumeMeasurementSystems(client)
+    """
     ENDPOINT = "/sc/volume-measurement-systems"
     SINGLE_MODEL = VolumeMeasurementSystem
 
 
 class WeightMeasurementSystems(BaseAPICall):
+    """
+    A class for interacting with the weight measurement systems endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import WeightMeasurementSystems
+    >>> client = SeshatAPI()
+    >>> weight_measurement_systems = WeightMeasurementSystems(client)
+    """
     ENDPOINT = "/sc/weight-measurement-systems"
     SINGLE_MODEL = WeightMeasurementSystem
 
 
 class TimeMeasurementSystems(BaseAPICall):
+    """
+    A class for interacting with the time measurement systems endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import TimeMeasurementSystems
+    >>> client = SeshatAPI()
+    >>> time_measurement_systems = TimeMeasurementSystems(client)
+    """
     ENDPOINT = "/sc/time-measurement-systems"
     SINGLE_MODEL = TimeMeasurementSystem
 
 
 class GeometricalMeasurementSystems(BaseAPICall):
+    """
+    A class for interacting with the geometrical measurement systems endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import GeometricalMeasurementSystems
+    >>> client = SeshatAPI()
+    >>> geometrical_measurement_systems = GeometricalMeasurementSystems(client)
+    """
     ENDPOINT = "/sc/geometrical-measurement-systems"
     SINGLE_MODEL = GeometricalMeasurementSystem
 
 
 class OtherMeasurementSystems(BaseAPICall):
+    """
+    A class for interacting with the other measurement systems endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import OtherMeasurementSystems
+    >>> client = SeshatAPI()
+    >>> other_measurement_systems = OtherMeasurementSystems(client)
+    """
     ENDPOINT = "/sc/other-measurement-systems"
     SINGLE_MODEL = OtherMeasurementSystem
 
 
 class DebtAndCreditStructures(BaseAPICall):
+    """
+    A class for interacting with the debt and credit structures endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import DebtAndCreditStructures
+    >>> client = SeshatAPI()
+    >>> debt_and_credit_structures = DebtAndCreditStructures(client)
+    """
     ENDPOINT = "/sc/debt-and-credit-structures"
     SINGLE_MODEL = DebtAndCreditStructure
 
 
 class StoresOfWealth(BaseAPICall):
+    """
+    A class for interacting with the stores of wealth endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import StoresOfWealth
+    >>> client = SeshatAPI()
+    >>> stores_of_wealth = StoresOfWealth(client)
+    """
     ENDPOINT = "/sc/stores-of-wealth"
     SINGLE_MODEL = StoreOfWealth
 
 
 class SourcesOfSupport(BaseAPICall):
+    """
+    A class for interacting with the sources of support endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import SourcesOfSupport
+    >>> client = SeshatAPI()
+    >>> sources_of_support = SourcesOfSupport(client)
+    """
     ENDPOINT = "/sc/sources-of-support"
     SINGLE_MODEL = SourceOfSupport
 
 
 class OccupationalComplexities(BaseAPICall):
+    """
+    A class for interacting with the occupational complexities endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import OccupationalComplexities
+    >>> client = SeshatAPI()
+    >>> occupational_complexities = OccupationalComplexities(client)
+    """
     ENDPOINT = "/sc/occupational-complexities"
     SINGLE_MODEL = OccupationalComplexity
 
 
 class SpecialPurposeHouses(BaseAPICall):
+    """
+    A class for interacting with the special purpose houses endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import SpecialPurposeHouses
+    >>> client = SeshatAPI()
+    >>> special_purpose_houses = SpecialPurposeHouses(client)
+    """
     ENDPOINT = "/sc/special-purpose-houses"
     SINGLE_MODEL = SpecialPurposeHouse
 
 
 class OtherSpecialPurposeSites(BaseAPICall):
+    """
+    A class for interacting with the other special purpose sites endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import OtherSpecialPurposeSites
+    >>> client = SeshatAPI()
+    >>> other_special_purpose_sites = OtherSpecialPurposeSites(client)
+    """
     ENDPOINT = "/sc/other-special-purpose-sites"
     SINGLE_MODEL = OtherSpecialPurposeSite
 
 
 class LargestCommunicationDistances(BaseAPICall):
+    """
+    A class for interacting with the largest communication distances endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import LargestCommunicationDistances
+    >>> client = SeshatAPI()
+    >>> largest_communication_distances = LargestCommunicationDistances(client)
+    """
     ENDPOINT = "/sc/largest-communication-distances"
     SINGLE_MODEL = LargestCommunicationDistance
 
 
 class FastestIndividualCommunications(BaseAPICall):
+    """
+    A class for interacting with the fastest individual communications endpoint of the Seshat API.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The API client to use for requests.
+
+    Example
+    -------
+    >>> from seshat_api import SeshatAPI
+    >>> from seshat_api.sc import FastestIndividualCommunications
+    >>> client = SeshatAPI()
+    >>> fastest_individual_communications = FastestIndividualCommunications(client)
+    """
     ENDPOINT = "/sc/fastest-individual-communications"
     SINGLE_MODEL = FastestIndividualCommunication
