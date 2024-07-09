@@ -183,7 +183,7 @@ class Capital(BaseModel):
 class NGAPolityRelation(BaseModel):
     """
     A class representing a single NGA–polity relation (relations between a
-    Natural Geographic Areas, NGA, and a polity) object in the Seshat API.
+    Natural Geographic Area, NGA, and a polity) object in the Seshat API.
 
     Parameters
     ----------

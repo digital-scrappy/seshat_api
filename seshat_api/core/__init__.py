@@ -197,7 +197,7 @@ class Capitals(BaseAPICall):
 class NGAPolityRelations(BaseAPICall):
     """
     A class for interacting with the NGA–polity relations (relations between a
-    Natural Geographic Areas, NGA, and a polity) endpoint of the Seshat API.
+    Natural Geographic Area, NGA, and a polity) endpoint of the Seshat API.
 
     Parameters
     ----------
