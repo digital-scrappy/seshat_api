@@ -25,7 +25,13 @@ pip install .
 ## Usage
 
 To use the Seshat API, you need to create a `SeshatAPI` client object and use
-it to interact with the database. Here is an example of how to set up a client:
+it to interact with the database.
+
+The best way to get started is to try one of our [example notebooks](examples/), which demo how to use the package.
+
+### Quick start
+
+Here is an example of how to set up a client:
 
 ```python
 from seshat_api import SeshatAPI
