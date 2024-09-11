@@ -18,7 +18,7 @@ from ..models import (
     CommentPart,
     CommentPartThroughCitation,
     Religion,
-    VideoShapefile,
+    CliopatriaShapefile,
     GADMShapefile,
     GADMCountry,
     GADMProvince,
@@ -44,7 +44,7 @@ __all__ = [
     "CommentParts",
     "CommentPartsThroughCitations",
     "Religions",
-    "VideoShapefiles",
+    "CliopatriaShapefiles",
     "GADMShapefiles",
     "GADMCountries",
     "GADMProvinces",
@@ -417,9 +417,9 @@ class Religions(BaseAPICall):
     SINGLE_MODEL = Religion
 
 
-class VideoShapefiles(BaseAPICall):
+class CliopatriaShapefiles(BaseAPICall):
     """
-    A class for interacting with the video shapefiles endpoint of the Seshat
+    A class for interacting with the Cliopatria shapefiles endpoint of the Seshat
     API.
 
     Parameters
@@ -430,12 +430,12 @@ class VideoShapefiles(BaseAPICall):
     Example
     -------
     >>> from seshat_api import SeshatAPI
-    >>> from seshat_api.core import VideoShapefiles
+    >>> from seshat_api.core import CliopatriaShapefiles
     >>> client = SeshatAPI()
-    >>> video_shapefiles = VideoShapefiles(client)
+    >>> cliopatria_shapefiles = CliopatriaShapefiles(client)
     """
-    ENDPOINT = "/core/video-shapefiles"
-    SINGLE_MODEL = VideoShapefile
+    ENDPOINT = "/core/cliopatria-shapefiles"
+    SINGLE_MODEL = CliopatriaShapefile
 
 
 class GADMShapefiles(BaseAPICall):
