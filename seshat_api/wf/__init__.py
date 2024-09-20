@@ -25,7 +25,7 @@ from ..models import (
     Dog,
     Donkey,
     Horse,
-    Camel,
+    Camels,
     Elephant,
     WoodBarkEtc,
     Leather,
@@ -606,7 +606,7 @@ class Camels(BaseAPICall):
     >>> camels = Camels(client)
     """
     ENDPOINT = "/wf/camels"
-    SINGLE_MODEL = Camel
+    SINGLE_MODEL = Camels
 
 
 class Elephants(BaseAPICall):

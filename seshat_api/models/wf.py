@@ -25,7 +25,7 @@ __all__ = [
     "Dog",
     "Donkey",
     "Horse",
-    "Camel",
+    "Camels",
     "Elephant",
     "WoodBarkEtc",
     "Leather",
@@ -511,9 +511,9 @@ class Horse(BaseModel):
     pass
 
 
-class Camel(BaseModel):
+class Camels(BaseModel):
     """
-    A class representing a single Camel object in the Seshat API.
+    A class representing a single Camels object in the Seshat API.
 
     Parameters
     ----------
