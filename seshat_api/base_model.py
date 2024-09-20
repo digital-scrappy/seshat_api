@@ -277,3 +277,28 @@ class BaseAPICall:
             return self.model(data=data, count=self.count, name=self.name)
 
         return BaseModel(data=data, count=self.count, name=self.name)
+    
+    def get_all(self):
+        """
+        Get all items from the API.
+
+        Returns
+        -------
+        list
+            A list of all items from the API.
+        """
+        all_results = []
+        page = 1
+
+        while True:
+            try:
+                response = self.get_page(page)
+            except:
+                break
+            results = response.get('results', [])
+            if not results:
+                break
+            all_results.extend(results)
+            page += 1
+
+        return all_results
