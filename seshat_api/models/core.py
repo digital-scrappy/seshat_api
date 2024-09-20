@@ -20,7 +20,7 @@ __all__ = [
     "CommentPart",
     "CommentPartThroughCitation",
     "Religion",
-    "VideoShapefile",
+    "CliopatriaShapefile",
     "GADMShapefile",
     "GADMCountry",
     "GADMProvince",
@@ -390,9 +390,9 @@ class Religion(BaseModel):
     pass
 
 
-class VideoShapefile(BaseModel):
+class CliopatriaShapefile(BaseModel):
     """
-    A class representing a single Video Shapefile object in the Seshat API.
+    A class representing a single Cliopatria Shapefile object in the Seshat API.
 
     Parameters
     ----------
