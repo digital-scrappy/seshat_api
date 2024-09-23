@@ -31,7 +31,7 @@ from .crisisdb import (
     HumanSacrifices,
     ExternalConflicts,
     ExternalConflictSides,
-    AgriculturalPopulationsArableLands,
+    # AgriculturalPopulationsArableLands,    # API endpoint not found
     GrossGrainSharedPerAgriculturalPopulations,
     NetGrainSharedPerAgriculturalPopulations,
     MilitaryExpenses,
@@ -265,7 +265,7 @@ __all__ = [
     "HumanSacrifices",
     "ExternalConflicts",
     "ExternalConflictSides",
-    "AgriculturalPopulationsArableLands",
+    # "AgriculturalPopulationsArableLands",    # API endpoint not found
     "GrossGrainSharedPerAgriculturalPopulations",
     "NetGrainSharedPerAgriculturalPopulations",
     "MilitaryExpenses",

@@ -8,7 +8,7 @@ from ..models import (
     HumanSacrifices,
     ExternalConflicts,
     ExternalConflictSides,
-    AgriculturalPopulationsArableLands,
+    # AgriculturalPopulationsArableLands,  # API endpoint not found
     GrossGrainSharedPerAgriculturalPopulations,
     NetGrainSharedPerAgriculturalPopulations,
     MilitaryExpenses,
@@ -32,7 +32,7 @@ __all__ = [
     "HumanSacrifices",
     "ExternalConflicts",
     "ExternalConflictSides",
-    "AgriculturalPopulationsArableLands",
+    # "AgriculturalPopulationsArableLands",  # API endpoint not found
     "GrossGrainSharedPerAgriculturalPopulations",
     "NetGrainSharedPerAgriculturalPopulations",
     "MilitaryExpenses",
@@ -195,25 +195,25 @@ class ExternalConflictSides(BaseAPICall):
     SINGLE_MODEL = ExternalConflictSides
 
 
-class AgriculturalPopulationsArableLands(BaseAPICall):
-    """
-    A class for interacting with the agricultural populations arable lands
-    endpoint of the Seshat API.
+# class AgriculturalPopulationsArableLands(BaseAPICall):    # API endpoint not found
+#     """
+#     A class for interacting with the agricultural populations arable lands
+#     endpoint of the Seshat API.
 
-    Parameters
-    ----------
-    client : SeshatAPI
-        The API client to use for requests.
+#     Parameters
+#     ----------
+#     client : SeshatAPI
+#         The API client to use for requests.
 
-    Example
-    -------
-    >>> from seshat_api import SeshatAPI
-    >>> from seshat_api.crisisdb import AgriculturalPopulationsArableLands
-    >>> client = SeshatAPI()
-    >>> agricultural_populations_arable_lands = AgriculturalPopulationsArableLands(client)
-    """
-    ENDPOINT = "/crisisdb/agricultural-populationsarable-lands"
-    SINGLE_MODEL = AgriculturalPopulationsArableLands
+#     Example
+#     -------
+#     >>> from seshat_api import SeshatAPI
+#     >>> from seshat_api.crisisdb import AgriculturalPopulationsArableLands
+#     >>> client = SeshatAPI()
+#     >>> agricultural_populations_arable_lands = AgriculturalPopulationsArableLands(client)
+#     """
+#     ENDPOINT = "/crisisdb/agricultural-populationsarable-lands"
+#     SINGLE_MODEL = AgriculturalPopulationsArableLands
 
 
 class GrossGrainSharedPerAgriculturalPopulations(BaseAPICall):
