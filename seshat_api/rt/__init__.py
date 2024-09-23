@@ -46,7 +46,7 @@ __all__ = [
     "FrequencyOfSocietalViolenceAgainstReligiousGroups",
     "SocietalDiscriminationAgainstReligiousGroupsTakingUpCertainOccupationsOrFunctions",  # noqa
     "SocietalPressureToConvertOrAgainstConversions",
-]s
+]
 
 
 class WidespreadReligions(BaseAPICall):

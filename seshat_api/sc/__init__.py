@@ -160,7 +160,7 @@ __all__ = [
     "OtherSpecialPurposeSites",
     "LargestCommunicationDistances",
     "FastestIndividualCommunications",
-]s
+]
 
 
 class ResearchAssistants(BaseAPICall):
