@@ -45,7 +45,7 @@ __all__ = [
     "Ditch",
     "Moats",
     "StoneWallNonMortared",
-    "StoneWallMortareds",
+    "StoneWallMortared",
     "FortifiedCamps",
     "ComplexFortifications",
     "ModernFortifications",
@@ -896,7 +896,7 @@ class StoneWallNonMortared(BaseModel):
     pass
 
 
-class StoneWallMortareds(BaseModel):
+class StoneWallMortared(BaseModel):
     """
     A class representing a single Stone Wall Mortared object in the Seshat API.
 
