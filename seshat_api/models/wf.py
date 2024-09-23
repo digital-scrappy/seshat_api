@@ -9,12 +9,12 @@ __all__ = [
     "Javelins",
     "Atlatls",
     "Slings",
-    "Selfbows",
+    "Selfbow",
     "CompositeBows",
     "Crossbows",
     "TensionSiegeEngines",
     "SlingSiegeEngines",
-    "GunpowderSiegeArtillerys",
+    "GunpowderSiegeArtillery",
     "HandheldFirearms",
     "WarClubs",
     "BattleAxes",
@@ -27,7 +27,7 @@ __all__ = [
     "Horses",
     "Camels",
     "Elephants",
-    "WoodBarkEtcs",
+    "WoodBarkEtc",
     "Leathers",
     "Shields",
     "Helmets",
@@ -36,15 +36,15 @@ __all__ = [
     "ScaledArmors",
     "LaminarArmors",
     "PlateArmors",
-    "SmallVesselCanoeEtcs",
-    "MerchantShipPressedIntoServices",
+    "SmallVesselCanoeEtc",
+    "MerchantShipPressedIntoService",
     "SpecializedMilitaryVessels",
     "SettlementInDefensivePositions",
     "WoodenPalisades",
     "EarthRamparts",
-    "Ditchs",
+    "Ditch",
     "Moats",
-    "StoneWallNonMortareds",
+    "StoneWallNonMortared",
     "StoneWallMortareds",
     "FortifiedCamps",
     "ComplexFortifications",
@@ -205,7 +205,7 @@ class Slings(BaseModel):
     pass
 
 
-class Selfbows(BaseModel):
+class Selfbow(BaseModel):
     """
     A class representing a single Selfbow object in the Seshat API.
 
@@ -301,7 +301,7 @@ class SlingSiegeEngines(BaseModel):
     pass
 
 
-class GunpowderSiegeArtillerys(BaseModel):
+class GunpowderSiegeArtillery(BaseModel):
     """
     A class representing a single Gunpowder Siege Artillery object in the
     Seshat API.
@@ -549,7 +549,7 @@ class Elephants(BaseModel):
     pass
 
 
-class WoodBarkEtcs(BaseModel):
+class WoodBarkEtc(BaseModel):
     """
     A class representing a single Wood Bark Etc object in the Seshat API.
 
@@ -720,7 +720,7 @@ class PlateArmors(BaseModel):
     pass
 
 
-class SmallVesselCanoeEtcs(BaseModel):
+class SmallVesselCanoeEtc(BaseModel):
     """
     A class representing a single Small Vessel Canoe Etc object in the Seshat
     API.
@@ -740,7 +740,7 @@ class SmallVesselCanoeEtcs(BaseModel):
     pass
 
 
-class MerchantShipPressedIntoServices(BaseModel):
+class MerchantShipPressedIntoService(BaseModel):
     """
     A class representing a single Merchant Ship Pressed Into Service object in
     the Seshat API.
@@ -838,7 +838,7 @@ class EarthRamparts(BaseModel):
     pass
 
 
-class Ditchs(BaseModel):
+class Ditch(BaseModel):
     """
     A class representing a single Ditch object in the Seshat API.
 
@@ -876,7 +876,7 @@ class Moats(BaseModel):
     pass
 
 
-class StoneWallNonMortareds(BaseModel):
+class StoneWallNonMortared(BaseModel):
     """
     A class representing a single Stone Wall Non Mortared object in the Seshat
     API.
