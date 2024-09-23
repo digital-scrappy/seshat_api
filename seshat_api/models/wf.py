@@ -9,12 +9,12 @@ __all__ = [
     "Javelins",
     "Atlatls",
     "Slings",
-    "Selfbows",
+    "SelfBows",
     "CompositeBows",
     "Crossbows",
     "TensionSiegeEngines",
     "SlingSiegeEngines",
-    "GunpowderSiegeArtillery",
+    "GunpowderSiegeArtilleries",
     "HandheldFirearms",
     "WarClubs",
     "BattleAxes",
@@ -44,8 +44,8 @@ __all__ = [
     "EarthRamparts",
     "Ditches",
     "Moats",
-    "StoneWallNonMortared",
-    "StoneWallMortared",
+    "StoneWallsNonMortared",
+    "StoneWallsMortared",
     "FortifiedCamps",
     "ComplexFortifications",
     "ModernFortifications",
@@ -205,7 +205,7 @@ class Slings(BaseModel):
     pass
 
 
-class Selfbows(BaseModel):
+class SelfBows(BaseModel):
     """
     A class representing a single Selfbow object in the Seshat API.
 
@@ -301,7 +301,7 @@ class SlingSiegeEngines(BaseModel):
     pass
 
 
-class GunpowderSiegeArtillery(BaseModel):
+class GunpowderSiegeArtilleries(BaseModel):
     """
     A class representing a single Gunpowder Siege Artillery object in the
     Seshat API.
@@ -876,7 +876,7 @@ class Moats(BaseModel):
     pass
 
 
-class StoneWallNonMortared(BaseModel):
+class StoneWallsNonMortared(BaseModel):
     """
     A class representing a single Stone Wall Non Mortared object in the Seshat
     API.
@@ -896,7 +896,7 @@ class StoneWallNonMortared(BaseModel):
     pass
 
 
-class StoneWallMortared(BaseModel):
+class StoneWallsMortared(BaseModel):
     """
     A class representing a single Stone Wall Mortared object in the Seshat API.
 

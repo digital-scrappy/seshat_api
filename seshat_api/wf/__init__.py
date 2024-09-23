@@ -9,12 +9,12 @@ from ..models import (
     Javelins,
     Atlatls,
     Slings,
-    Selfbows,
+    SelfBows,
     CompositeBows,
     Crossbows,
     TensionSiegeEngines,
     SlingSiegeEngines,
-    GunpowderSiegeArtillery,
+    GunpowderSiegeArtilleries,
     HandheldFirearms,
     WarClubs,
     BattleAxes,
@@ -44,8 +44,8 @@ from ..models import (
     EarthRamparts,
     Ditches,
     Moats,
-    StoneWallNonMortared,
-    StoneWallMortared,
+    StoneWallsNonMortared,
+    StoneWallsMortared,
     FortifiedCamps,
     ComplexFortifications,
     ModernFortifications,
@@ -79,7 +79,7 @@ __all__ = [
     "Horses",
     "Camels",
     "Elephants",
-    "WoodBarksEtc",
+    "WoodBarkEtc",
     "Leathers",
     "Shields",
     "Helmets",
@@ -88,8 +88,8 @@ __all__ = [
     "ScaledArmors",
     "LaminarArmors",
     "PlateArmors",
-    "SmallVesselsCanoesEtc",
-    "MerchantShipsPressedIntoService",
+    "SmallVesselCanoeEtc",
+    "MerchantShipPressedIntoService",
     "SpecializedMilitaryVessels",
     "SettlementInDefensivePositions",
     "WoodenPalisades",
@@ -282,7 +282,7 @@ class SelfBows(BaseAPICall):
     >>> self_bows = SelfBows(client)
     """
     ENDPOINT = "/wf/self-bows"
-    SINGLE_MODEL = Selfbows
+    SINGLE_MODEL = SelfBows
 
 
 class CompositeBows(BaseAPICall):
@@ -385,7 +385,7 @@ class GunpowderSiegeArtilleries(BaseAPICall):
     >>> gunpowder_siege_artilleries = GunpowderSiegeArtilleries(client)
     """
     ENDPOINT = "/wf/gunpowder-siege-artilleries"
-    SINGLE_MODEL = GunpowderSiegeArtillery
+    SINGLE_MODEL = GunpowderSiegeArtilleries
 
 
 class HandheldFirearms(BaseAPICall):
@@ -629,7 +629,7 @@ class Elephants(BaseAPICall):
     SINGLE_MODEL = Elephants
 
 
-class WoodBarksEtc(BaseAPICall):
+class WoodBarkEtc(BaseAPICall):
     """
     A class for interacting with the woodbark, etc endpoint of the Seshat API.
 
@@ -641,9 +641,9 @@ class WoodBarksEtc(BaseAPICall):
     Example
     -------
     >>> from seshat_api import SeshatAPI
-    >>> from seshat_api.wf import WoodBarksEtc
+    >>> from seshat_api.wf import WoodBarkEtc
     >>> client = SeshatAPI()
-    >>> wood_barks_etc = WoodBarksEtc(client)
+    >>> wood_barks_etc = WoodBarkEtc(client)
     """
     ENDPOINT = "/wf/wood-bark-etc"
     SINGLE_MODEL = WoodBarkEtc
@@ -810,7 +810,7 @@ class PlateArmors(BaseAPICall):
     SINGLE_MODEL = PlateArmors
 
 
-class SmallVesselsCanoesEtc(BaseAPICall):
+class SmallVesselCanoeEtc(BaseAPICall):
     """
     A class for interacting with the small vessels, canoes, etc. endpoint of
     the Seshat API.
@@ -823,15 +823,15 @@ class SmallVesselsCanoesEtc(BaseAPICall):
     Example
     -------
     >>> from seshat_api import SeshatAPI
-    >>> from seshat_api.wf import SmallVesselsCanoesEtc
+    >>> from seshat_api.wf import SmallVesselCanoeEtc
     >>> client = SeshatAPI()
-    >>> small_vessels_canoes_etc = SmallVesselsCanoesEtc(client)
+    >>> small_vessels_canoes_etc = SmallVesselCanoeEtc(client)
     """
     ENDPOINT = "/wf/small-vessel-canoe-etc"
     SINGLE_MODEL = SmallVesselCanoeEtc
 
 
-class MerchantShipsPressedIntoService(BaseAPICall):
+class MerchantShipPressedIntoService(BaseAPICall):
     """
     A class for interacting with the merchant ships pressed into service
     endpoint of the Seshat API.
@@ -844,9 +844,9 @@ class MerchantShipsPressedIntoService(BaseAPICall):
     Example
     -------
     >>> from seshat_api import SeshatAPI
-    >>> from seshat_api.wf import MerchantShipsPressedIntoService
+    >>> from seshat_api.wf import MerchantShipPressedIntoService
     >>> client = SeshatAPI()
-    >>> merchant_ships_pressed_into_service = MerchantShipsPressedIntoService(client)
+    >>> merchant_ships_pressed_into_service = MerchantShipPressedIntoService(client)
     """
     ENDPOINT = "/wf/merchant-ship-pressed-into-service"
     SINGLE_MODEL = MerchantShipPressedIntoService
@@ -993,7 +993,7 @@ class StoneWallsNonMortared(BaseAPICall):
     >>> stone_walls_non_mortared = StoneWallsNonMortared(client)
     """
     ENDPOINT = "/wf/stone-walls-non-mortared"
-    SINGLE_MODEL = StoneWallNonMortared
+    SINGLE_MODEL = StoneWallsNonMortared
 
 
 class StoneWallsMortared(BaseAPICall):
@@ -1014,7 +1014,7 @@ class StoneWallsMortared(BaseAPICall):
     >>> stone_walls_mortared = StoneWallsMortared(client)
     """
     ENDPOINT = "/wf/stone-walls-mortared"
-    SINGLE_MODEL = StoneWallMortared
+    SINGLE_MODEL = StoneWallsMortared
 
 
 class FortifiedCamps(BaseAPICall):
