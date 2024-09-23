@@ -286,7 +286,7 @@ class TaxesBasedOnReligiousAdherenceOrOnReligiousActivityAndInstitutions(
     pass
 
 
-class GovernmentalObligationsForReligiousGroupToApplyForOfficialRecognition(
+class GovernmentalObligationsForReligiousGroupToApplyForOfficialRecognitions(
     BaseModel
 ):
     """
