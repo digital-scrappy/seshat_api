@@ -976,7 +976,7 @@ class ModernFortifications(BaseModel):
 
 class Chainmails(BaseModel):
     """
-    A class representing a single Chainmail object in the Seshat API.
+    A class representing a single Chainmails object in the Seshat API.
 
     Parameters
     ----------

@@ -1097,4 +1097,4 @@ class Chainmails(BaseAPICall):
     >>> chainmails = Chainmails(client)
     """
     ENDPOINT = "/wf/chainmails"
-    SINGLE_MODEL = Chainmail
+    SINGLE_MODEL = Chainmails
