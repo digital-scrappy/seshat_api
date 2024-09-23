@@ -12,8 +12,8 @@ from ..models import (
     PolityCapitals,
     PolityLanguages,
     PolityLinguisticFamilies,
-    PolityLanguageGenus,
-    PolityReligionGenus,
+    PolityLanguageGenuses,
+    PolityReligionGenuses,
     PolityReligionFamilies,
     PolityReligions,
     PolityRelationshipToPrecedingEntities,
@@ -308,7 +308,7 @@ class PolityLanguageGenuses(BaseAPICall):
     >>> polity_language_genuses = PolityLanguageGenuses(client)
     """
     ENDPOINT = "/general/polity-language-genuses"
-    SINGLE_MODEL = PolityLanguageGenus
+    SINGLE_MODEL = PolityLanguageGenuses
 
 
 class PolityReligionGenuses(BaseAPICall):
@@ -329,7 +329,7 @@ class PolityReligionGenuses(BaseAPICall):
     >>> polity_religion_genuses = PolityReligionGenuses(client)
     """
     ENDPOINT = "/general/polity-religion-genuses"
-    SINGLE_MODEL = PolityReligionGenus
+    SINGLE_MODEL = PolityReligionGenuses
 
 
 class PolityReligionFamilies(BaseAPICall):
