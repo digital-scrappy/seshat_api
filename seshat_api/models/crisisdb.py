@@ -8,7 +8,7 @@ __all__ = [
     "HumanSacrifices",
     "ExternalConflicts",
     "ExternalConflictSides",
-    "AgriculturalPopulationsArableLands",
+    # "AgriculturalPopulationsArableLands",    # API endpoint not found
     "GrossGrainSharedPerAgriculturalPopulations",
     "NetGrainSharedPerAgriculturalPopulations",
     "MilitaryExpenses",
@@ -160,24 +160,24 @@ class ExternalConflictSides(BaseModel):
     pass
 
 
-class AgriculturalPopulationsArableLands(BaseModel):
-    """
-    A class representing a single Agricultural Population Arable Land object in
-    the Seshat API.
+# class AgriculturalPopulationsArableLands(BaseModel):    # API endpoint not found
+#     """
+#     A class representing a single Agricultural Population Arable Land object in
+#     the Seshat API.
 
-    Parameters
-    ----------
-    data : dict
-        The data to use in the model.
-    count : int, optional
-        The total count of items in the API.
-    name : str, optional
-        The name of the API.
+#     Parameters
+#     ----------
+#     data : dict
+#         The data to use in the model.
+#     count : int, optional
+#         The total count of items in the API.
+#     name : str, optional
+#         The name of the API.
 
-    ..
-        TODO: Add an example of how to create the object
-    """
-    pass
+#     ..
+#         TODO: Add an example of how to create the object
+#     """
+#     pass
 
 
 class GrossGrainSharedPerAgriculturalPopulations(BaseModel):
