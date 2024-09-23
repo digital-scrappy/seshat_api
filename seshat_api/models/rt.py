@@ -242,7 +242,7 @@ class GovernmentPressureToConverts(BaseModel):
     pass
 
 
-class GovernmentRestrictionsOnPropertyOwnershipForAdherentsOfAndReligiousGroup(
+class GovernmentRestrictionsOnPropertyOwnershipForAdherentsOfAndReligiousGroups(
     BaseModel
 ):
     """

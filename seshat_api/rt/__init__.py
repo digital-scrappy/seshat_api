@@ -272,7 +272,7 @@ class GovernmentRestrictionsOnPropertyOwnershipForAdherentsOfAndReligiousGroups(
     BaseAPICall
 ):
     ENDPOINT = "/rt/government-restrictions-on-property-ownership-for-adherents-of-and-religious-groups"
-    SINGLE_MODEL = GovernmentRestrictionsOnPropertyOwnershipForAdherentsOfAndReligiousGroup  # noqa
+    SINGLE_MODEL = GovernmentRestrictionsOnPropertyOwnershipForAdherentsOfAndReligiousGroups  # noqa
 
 
 class TaxesBasedOnReligiousAdherenceOrOnReligiousActivitiesAndInstitutions(
