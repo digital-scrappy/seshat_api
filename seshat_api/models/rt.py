@@ -13,14 +13,14 @@ __all__ = [
     "GovernmentRestrictionsOnConversions",
     "GovernmentPressureToConverts",
     "GovernmentRestrictionsOnPropertyOwnershipForAdherentsOfAndReligiousGroups",
-    "TaxesBasedOnReligiousAdherenceOrOnReligiousActivityAndInstitutions",
-    "GovernmentalObligationsForReligiousGroupToApplyForOfficialRecognitions",
+    "TaxesBasedOnReligiousAdherenceOrOnReligiousActivitiesAndInstitutions",
+    "GovernmentalObligationsForReligiousGroupsToApplyForOfficialRecognitions",
     "GovernmentRestrictionsOnConstructionOfReligiousBuildings",
     "GovernmentRestrictionsOnReligiousEducations",
     "GovernmentRestrictionsOnCirculationOfReligiousLiteratures",
-    "GovernmentDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunctions",  # noqa
+    "GovernmentDiscriminationAgainstReligiousGroupsTakingUpCertainOccupationsOrFunctions",  # noqa
     "FrequencyOfSocietalViolenceAgainstReligiousGroups",
-    "SocietalDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunctions",  # noqa
+    "SocietalDiscriminationAgainstReligiousGroupsTakingUpCertainOccupationsOrFunctions",  # noqa
     "SocietalPressureToConvertOrAgainstConversions",
 ]
 
@@ -264,7 +264,7 @@ class GovernmentRestrictionsOnPropertyOwnershipForAdherentsOfAndReligiousGroups(
     pass
 
 
-class TaxesBasedOnReligiousAdherenceOrOnReligiousActivityAndInstitutions(
+class TaxesBasedOnReligiousAdherenceOrOnReligiousActivitiesAndInstitutions(
     BaseModel
 ):
     """
@@ -286,7 +286,7 @@ class TaxesBasedOnReligiousAdherenceOrOnReligiousActivityAndInstitutions(
     pass
 
 
-class GovernmentalObligationsForReligiousGroupToApplyForOfficialRecognitions(
+class GovernmentalObligationsForReligiousGroupsToApplyForOfficialRecognitions(
     BaseModel
 ):
     """
@@ -368,7 +368,7 @@ class GovernmentRestrictionsOnCirculationOfReligiousLiteratures(BaseModel):
     pass
 
 
-class GovernmentDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunctions(  # noqa
+class GovernmentDiscriminationAgainstReligiousGroupsTakingUpCertainOccupationsOrFunctions(  # noqa
     BaseModel
 ):
     """
@@ -410,7 +410,7 @@ class FrequencyOfSocietalViolenceAgainstReligiousGroups(BaseModel):
     pass
 
 
-class SocietalDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunctions(  # noqa
+class SocietalDiscriminationAgainstReligiousGroupsTakingUpCertainOccupationsOrFunctions(  # noqa
     BaseModel
 ):
     """

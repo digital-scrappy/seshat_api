@@ -13,14 +13,14 @@ from ..models import (
     GovernmentRestrictionsOnConversions,
     GovernmentPressureToConverts,
     GovernmentRestrictionsOnPropertyOwnershipForAdherentsOfAndReligiousGroups,
-    TaxesBasedOnReligiousAdherenceOrOnReligiousActivityAndInstitutions,
-    GovernmentalObligationsForReligiousGroupToApplyForOfficialRecognitions,
+    TaxesBasedOnReligiousAdherenceOrOnReligiousActivitiesAndInstitutions,
+    GovernmentalObligationsForReligiousGroupsToApplyForOfficialRecognitions,
     GovernmentRestrictionsOnConstructionOfReligiousBuildings,
     GovernmentRestrictionsOnReligiousEducations,
     GovernmentRestrictionsOnCirculationOfReligiousLiteratures,
-    GovernmentDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunctions,  # noqa
+    GovernmentDiscriminationAgainstReligiousGroupsTakingUpCertainOccupationsOrFunctions,  # noqa
     FrequencyOfSocietalViolenceAgainstReligiousGroups,
-    SocietalDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunctions,  # noqa
+    SocietalDiscriminationAgainstReligiousGroupsTakingUpCertainOccupationsOrFunctions,  # noqa
     SocietalPressureToConvertOrAgainstConversions,
 )
 
@@ -280,7 +280,7 @@ class TaxesBasedOnReligiousAdherenceOrOnReligiousActivitiesAndInstitutions(
 ):
     ENDPOINT = "/rt/taxes-based-on-religious-adherence-or-on-religious-activities-and-institutions"  # noqa
     SINGLE_MODEL = (
-        TaxesBasedOnReligiousAdherenceOrOnReligiousActivityAndInstitutions
+        TaxesBasedOnReligiousAdherenceOrOnReligiousActivitiesAndInstitutions
     )
 
 
@@ -289,7 +289,7 @@ class GovernmentalObligationsForReligiousGroupsToApplyForOfficialRecognitions(
 ):
     ENDPOINT = "/rt/governmental-obligations-for-religious-groups-to-apply-for-official-recognitions"  # noqa
     SINGLE_MODEL = (
-        GovernmentalObligationsForReligiousGroupToApplyForOfficialRecognitions
+        GovernmentalObligationsForReligiousGroupsToApplyForOfficialRecognitions
     )
 
 
@@ -364,7 +364,7 @@ class GovernmentDiscriminationAgainstReligiousGroupsTakingUpCertainOccupationsOr
     BaseAPICall
 ):
     ENDPOINT = "/rt/government-discrimination-against-religious-groups-taking-up-certain-occupations-or-functions"
-    SINGLE_MODEL = GovernmentDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunctions  # noqas
+    SINGLE_MODEL = GovernmentDiscriminationAgainstReligiousGroupsTakingUpCertainOccupationsOrFunctions  # noqas
 
 
 class FrequencyOfSocietalViolenceAgainstReligiousGroups(BaseAPICall):
@@ -392,7 +392,7 @@ class SocietalDiscriminationAgainstReligiousGroupsTakingUpCertainOccupationsOrFu
     BaseAPICall
 ):
     ENDPOINT = "/rt/societal-discrimination-against-religious-groups-taking-up-certain-occupations-or-functions"  # noqa
-    SINGLE_MODEL = SocietalDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunctions  # noqas
+    SINGLE_MODEL = SocietalDiscriminationAgainstReligiousGroupsTakingUpCertainOccupationsOrFunctions  # noqas
 
 
 class SocietalPressureToConvertOrAgainstConversions(BaseAPICall):

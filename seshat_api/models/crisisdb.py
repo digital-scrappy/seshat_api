@@ -8,7 +8,7 @@ __all__ = [
     "HumanSacrifices",
     "ExternalConflicts",
     "ExternalConflictSides",
-    "AgriculturalPopulationArableLands",
+    "AgriculturalPopulationsArableLands",
     "GrossGrainSharedPerAgriculturalPopulations",
     "NetGrainSharedPerAgriculturalPopulations",
     "MilitaryExpenses",
@@ -160,7 +160,7 @@ class ExternalConflictSides(BaseModel):
     pass
 
 
-class AgriculturalPopulationArableLands(BaseModel):
+class AgriculturalPopulationsArableLands(BaseModel):
     """
     A class representing a single Agricultural Population Arable Land object in
     the Seshat API.

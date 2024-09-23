@@ -28,7 +28,7 @@ from ..models import (
     Bridges,
     Canals,
     Ports,
-    MineOrQuarries,
+    MinesOrQuarries,
     MnemonicDevices,
     NonwrittenRecords,
     WrittenRecords,
@@ -741,7 +741,7 @@ class MinesOrQuarries(BaseAPICall):
     >>> mines_or_quarries = MinesOrQuarries(client)
     """
     ENDPOINT = "/sc/mines-or-quarries"
-    SINGLE_MODEL = MineOrQuarries
+    SINGLE_MODEL = MinesOrQuarries
 
 
 class MnemonicDevices(BaseAPICall):

@@ -31,7 +31,7 @@ from .crisisdb import (
     HumanSacrifices,
     ExternalConflicts,
     ExternalConflictSides,
-    AgriculturalPopulationArableLands,
+    AgriculturalPopulationsArableLands,
     GrossGrainSharedPerAgriculturalPopulations,
     NetGrainSharedPerAgriculturalPopulations,
     MilitaryExpenses,
@@ -89,14 +89,14 @@ from .rt import (
     GovernmentRestrictionsOnConversions,
     GovernmentPressureToConverts,
     GovernmentRestrictionsOnPropertyOwnershipForAdherentsOfAndReligiousGroups,
-    TaxesBasedOnReligiousAdherenceOrOnReligiousActivityAndInstitutions,
-    GovernmentalObligationsForReligiousGroupToApplyForOfficialRecognitions,
+    TaxesBasedOnReligiousAdherenceOrOnReligiousActivitiesAndInstitutions,
+    GovernmentalObligationsForReligiousGroupsToApplyForOfficialRecognitions,
     GovernmentRestrictionsOnConstructionOfReligiousBuildings,
     GovernmentRestrictionsOnReligiousEducations,
     GovernmentRestrictionsOnCirculationOfReligiousLiteratures,
-    GovernmentDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunctions,  # noqa
+    GovernmentDiscriminationAgainstReligiousGroupsTakingUpCertainOccupationsOrFunctions,  # noqa
     FrequencyOfSocietalViolenceAgainstReligiousGroups,
-    SocietalDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunctions,  # noqa
+    SocietalDiscriminationAgainstReligiousGroupsTakingUpCertainOccupationsOrFunctions,  # noqa
     SocietalPressureToConvertOrAgainstConversions,
 )
 
@@ -128,7 +128,7 @@ from .sc import (
     Bridges,
     Canals,
     Ports,
-    MineOrQuarries,
+    MinesOrQuarries,
     MnemonicDevices,
     NonwrittenRecords,
     WrittenRecords,
@@ -265,7 +265,7 @@ __all__ = [
     "HumanSacrifices",
     "ExternalConflicts",
     "ExternalConflictSides",
-    "AgriculturalPopulationArableLands",
+    "AgriculturalPopulationsArableLands",
     "GrossGrainSharedPerAgriculturalPopulations",
     "NetGrainSharedPerAgriculturalPopulations",
     "MilitaryExpenses",
@@ -319,14 +319,14 @@ __all__ = [
     "GovernmentRestrictionsOnConversions",
     "GovernmentPressureToConverts",
     "GovernmentRestrictionsOnPropertyOwnershipForAdherentsOfAndReligiousGroups",
-    "TaxesBasedOnReligiousAdherenceOrOnReligiousActivityAndInstitutions",
-    "GovernmentalObligationsForReligiousGroupToApplyForOfficialRecognitions",
+    "TaxesBasedOnReligiousAdherenceOrOnReligiousActivitiesAndInstitutions",
+    "GovernmentalObligationsForReligiousGroupsToApplyForOfficialRecognitions",
     "GovernmentRestrictionsOnConstructionOfReligiousBuildings",
     "GovernmentRestrictionsOnReligiousEducations",
     "GovernmentRestrictionsOnCirculationOfReligiousLiteratures",
-    "GovernmentDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunctions",  # noqa
+    "GovernmentDiscriminationAgainstReligiousGroupsTakingUpCertainOccupationsOrFunctions",  # noqa
     "FrequencyOfSocietalViolenceAgainstReligiousGroups",
-    "SocietalDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunctions",  # noqa
+    "SocietalDiscriminationAgainstReligiousGroupsTakingUpCertainOccupationsOrFunctions",  # noqa
     "SocietalPressureToConvertOrAgainstConversions",
     # sc
     "ResearchAssistants",
@@ -356,7 +356,7 @@ __all__ = [
     "Bridges",
     "Canals",
     "Ports",
-    "MineOrQuarries",
+    "MinesOrQuarries",
     "MnemonicDevices",
     "NonwrittenRecords",
     "WrittenRecords",

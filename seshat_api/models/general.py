@@ -21,7 +21,7 @@ __all__ = [
     "PolitySucceedingEntities",
     "PolitySupraculturalEntities",
     "PolityScaleOfSupraculturalInteractions",
-    "PolityAlternateReligionGenus",
+    "PolityAlternateReligionGenuses",
     "PolityAlternateReligionFamilies",
     "PolityAlternateReligions",
     "PolityExperts",

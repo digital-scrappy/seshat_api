@@ -28,7 +28,7 @@ __all__ = [
     "Bridges",
     "Canals",
     "Ports",
-    "MineOrQuarries",
+    "MinesOrQuarries",
     "MnemonicDevices",
     "NonwrittenRecords",
     "WrittenRecords",
@@ -604,7 +604,7 @@ class Ports(BaseModel):
     pass
 
 
-class MineOrQuarries(BaseModel):
+class MinesOrQuarries(BaseModel):
     """
     A class representing a single Mine or Quarry object in the Seshat API.
 

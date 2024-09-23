@@ -8,7 +8,7 @@ from ..models import (
     HumanSacrifices,
     ExternalConflicts,
     ExternalConflictSides,
-    AgriculturalPopulationArableLands,
+    AgriculturalPopulationsArableLands,
     GrossGrainSharedPerAgriculturalPopulations,
     NetGrainSharedPerAgriculturalPopulations,
     MilitaryExpenses,
@@ -213,7 +213,7 @@ class AgriculturalPopulationsArableLands(BaseAPICall):
     >>> agricultural_populations_arable_lands = AgriculturalPopulationsArableLands(client)
     """
     ENDPOINT = "/crisisdb/agricultural-populationsarable-lands"
-    SINGLE_MODEL = AgriculturalPopulationArableLands
+    SINGLE_MODEL = AgriculturalPopulationsArableLands
 
 
 class GrossGrainSharedPerAgriculturalPopulations(BaseAPICall):
