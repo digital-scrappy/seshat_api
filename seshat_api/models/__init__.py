@@ -1,6 +1,6 @@
 from .core import (
     PrivateComments,
-    PrivateCommentParts,
+    PrivateCommentsParts,
     MacroRegions,
     Regions,
     NGAs,
@@ -236,7 +236,7 @@ from .wf import (
 __all__ = [
     # core
     "PrivateComments",
-    "PrivateCommentParts",
+    "PrivateCommentsParts",
     "MacroRegions",
     "Regions",
     "NGAs",

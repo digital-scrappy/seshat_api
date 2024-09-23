@@ -3,7 +3,7 @@ from ._base import BaseModel
 __all__ = [
     "Polities",
     "PrivateComments",
-    "PrivateCommentParts",
+    "PrivateCommentsParts",
     "MacroRegions",
     "Regions",
     "NGAs",
@@ -64,7 +64,7 @@ class PrivateComments(BaseModel):
     pass
 
 
-class PrivateCommentParts(BaseModel):
+class PrivateCommentsParts(BaseModel):
     """
     A class representing a single Private Comment Part object in the Seshat API.
 

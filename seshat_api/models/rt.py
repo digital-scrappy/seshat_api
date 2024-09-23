@@ -368,7 +368,7 @@ class GovernmentRestrictionsOnCirculationOfReligiousLiteratures(BaseModel):
     pass
 
 
-class GovernmentDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunction(  # noqa
+class GovernmentDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunctions(  # noqa
     BaseModel
 ):
     """
@@ -410,7 +410,7 @@ class FrequencyOfSocietalViolenceAgainstReligiousGroups(BaseModel):
     pass
 
 
-class SocietalDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunction(  # noqa
+class SocietalDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunctions(  # noqa
     BaseModel
 ):
     """

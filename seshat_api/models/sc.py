@@ -2,7 +2,7 @@ from ._base import BaseModel
 
 __all__ = [
     "ResearchAssistants",
-    "PolityTerritory",
+    "PolityTerritories",
     "PolityPopulations",
     "PopulationOfTheLargestSettlements",
     "SettlementHierarchies",
@@ -101,7 +101,7 @@ class ResearchAssistants(BaseModel):
     pass
 
 
-class PolityTerritorys(BaseModel):
+class PolityTerritories(BaseModel):
     """
     A class representing a single Polity Territory object in the Seshat API.
 
@@ -159,7 +159,7 @@ class PopulationOfTheLargestSettlements(BaseModel):
     pass
 
 
-class SettlementHierarchys(BaseModel):
+class SettlementHierarchies(BaseModel):
     """
     A class representing a single Settlement Hierarchy object in the Seshat
     API.
@@ -1262,7 +1262,7 @@ class BurialSites(BaseModel):
     pass
 
 
-class TradingEmporias(BaseModel):
+class TradingEmporia(BaseModel):
     """
     A class representing a single Trading Emporium object in the Seshat API.
 
@@ -1498,7 +1498,7 @@ class SourceOfSupports(BaseModel):
     pass
 
 
-class OccupationalComplexitys(BaseModel):
+class OccupationalComplexities(BaseModel):
     """
     A class representing a single Occupational Complexity object in the Seshat
     API.

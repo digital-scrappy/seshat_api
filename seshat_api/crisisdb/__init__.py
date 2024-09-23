@@ -66,7 +66,7 @@ class USLocations(BaseAPICall):
     >>> us_locations = USLocations(client)
     """
     ENDPOINT = "/crisisdb/us-locations"
-    SINGLE_MODEL = USLocation
+    SINGLE_MODEL = USLocations
 
 
 class USViolenceDataSources(BaseAPICall):
@@ -87,7 +87,7 @@ class USViolenceDataSources(BaseAPICall):
     >>> us_violence_data_sources = USViolenceDataSources(client)
     """
     ENDPOINT = "/crisisdb/us-violence-data-sources"
-    SINGLE_MODEL = USViolenceDataSource
+    SINGLE_MODEL = USViolenceDataSources
 
 
 class CrisisConsequences(BaseAPICall):
@@ -108,7 +108,7 @@ class CrisisConsequences(BaseAPICall):
     >>> crisis_consequences = CrisisConsequences(client)
     """
     ENDPOINT = "/crisisdb/crisis-consequences"
-    SINGLE_MODEL = CrisisConsequence
+    SINGLE_MODEL = CrisisConsequences
 
 
 class PowerTransitions(BaseAPICall):
@@ -129,7 +129,7 @@ class PowerTransitions(BaseAPICall):
     >>> power_transitions = PowerTransitions(client)
     """
     ENDPOINT = "/crisisdb/power-transitions"
-    SINGLE_MODEL = PowerTransition
+    SINGLE_MODEL = PowerTransitions
 
 
 class HumanSacrifices(BaseAPICall):
@@ -150,7 +150,7 @@ class HumanSacrifices(BaseAPICall):
     >>> human_sacrifices = HumanSacrifices(client)
     """
     ENDPOINT = "/crisisdb/human-sacrifices"
-    SINGLE_MODEL = HumanSacrifice
+    SINGLE_MODEL = HumanSacrifices
 
 
 class ExternalConflicts(BaseAPICall):
@@ -171,7 +171,7 @@ class ExternalConflicts(BaseAPICall):
     >>> external_conflicts = ExternalConflicts(client)
     """
     ENDPOINT = "/crisisdb/external-conflicts"
-    SINGLE_MODEL = ExternalConflict
+    SINGLE_MODEL = ExternalConflicts
 
 
 class ExternalConflictSides(BaseAPICall):
@@ -192,7 +192,7 @@ class ExternalConflictSides(BaseAPICall):
     >>> external_conflict_sides = ExternalConflictSides(client)
     """
     ENDPOINT = "/crisisdb/external-conflict-sides"
-    SINGLE_MODEL = ExternalConflictSide
+    SINGLE_MODEL = ExternalConflictSides
 
 
 class AgriculturalPopulationsArableLands(BaseAPICall):
@@ -213,7 +213,7 @@ class AgriculturalPopulationsArableLands(BaseAPICall):
     >>> agricultural_populations_arable_lands = AgriculturalPopulationsArableLands(client)
     """
     ENDPOINT = "/crisisdb/agricultural-populationsarable-lands"
-    SINGLE_MODEL = AgriculturalPopulationArableLands
+    SINGLE_MODEL = AgriculturalPopulationArableLandss
 
 
 class GrossGrainSharedPerAgriculturalPopulations(BaseAPICall):
@@ -234,7 +234,7 @@ class GrossGrainSharedPerAgriculturalPopulations(BaseAPICall):
     >>> gross_grain_shared_per_agricultural_population = GrossGrainSharedPerAgriculturalPopulations(client)
     """
     ENDPOINT = "/crisisdb/gross-grain-shared-per-agricultural-populations"
-    SINGLE_MODEL = GrossGrainSharedPerAgriculturalPopulations
+    SINGLE_MODEL = GrossGrainSharedPerAgriculturalPopulationss
 
 
 class NetGrainSharedPerAgriculturalPopulations(BaseAPICall):
@@ -276,7 +276,7 @@ class MilitaryExpenses(BaseAPICall):
     >>> military_expenses = MilitaryExpenses(client)
     """
     ENDPOINT = "/crisisdb/military-expenses"
-    SINGLE_MODEL = MilitaryExpense
+    SINGLE_MODEL = MilitaryExpenses
 
 
 class SilverInflows(BaseAPICall):
@@ -296,7 +296,7 @@ class SilverInflows(BaseAPICall):
     >>> silver_inflows = SilverInflows(client)
     """
     ENDPOINT = "/crisisdb/silver-inflows"
-    SINGLE_MODEL = SilverInflow
+    SINGLE_MODEL = SilverInflows
 
 
 class SilverStocks(BaseAPICall):
@@ -316,7 +316,7 @@ class SilverStocks(BaseAPICall):
     >>> silver_stocks = SilverStocks(client)
     """
     ENDPOINT = "/crisisdb/silver-stocks"
-    SINGLE_MODEL = SilverStock
+    SINGLE_MODEL = SilverStocks
 
 
 class TotalPopulations(BaseAPICall):
@@ -337,7 +337,7 @@ class TotalPopulations(BaseAPICall):
     >>> total_populations = TotalPopulations(client)
     """
     ENDPOINT = "/crisisdb/total-populations"
-    SINGLE_MODEL = TotalPopulation
+    SINGLE_MODEL = TotalPopulations
 
 
 class GDPPerCapitas(BaseAPICall):
@@ -358,7 +358,7 @@ class GDPPerCapitas(BaseAPICall):
     >>> gdp_per_capitas = GDPPerCapitas(client)
     """
     ENDPOINT = "/crisisdb/gdp-per-capitas"
-    SINGLE_MODEL = GDPPerCapita
+    SINGLE_MODEL = GDPPerCapitas
 
 
 class DroughtEvents(BaseAPICall):
@@ -378,7 +378,7 @@ class DroughtEvents(BaseAPICall):
     >>> drought_events = DroughtEvents(client)
     """
     ENDPOINT = "/crisisdb/drought-events"
-    SINGLE_MODEL = DroughtEvent
+    SINGLE_MODEL = DroughtEvents
 
 
 class LocustEvents(BaseAPICall):
@@ -398,7 +398,7 @@ class LocustEvents(BaseAPICall):
     >>> locust_events = LocustEvents(client)
     """
     ENDPOINT = "/crisisdb/locust-events"
-    SINGLE_MODEL = LocustEvent
+    SINGLE_MODEL = LocustEvents
 
 
 class SocioeconomicTurmoilEvents(BaseAPICall):
@@ -419,7 +419,7 @@ class SocioeconomicTurmoilEvents(BaseAPICall):
     >>> socioeconomic_turmoil_events = SocioeconomicTurmoilEvents(client)
     """
     ENDPOINT = "/crisisdb/socioeconomic-turmoil-events"
-    SINGLE_MODEL = SocioeconomicTurmoilEvent
+    SINGLE_MODEL = SocioeconomicTurmoilEvents
 
 
 class CropFailureEvents(BaseAPICall):
@@ -440,7 +440,7 @@ class CropFailureEvents(BaseAPICall):
     >>> crop_failure_events = CropFailureEvents(client)
     """
     ENDPOINT = "/crisisdb/crop-failure-events"
-    SINGLE_MODEL = CropFailureEvent
+    SINGLE_MODEL = CropFailureEvents
 
 
 class FamineEvents(BaseAPICall):
@@ -460,7 +460,7 @@ class FamineEvents(BaseAPICall):
     >>> famine_events = FamineEvents(client)
     """
     ENDPOINT = "/crisisdb/famine-events"
-    SINGLE_MODEL = FamineEvent
+    SINGLE_MODEL = FamineEvents
 
 
 class DiseaseOutbreaks(BaseAPICall):
@@ -481,4 +481,4 @@ class DiseaseOutbreaks(BaseAPICall):
     >>> disease_outbreaks = DiseaseOutbreaks(client)
     """
     ENDPOINT = "/crisisdb/disease-outbreaks"
-    SINGLE_MODEL = DiseaseOutbreak
+    SINGLE_MODEL = DiseaseOutbreaks
