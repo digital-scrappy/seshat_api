@@ -9,7 +9,7 @@ from ..models import (
     Javelins,
     Atlatls,
     Slings,
-    Selfbow,
+    Selfbows,
     CompositeBows,
     Crossbows,
     TensionSiegeEngines,
@@ -42,7 +42,7 @@ from ..models import (
     SettlementInDefensivePositions,
     WoodenPalisades,
     EarthRamparts,
-    Ditch,
+    Ditches,
     Moats,
     StoneWallNonMortared,
     StoneWallMortared,
@@ -122,7 +122,7 @@ class LongWalls(BaseAPICall):
     >>> long_walls = LongWalls(client)
     """
     ENDPOINT = "/wf/long-walls"
-    SINGLE_MODEL = LongWall
+    SINGLE_MODEL = LongWalls
 
 
 class Coppers(BaseAPICall):
@@ -142,7 +142,7 @@ class Coppers(BaseAPICall):
     >>> coppers = Coppers(client)
     """
     ENDPOINT = "/wf/coppers"
-    SINGLE_MODEL = Copper
+    SINGLE_MODEL = Coppers
 
 
 class Bronzes(BaseAPICall):
@@ -162,7 +162,7 @@ class Bronzes(BaseAPICall):
     >>> bronzes = Bronzes(client)
     """
     ENDPOINT = "/wf/bronzes"
-    SINGLE_MODEL = Bronze
+    SINGLE_MODEL = Bronzes
 
 
 class Irons(BaseAPICall):
@@ -182,7 +182,7 @@ class Irons(BaseAPICall):
     >>> irons = Irons(client)
     """
     ENDPOINT = "/wf/irons"
-    SINGLE_MODEL = Iron
+    SINGLE_MODEL = Irons
 
 
 class Steels(BaseAPICall):
@@ -202,7 +202,7 @@ class Steels(BaseAPICall):
     >>> steels = Steels(client)
     """
     ENDPOINT = "/wf/steels"
-    SINGLE_MODEL = Steel
+    SINGLE_MODEL = Steels
 
 
 class Javelins(BaseAPICall):
@@ -222,7 +222,7 @@ class Javelins(BaseAPICall):
     >>> javelins = Javelins(client)
     """
     ENDPOINT = "/wf/javelins"
-    SINGLE_MODEL = Javelin
+    SINGLE_MODEL = Javelins
 
 
 class Atlatls(BaseAPICall):
@@ -242,7 +242,7 @@ class Atlatls(BaseAPICall):
     >>> atlatls = Atlatls(client)
     """
     ENDPOINT = "/wf/atlatls"
-    SINGLE_MODEL = Atlatl
+    SINGLE_MODEL = Atlatls
 
 
 class Slings(BaseAPICall):
@@ -262,7 +262,7 @@ class Slings(BaseAPICall):
     >>> slings = Slings(client)
     """
     ENDPOINT = "/wf/slings"
-    SINGLE_MODEL = Sling
+    SINGLE_MODEL = Slings
 
 
 class SelfBows(BaseAPICall):
@@ -282,7 +282,7 @@ class SelfBows(BaseAPICall):
     >>> self_bows = SelfBows(client)
     """
     ENDPOINT = "/wf/self-bows"
-    SINGLE_MODEL = Selfbow
+    SINGLE_MODEL = Selfbows
 
 
 class CompositeBows(BaseAPICall):
@@ -302,7 +302,7 @@ class CompositeBows(BaseAPICall):
     >>> composite_bows = CompositeBows(client)
     """
     ENDPOINT = "/wf/composite-bows"
-    SINGLE_MODEL = CompositeBow
+    SINGLE_MODEL = CompositeBows
 
 
 class Crossbows(BaseAPICall):
@@ -322,7 +322,7 @@ class Crossbows(BaseAPICall):
     >>> crossbows = Crossbows(client)
     """
     ENDPOINT = "/wf/crossbows"
-    SINGLE_MODEL = Crossbow
+    SINGLE_MODEL = Crossbows
 
 
 class TensionSiegeEngines(BaseAPICall):
@@ -343,7 +343,7 @@ class TensionSiegeEngines(BaseAPICall):
     >>> tension_siege_engines = TensionSiegeEngines(client)
     """
     ENDPOINT = "/wf/tension-siege-engines"
-    SINGLE_MODEL = TensionSiegeEngine
+    SINGLE_MODEL = TensionSiegeEngines
 
 
 class SlingSiegeEngines(BaseAPICall):
@@ -364,7 +364,7 @@ class SlingSiegeEngines(BaseAPICall):
     >>> sling_siege_engines = SlingSiegeEngines(client)
     """
     ENDPOINT = "/wf/sling-siege-engines"
-    SINGLE_MODEL = SlingSiegeEngine
+    SINGLE_MODEL = SlingSiegeEngines
 
 
 class GunpowderSiegeArtilleries(BaseAPICall):
@@ -406,7 +406,7 @@ class HandheldFirearms(BaseAPICall):
     >>> handheld_firearms = HandheldFirearms(client)
     """
     ENDPOINT = "/wf/handheld-firearms"
-    SINGLE_MODEL = HandheldFirearm
+    SINGLE_MODEL = HandheldFirearms
 
 
 class WarClubs(BaseAPICall):
@@ -426,7 +426,7 @@ class WarClubs(BaseAPICall):
     >>> war_clubs = WarClubs(client)
     """
     ENDPOINT = "/wf/war-clubs"
-    SINGLE_MODEL = WarClub
+    SINGLE_MODEL = WarClubs
 
 
 class BattleAxes(BaseAPICall):
@@ -446,7 +446,7 @@ class BattleAxes(BaseAPICall):
     >>> battle_axes = BattleAxes(client)
     """
     ENDPOINT = "/wf/battle-axes"
-    SINGLE_MODEL = BattleAxe
+    SINGLE_MODEL = BattleAxes
 
 
 class Daggers(BaseAPICall):
@@ -466,7 +466,7 @@ class Daggers(BaseAPICall):
     >>> daggers = Daggers(client)
     """
     ENDPOINT = "/wf/daggers"
-    SINGLE_MODEL = Dagger
+    SINGLE_MODEL = Daggers
 
 
 class Swords(BaseAPICall):
@@ -486,7 +486,7 @@ class Swords(BaseAPICall):
     >>> swords = Swords(client)
     """
     ENDPOINT = "/wf/swords"
-    SINGLE_MODEL = Sword
+    SINGLE_MODEL = Swords
 
 
 class Spears(BaseAPICall):
@@ -506,7 +506,7 @@ class Spears(BaseAPICall):
     >>> spears = Spears(client)
     """
     ENDPOINT = "/wf/spears"
-    SINGLE_MODEL = Spear
+    SINGLE_MODEL = Spears
 
 
 class Polearms(BaseAPICall):
@@ -526,7 +526,7 @@ class Polearms(BaseAPICall):
     >>> polearms = Polearms(client)
     """
     ENDPOINT = "/wf/polearms"
-    SINGLE_MODEL = Polearm
+    SINGLE_MODEL = Polearms
 
 
 class Dogs(BaseAPICall):
@@ -546,7 +546,7 @@ class Dogs(BaseAPICall):
     >>> dogs = Dogs(client)
     """
     ENDPOINT = "/wf/dogs"
-    SINGLE_MODEL = Dog
+    SINGLE_MODEL = Dogs
 
 
 class Donkeys(BaseAPICall):
@@ -566,7 +566,7 @@ class Donkeys(BaseAPICall):
     >>> donkeys = Donkeys(client)
     """
     ENDPOINT = "/wf/donkeys"
-    SINGLE_MODEL = Donkey
+    SINGLE_MODEL = Donkeys
 
 
 class Horses(BaseAPICall):
@@ -586,7 +586,7 @@ class Horses(BaseAPICall):
     >>> horses = Horses(client)
     """
     ENDPOINT = "/wf/horses"
-    SINGLE_MODEL = Horse
+    SINGLE_MODEL = Horses
 
 
 class Camels(BaseAPICall):
@@ -626,7 +626,7 @@ class Elephants(BaseAPICall):
     >>> elephants = Elephants(client)
     """
     ENDPOINT = "/wf/elephants"
-    SINGLE_MODEL = Elephant
+    SINGLE_MODEL = Elephants
 
 
 class WoodBarksEtc(BaseAPICall):
@@ -666,7 +666,7 @@ class Leathers(BaseAPICall):
     >>> leathers = Leathers(client)
     """
     ENDPOINT = "/wf/leathers"
-    SINGLE_MODEL = Leather
+    SINGLE_MODEL = Leathers
 
 
 class Shields(BaseAPICall):
@@ -686,7 +686,7 @@ class Shields(BaseAPICall):
     >>> shields = Shields(client)
     """
     ENDPOINT = "/wf/shields"
-    SINGLE_MODEL = Shield
+    SINGLE_MODEL = Shields
 
 
 class Helmets(BaseAPICall):
@@ -706,7 +706,7 @@ class Helmets(BaseAPICall):
     >>> helmets = Helmets(client)
     """
     ENDPOINT = "/wf/helmets"
-    SINGLE_MODEL = Helmet
+    SINGLE_MODEL = Helmets
 
 
 class Breastplates(BaseAPICall):
@@ -726,7 +726,7 @@ class Breastplates(BaseAPICall):
     >>> breastplates = Breastplates(client)
     """
     ENDPOINT = "/wf/breastplates"
-    SINGLE_MODEL = Breastplate
+    SINGLE_MODEL = Breastplates
 
 
 class LimbProtections(BaseAPICall):
@@ -747,7 +747,7 @@ class LimbProtections(BaseAPICall):
     >>> limb_protections = LimbProtections(client)
     """
     ENDPOINT = "/wf/limb-protections"
-    SINGLE_MODEL = LimbProtection
+    SINGLE_MODEL = LimbProtections
 
 
 class ScaledArmors(BaseAPICall):
@@ -767,7 +767,7 @@ class ScaledArmors(BaseAPICall):
     >>> scaled_armors = ScaledArmors(client)
     """
     ENDPOINT = "/wf/scaled-armors"
-    SINGLE_MODEL = ScaledArmor
+    SINGLE_MODEL = ScaledArmors
 
 
 class LaminarArmors(BaseAPICall):
@@ -787,7 +787,7 @@ class LaminarArmors(BaseAPICall):
     >>> laminar_armors = LaminarArmors(client)
     """
     ENDPOINT = "/wf/laminar-armors"
-    SINGLE_MODEL = LaminarArmor
+    SINGLE_MODEL = LaminarArmors
 
 
 class PlateArmors(BaseAPICall):
@@ -807,7 +807,7 @@ class PlateArmors(BaseAPICall):
     >>> plate_armors = PlateArmors(client)
     """
     ENDPOINT = "/wf/plate-armors"
-    SINGLE_MODEL = PlateArmor
+    SINGLE_MODEL = PlateArmors
 
 
 class SmallVesselsCanoesEtc(BaseAPICall):
@@ -870,7 +870,7 @@ class SpecializedMilitaryVessels(BaseAPICall):
     >>> specialized_military_vessels = SpecializedMilitaryVessels(client)
     """
     ENDPOINT = "/wf/specialized-military-vessels"
-    SINGLE_MODEL = SpecializedMilitaryVessel
+    SINGLE_MODEL = SpecializedMilitaryVessels
 
 
 class SettlementInDefensivePositions(BaseAPICall):
@@ -891,7 +891,7 @@ class SettlementInDefensivePositions(BaseAPICall):
     >>> settlement_in_defensive_positions = SettlementInDefensivePositions(client)
     """
     ENDPOINT = "/wf/settlement-in-defensive-positions"
-    SINGLE_MODEL = SettlementInDefensivePosition
+    SINGLE_MODEL = SettlementInDefensivePositions
 
 
 class WoodenPalisades(BaseAPICall):
@@ -912,7 +912,7 @@ class WoodenPalisades(BaseAPICall):
     >>> wooden_palisades = WoodenPalisades(client)
     """
     ENDPOINT = "/wf/wooden-palisades"
-    SINGLE_MODEL = WoodenPalisade
+    SINGLE_MODEL = WoodenPalisades
 
 
 class EarthRamparts(BaseAPICall):
@@ -932,7 +932,7 @@ class EarthRamparts(BaseAPICall):
     >>> earth_ramparts = EarthRamparts(client)
     """
     ENDPOINT = "/wf/earth-ramparts"
-    SINGLE_MODEL = EarthRampart
+    SINGLE_MODEL = EarthRamparts
 
 
 class Ditches(BaseAPICall):
@@ -952,7 +952,7 @@ class Ditches(BaseAPICall):
     >>> ditches = Ditches(client)
     """
     ENDPOINT = "/wf/ditches"
-    SINGLE_MODEL = Ditch
+    SINGLE_MODEL = Ditches
 
 
 class Moats(BaseAPICall):
@@ -972,7 +972,7 @@ class Moats(BaseAPICall):
     >>> moats = Moats(client)
     """
     ENDPOINT = "/wf/moats"
-    SINGLE_MODEL = Moat
+    SINGLE_MODEL = Moats
 
 
 class StoneWallsNonMortared(BaseAPICall):
@@ -1035,7 +1035,7 @@ class FortifiedCamps(BaseAPICall):
     >>> fortified_camps = FortifiedCamps(client)
     """
     ENDPOINT = "/wf/fortified-camps"
-    SINGLE_MODEL = FortifiedCamp
+    SINGLE_MODEL = FortifiedCamps
 
 
 class ComplexFortifications(BaseAPICall):
@@ -1056,7 +1056,7 @@ class ComplexFortifications(BaseAPICall):
     >>> complex_fortifications = ComplexFortifications(client)
     """
     ENDPOINT = "/wf/complex-fortifications"
-    SINGLE_MODEL = ComplexFortification
+    SINGLE_MODEL = ComplexFortifications
 
 
 class ModernFortifications(BaseAPICall):
@@ -1077,7 +1077,7 @@ class ModernFortifications(BaseAPICall):
     >>> modern_fortifications = ModernFortifications(client)
     """
     ENDPOINT = "/wf/modern-fortifications"
-    SINGLE_MODEL = ModernFortification
+    SINGLE_MODEL = ModernFortifications
 
 
 class Chainmails(BaseAPICall):

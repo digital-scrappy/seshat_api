@@ -9,7 +9,7 @@ __all__ = [
     "Javelins",
     "Atlatls",
     "Slings",
-    "Selfbow",
+    "Selfbows",
     "CompositeBows",
     "Crossbows",
     "TensionSiegeEngines",
@@ -42,7 +42,7 @@ __all__ = [
     "SettlementInDefensivePositions",
     "WoodenPalisades",
     "EarthRamparts",
-    "Ditch",
+    "Ditches",
     "Moats",
     "StoneWallNonMortared",
     "StoneWallMortared",
@@ -205,7 +205,7 @@ class Slings(BaseModel):
     pass
 
 
-class Selfbow(BaseModel):
+class Selfbows(BaseModel):
     """
     A class representing a single Selfbow object in the Seshat API.
 
@@ -838,9 +838,9 @@ class EarthRamparts(BaseModel):
     pass
 
 
-class Ditch(BaseModel):
+class Ditches(BaseModel):
     """
-    A class representing a single Ditch object in the Seshat API.
+    A class representing a single Ditches object in the Seshat API.
 
     Parameters
     ----------
