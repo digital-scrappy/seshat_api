@@ -1,59 +1,59 @@
 from ._base import BaseModel
 
 __all__ = [
-    "LongWall",
-    "Copper",
-    "Bronze",
-    "Iron",
-    "Steel",
-    "Javelin",
-    "Atlatl",
-    "Sling",
-    "Selfbow",
-    "CompositeBow",
-    "Crossbow",
-    "TensionSiegeEngine",
-    "SlingSiegeEngine",
-    "GunpowderSiegeArtillery",
-    "HandheldFirearm",
-    "WarClub",
-    "BattleAxe",
-    "Dagger",
-    "Sword",
-    "Spear",
-    "Polearm",
-    "Dog",
-    "Donkey",
-    "Horse",
+    "LongWalls",
+    "Coppers",
+    "Bronzes",
+    "Irons",
+    "Steels",
+    "Javelins",
+    "Atlatls",
+    "Slings",
+    "Selfbows",
+    "CompositeBows",
+    "Crossbows",
+    "TensionSiegeEngines",
+    "SlingSiegeEngines",
+    "GunpowderSiegeArtillerys",
+    "HandheldFirearms",
+    "WarClubs",
+    "BattleAxes",
+    "Daggers",
+    "Swords",
+    "Spears",
+    "Polearms",
+    "Dogs",
+    "Donkeys",
+    "Horses",
     "Camels",
-    "Elephant",
-    "WoodBarkEtc",
-    "Leather",
-    "Shield",
-    "Helmet",
-    "Breastplate",
-    "LimbProtection",
-    "ScaledArmor",
-    "LaminarArmor",
-    "PlateArmor",
-    "SmallVesselCanoeEtc",
-    "MerchantShipPressedIntoService",
-    "SpecializedMilitaryVessel",
-    "SettlementInDefensivePosition",
-    "WoodenPalisade",
-    "EarthRampart",
-    "Ditch",
-    "Moat",
-    "StoneWallNonMortared",
-    "StoneWallMortared",
-    "FortifiedCamp",
-    "ComplexFortification",
-    "ModernFortification",
-    "Chainmail",
+    "Elephants",
+    "WoodBarkEtcs",
+    "Leathers",
+    "Shields",
+    "Helmets",
+    "Breastplates",
+    "LimbProtections",
+    "ScaledArmors",
+    "LaminarArmors",
+    "PlateArmors",
+    "SmallVesselCanoeEtcs",
+    "MerchantShipPressedIntoServices",
+    "SpecializedMilitaryVessels",
+    "SettlementInDefensivePositions",
+    "WoodenPalisades",
+    "EarthRamparts",
+    "Ditchs",
+    "Moats",
+    "StoneWallNonMortareds",
+    "StoneWallMortareds",
+    "FortifiedCamps",
+    "ComplexFortifications",
+    "ModernFortifications",
+    "Chainmails",
 ]
 
 
-class LongWall(BaseModel):
+class LongWalls(BaseModel):
     """
     A class representing a single Long Wall object in the Seshat API.
 
@@ -72,7 +72,7 @@ class LongWall(BaseModel):
     pass
 
 
-class Copper(BaseModel):
+class Coppers(BaseModel):
     """
     A class representing a single Copper object in the Seshat API.
 
@@ -91,7 +91,7 @@ class Copper(BaseModel):
     pass
 
 
-class Bronze(BaseModel):
+class Bronzes(BaseModel):
     """
     A class representing a single Bronze object in the Seshat API.
 
@@ -110,7 +110,7 @@ class Bronze(BaseModel):
     pass
 
 
-class Iron(BaseModel):
+class Irons(BaseModel):
     """
     A class representing a single Iron object in the Seshat API.
 
@@ -129,7 +129,7 @@ class Iron(BaseModel):
     pass
 
 
-class Steel(BaseModel):
+class Steels(BaseModel):
     """
     A class representing a single Steel object in the Seshat API.
 
@@ -148,7 +148,7 @@ class Steel(BaseModel):
     pass
 
 
-class Javelin(BaseModel):
+class Javelins(BaseModel):
     """
     A class representing a single Javelin object in the Seshat API.
 
@@ -167,7 +167,7 @@ class Javelin(BaseModel):
     pass
 
 
-class Atlatl(BaseModel):
+class Atlatls(BaseModel):
     """
     A class representing a single Atlatl object in the Seshat API.
 
@@ -186,7 +186,7 @@ class Atlatl(BaseModel):
     pass
 
 
-class Sling(BaseModel):
+class Slings(BaseModel):
     """
     A class representing a single Sling object in the Seshat API.
 
@@ -205,7 +205,7 @@ class Sling(BaseModel):
     pass
 
 
-class Selfbow(BaseModel):
+class Selfbows(BaseModel):
     """
     A class representing a single Selfbow object in the Seshat API.
 
@@ -224,7 +224,7 @@ class Selfbow(BaseModel):
     pass
 
 
-class CompositeBow(BaseModel):
+class CompositeBows(BaseModel):
     """
     A class representing a single Composite Bow object in the Seshat API.
 
@@ -243,7 +243,7 @@ class CompositeBow(BaseModel):
     pass
 
 
-class Crossbow(BaseModel):
+class Crossbows(BaseModel):
     """
     A class representing a single Crossbow object in the Seshat API.
 
@@ -262,7 +262,7 @@ class Crossbow(BaseModel):
     pass
 
 
-class TensionSiegeEngine(BaseModel):
+class TensionSiegeEngines(BaseModel):
     """
     A class representing a single Tension Siege Engine object in the Seshat
     API.
@@ -282,7 +282,7 @@ class TensionSiegeEngine(BaseModel):
     pass
 
 
-class SlingSiegeEngine(BaseModel):
+class SlingSiegeEngines(BaseModel):
     """
     A class representing a single Sling Siege Engine object in the Seshat API.
 
@@ -301,7 +301,7 @@ class SlingSiegeEngine(BaseModel):
     pass
 
 
-class GunpowderSiegeArtillery(BaseModel):
+class GunpowderSiegeArtillerys(BaseModel):
     """
     A class representing a single Gunpowder Siege Artillery object in the
     Seshat API.
@@ -321,7 +321,7 @@ class GunpowderSiegeArtillery(BaseModel):
     pass
 
 
-class HandheldFirearm(BaseModel):
+class HandheldFirearms(BaseModel):
     """
     A class representing a single Handheld Firearm object in the Seshat API.
 
@@ -340,7 +340,7 @@ class HandheldFirearm(BaseModel):
     pass
 
 
-class WarClub(BaseModel):
+class WarClubs(BaseModel):
     """
     A class representing a single War Club object in the Seshat API.
 
@@ -359,7 +359,7 @@ class WarClub(BaseModel):
     pass
 
 
-class BattleAxe(BaseModel):
+class BattleAxes(BaseModel):
     """
     A class representing a single Battle Axe object in the Seshat API.
 
@@ -378,7 +378,7 @@ class BattleAxe(BaseModel):
     pass
 
 
-class Dagger(BaseModel):
+class Daggers(BaseModel):
     """
     A class representing a single Dagger object in the Seshat API.
 
@@ -397,7 +397,7 @@ class Dagger(BaseModel):
     pass
 
 
-class Sword(BaseModel):
+class Swords(BaseModel):
     """
     A class representing a single Sword object in the Seshat API.
 
@@ -416,7 +416,7 @@ class Sword(BaseModel):
     pass
 
 
-class Spear(BaseModel):
+class Spears(BaseModel):
     """
     A class representing a single Spear object in the Seshat API.
 
@@ -435,7 +435,7 @@ class Spear(BaseModel):
     pass
 
 
-class Polearm(BaseModel):
+class Polearms(BaseModel):
     """
     A class representing a single Polearm object in the Seshat API.
 
@@ -454,7 +454,7 @@ class Polearm(BaseModel):
     pass
 
 
-class Dog(BaseModel):
+class Dogs(BaseModel):
     """
     A class representing a single Dog object in the Seshat API.
 
@@ -473,7 +473,7 @@ class Dog(BaseModel):
     pass
 
 
-class Donkey(BaseModel):
+class Donkeys(BaseModel):
     """
     A class representing a single Donkey object in the Seshat API.
 
@@ -492,7 +492,7 @@ class Donkey(BaseModel):
     pass
 
 
-class Horse(BaseModel):
+class Horses(BaseModel):
     """
     A class representing a single Horse object in the Seshat API.
 
@@ -530,7 +530,7 @@ class Camels(BaseModel):
     pass
 
 
-class Elephant(BaseModel):
+class Elephants(BaseModel):
     """
     A class representing a single Elephant object in the Seshat API.
 
@@ -549,7 +549,7 @@ class Elephant(BaseModel):
     pass
 
 
-class WoodBarkEtc(BaseModel):
+class WoodBarkEtcs(BaseModel):
     """
     A class representing a single Wood Bark Etc object in the Seshat API.
 
@@ -568,7 +568,7 @@ class WoodBarkEtc(BaseModel):
     pass
 
 
-class Leather(BaseModel):
+class Leathers(BaseModel):
     """
     A class representing a single Leather object in the Seshat API.
 
@@ -587,7 +587,7 @@ class Leather(BaseModel):
     pass
 
 
-class Shield(BaseModel):
+class Shields(BaseModel):
     """
     A class representing a single Shield object in the Seshat API.
 
@@ -606,7 +606,7 @@ class Shield(BaseModel):
     pass
 
 
-class Helmet(BaseModel):
+class Helmets(BaseModel):
     """
     A class representing a single Helmet object in the Seshat API.
 
@@ -625,7 +625,7 @@ class Helmet(BaseModel):
     pass
 
 
-class Breastplate(BaseModel):
+class Breastplates(BaseModel):
     """
     A class representing a single Breastplate object in the Seshat API.
 
@@ -644,7 +644,7 @@ class Breastplate(BaseModel):
     pass
 
 
-class LimbProtection(BaseModel):
+class LimbProtections(BaseModel):
     """
     A class representing a single Limb Protection object in the Seshat API.
 
@@ -663,7 +663,7 @@ class LimbProtection(BaseModel):
     pass
 
 
-class ScaledArmor(BaseModel):
+class ScaledArmors(BaseModel):
     """
     A class representing a single Scaled Armor object in the Seshat API.
 
@@ -682,7 +682,7 @@ class ScaledArmor(BaseModel):
     pass
 
 
-class LaminarArmor(BaseModel):
+class LaminarArmors(BaseModel):
     """
     A class representing a single Laminar Armor object in the Seshat API.
 
@@ -701,7 +701,7 @@ class LaminarArmor(BaseModel):
     pass
 
 
-class PlateArmor(BaseModel):
+class PlateArmors(BaseModel):
     """
     A class representing a single Plate Armor object in the Seshat API.
 
@@ -720,7 +720,7 @@ class PlateArmor(BaseModel):
     pass
 
 
-class SmallVesselCanoeEtc(BaseModel):
+class SmallVesselCanoeEtcs(BaseModel):
     """
     A class representing a single Small Vessel Canoe Etc object in the Seshat
     API.
@@ -740,7 +740,7 @@ class SmallVesselCanoeEtc(BaseModel):
     pass
 
 
-class MerchantShipPressedIntoService(BaseModel):
+class MerchantShipPressedIntoServices(BaseModel):
     """
     A class representing a single Merchant Ship Pressed Into Service object in
     the Seshat API.
@@ -760,7 +760,7 @@ class MerchantShipPressedIntoService(BaseModel):
     pass
 
 
-class SpecializedMilitaryVessel(BaseModel):
+class SpecializedMilitaryVessels(BaseModel):
     """
     A class representing a single Specialized Military Vessel object in the
     Seshat API.
@@ -780,7 +780,7 @@ class SpecializedMilitaryVessel(BaseModel):
     pass
 
 
-class SettlementInDefensivePosition(BaseModel):
+class SettlementInDefensivePositions(BaseModel):
     """
     A class representing a single Settlement In Defensive Position object in
     the Seshat API.
@@ -800,7 +800,7 @@ class SettlementInDefensivePosition(BaseModel):
     pass
 
 
-class WoodenPalisade(BaseModel):
+class WoodenPalisades(BaseModel):
     """
     A class representing a single Wooden Palisade object in the Seshat API.
 
@@ -819,7 +819,7 @@ class WoodenPalisade(BaseModel):
     pass
 
 
-class EarthRampart(BaseModel):
+class EarthRamparts(BaseModel):
     """
     A class representing a single Earth Rampart object in the Seshat API.
 
@@ -838,7 +838,7 @@ class EarthRampart(BaseModel):
     pass
 
 
-class Ditch(BaseModel):
+class Ditchs(BaseModel):
     """
     A class representing a single Ditch object in the Seshat API.
 
@@ -857,7 +857,7 @@ class Ditch(BaseModel):
     pass
 
 
-class Moat(BaseModel):
+class Moats(BaseModel):
     """
     A class representing a single Moat object in the Seshat API.
 
@@ -876,7 +876,7 @@ class Moat(BaseModel):
     pass
 
 
-class StoneWallNonMortared(BaseModel):
+class StoneWallNonMortareds(BaseModel):
     """
     A class representing a single Stone Wall Non Mortared object in the Seshat
     API.
@@ -896,7 +896,7 @@ class StoneWallNonMortared(BaseModel):
     pass
 
 
-class StoneWallMortared(BaseModel):
+class StoneWallMortareds(BaseModel):
     """
     A class representing a single Stone Wall Mortared object in the Seshat API.
 
@@ -915,7 +915,7 @@ class StoneWallMortared(BaseModel):
     pass
 
 
-class FortifiedCamp(BaseModel):
+class FortifiedCamps(BaseModel):
     """
     A class representing a single Fortified Camp object in the Seshat API.
 
@@ -934,7 +934,7 @@ class FortifiedCamp(BaseModel):
     pass
 
 
-class ComplexFortification(BaseModel):
+class ComplexFortifications(BaseModel):
     """
     A class representing a single Complex Fortification object in the Seshat
     API.
@@ -954,7 +954,7 @@ class ComplexFortification(BaseModel):
     pass
 
 
-class ModernFortification(BaseModel):
+class ModernFortifications(BaseModel):
     """
     A class representing a single Modern Fortification object in the Seshat
     API.
@@ -974,7 +974,7 @@ class ModernFortification(BaseModel):
     pass
 
 
-class Chainmail(BaseModel):
+class Chainmails(BaseModel):
     """
     A class representing a single Chainmail object in the Seshat API.
 
