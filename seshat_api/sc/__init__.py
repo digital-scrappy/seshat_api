@@ -1,84 +1,84 @@
 from ..base_model import BaseAPICall
 
 from ..models import (
-    ResearchAssistant,
-    PolityTerritory,
-    PolityPopulation,
-    PopulationOfTheLargestSettlement,
-    SettlementHierarchy,
-    AdministrativeLevel,
-    ReligiousLevel,
-    MilitaryLevel,
-    ProfessionalMilitaryOfficer,
-    ProfessionalSoldier,
-    ProfessionalPriesthood,
-    FullTimeBureaucrat,
-    ExaminationSystem,
-    MeritPromotion,
-    SpecializedGovernmentBuilding,
-    FormalLegalCode,
-    Judge,
-    Court,
-    ProfessionalLawyer,
-    IrrigationSystem,
-    DrinkingWaterSupply,
-    Market,
-    FoodStorageSite,
-    Road,
-    Bridge,
-    Canal,
-    Port,
+    ResearchAssistants,
+    PolityTerritories,
+    PolityPopulations,
+    PopulationOfTheLargestSettlements,
+    SettlementHierarchies,
+    AdministrativeLevels,
+    ReligiousLevels,
+    MilitaryLevels,
+    ProfessionalMilitaryOfficers,
+    ProfessionalSoldiers,
+    ProfessionalPriesthoods,
+    FullTimeBureaucrats,
+    ExaminationSystems,
+    MeritPromotions,
+    SpecializedGovernmentBuildings,
+    FormalLegalCodes,
+    Judges,
+    Courts,
+    ProfessionalLawyers,
+    IrrigationSystems,
+    DrinkingWaterSupplies,
+    Markets,
+    FoodStorageSites,
+    Roads,
+    Bridges,
+    Canals,
+    Ports,
     MineOrQuarry,
-    MnemonicDevice,
-    NonwrittenRecord,
-    WrittenRecord,
-    Script,
-    NonPhoneticWriting,
-    PhoneticAlphabeticWriting,
-    ListsTablesAndClassification,
-    Calendar,
-    SacredText,
-    ReligiousLiterature,
-    PracticalLiterature,
+    MnemonicDevices,
+    NonwrittenRecords,
+    WrittenRecords,
+    Scripts,
+    NonPhoneticWritings,
+    PhoneticAlphabeticWritings,
+    ListsTablesAndClassifications,
+    Calendars,
+    SacredTexts,
+    ReligiousLiteratures,
+    PracticalLiteratures,
     History,
     Philosophy,
-    ScientificLiterature,
-    Fiction,
-    Article,
-    Token,
-    PreciousMetal,
-    ForeignCoin,
-    IndigenousCoin,
+    ScientificLiteratures,
+    Fictions,
+    Articles,
+    Tokens,
+    PreciousMetals,
+    ForeignCoins,
+    IndigenousCoins,
     PaperCurrency,
-    Courier,
-    PostalStation,
-    GeneralPostalService,
-    CommunalBuilding,
-    UtilitarianPublicBuilding,
-    SymbolicBuilding,
-    EntertainmentBuilding,
-    KnowledgeOrInformationBuilding,
-    OtherUtilitarianPublicBuilding,
-    SpecialPurposeSite,
-    CeremonialSite,
-    BurialSite,
-    TradingEmporium,
-    Enclosure,
-    LengthMeasurementSystem,
-    AreaMeasurementSystem,
-    VolumeMeasurementSystem,
-    WeightMeasurementSystem,
-    TimeMeasurementSystem,
-    GeometricalMeasurementSystem,
-    OtherMeasurementSystem,
-    DebtAndCreditStructure,
+    Couriers,
+    PostalStations,
+    GeneralPostalServices,
+    CommunalBuildings,
+    UtilitarianPublicBuildings,
+    SymbolicBuildings,
+    EntertainmentBuildings,
+    KnowledgeOrInformationBuildings,
+    OtherUtilitarianPublicBuildings,
+    SpecialPurposeSites,
+    CeremonialSites,
+    BurialSites,
+    TradingEmporia,
+    Enclosures,
+    LengthMeasurementSystems,
+    AreaMeasurementSystems,
+    VolumeMeasurementSystems,
+    WeightMeasurementSystems,
+    TimeMeasurementSystems,
+    GeometricalMeasurementSystems,
+    OtherMeasurementSystems,
+    DebtAndCreditStructures,
     StoreOfWealth,
     SourceOfSupport,
     OccupationalComplexity,
-    SpecialPurposeHouse,
-    OtherSpecialPurposeSite,
-    LargestCommunicationDistance,
-    FastestIndividualCommunication,
+    SpecialPurposeHouses,
+    OtherSpecialPurposeSites,
+    LargestCommunicationDistances,
+    FastestIndividualCommunications,
 )
 
 __all__ = [
@@ -143,7 +143,7 @@ __all__ = [
     "SpecialPurposeSites",
     "CeremonialSites",
     "BurialSites",
-    "TradingEmporia",
+    "TradingEmporias",
     "Enclosures",
     "LengthMeasurementSystems",
     "AreaMeasurementSystems",
@@ -153,8 +153,8 @@ __all__ = [
     "GeometricalMeasurementSystems",
     "OtherMeasurementSystems",
     "DebtAndCreditStructures",
-    "StoresOfWealth",
-    "SourcesOfSupport",
+    "StoresOfWealths",
+    "SourcesOfSupports",
     "OccupationalComplexities",
     "SpecialPurposeHouses",
     "OtherSpecialPurposeSites",
@@ -1426,7 +1426,7 @@ class BurialSites(BaseAPICall):
     SINGLE_MODEL = BurialSite
 
 
-class TradingEmporia(BaseAPICall):
+class TradingEmporias(BaseAPICall):
     """
     A class for interacting with the trading emporia endpoint of the Seshat
     API.
@@ -1444,7 +1444,7 @@ class TradingEmporia(BaseAPICall):
     >>> trading_emporia = TradingEmporia(client)
     """
     ENDPOINT = "/sc/trading-emporia"
-    SINGLE_MODEL = TradingEmporium
+    SINGLE_MODEL = TradingEmporia
 
 
 class Enclosures(BaseAPICall):
@@ -1635,7 +1635,7 @@ class DebtAndCreditStructures(BaseAPICall):
     SINGLE_MODEL = DebtAndCreditStructure
 
 
-class StoresOfWealth(BaseAPICall):
+class StoresOfWealths(BaseAPICall):
     """
     A class for interacting with the stores of wealth endpoint of the Seshat
     API.
@@ -1656,7 +1656,7 @@ class StoresOfWealth(BaseAPICall):
     SINGLE_MODEL = StoreOfWealth
 
 
-class SourcesOfSupport(BaseAPICall):
+class SourcesOfSupports(BaseAPICall):
     """
     A class for interacting with the sources of support endpoint of the Seshat
     API.

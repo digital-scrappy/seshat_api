@@ -1,31 +1,31 @@
 from ._base import BaseModel
 
 __all__ = [
-    "WidespreadReligion",
-    "OfficialReligion",
-    "ElitesReligion",
-    "TheologicalSyncretismOfDifferentReligion",
-    "SyncretismOfReligiousPracticesAtTheLevelOfIndividualBeliever",
-    "ReligiousFragmentation",
-    "FrequencyOfGovernmentalViolenceAgainstReligiousGroup",
-    "GovernmentRestrictionsOnPublicWorship",
-    "GovernmentRestrictionsOnPublicProselytizing",
-    "GovernmentRestrictionsOnConversion",
-    "GovernmentPressureToConvert",
-    "GovernmentRestrictionsOnPropertyOwnershipForAdherentsOfAndReligiousGroup",
-    "TaxesBasedOnReligiousAdherenceOrOnReligiousActivityAndInstitution",
-    "GovernmentalObligationsForReligiousGroupToApplyForOfficialRecognition",
-    "GovernmentRestrictionsOnConstructionOfReligiousBuilding",
-    "GovernmentRestrictionsOnReligiousEducation",
-    "GovernmentRestrictionsOnCirculationOfReligiousLiterature",
-    "GovernmentDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunction",  # noqa
-    "FrequencyOfSocietalViolenceAgainstReligiousGroup",
-    "SocietalDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunction",  # noqa
-    "SocietalPressureToConvertOrAgainstConversion",
+    "WidespreadReligions",
+    "OfficialReligions",
+    "ElitesReligions",
+    "TheologicalSyncretismOfDifferentReligions",
+    "SyncretismOfReligiousPracticesAtTheLevelOfIndividualBelievers",
+    "ReligiousFragmentations",
+    "FrequencyOfGovernmentalViolenceAgainstReligiousGroups",
+    "GovernmentRestrictionsOnPublicWorships",
+    "GovernmentRestrictionsOnPublicProselytizings",
+    "GovernmentRestrictionsOnConversions",
+    "GovernmentPressureToConverts",
+    "GovernmentRestrictionsOnPropertyOwnershipForAdherentsOfAndReligiousGroups",
+    "TaxesBasedOnReligiousAdherenceOrOnReligiousActivityAndInstitutions",
+    "GovernmentalObligationsForReligiousGroupToApplyForOfficialRecognitions",
+    "GovernmentRestrictionsOnConstructionOfReligiousBuildings",
+    "GovernmentRestrictionsOnReligiousEducations",
+    "GovernmentRestrictionsOnCirculationOfReligiousLiteratures",
+    "GovernmentDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunctions",  # noqa
+    "FrequencyOfSocietalViolenceAgainstReligiousGroups",
+    "SocietalDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunctions",  # noqa
+    "SocietalPressureToConvertOrAgainstConversions",
 ]
 
 
-class WidespreadReligion(BaseModel):
+class WidespreadReligions(BaseModel):
     """
     A class representing a single Widespread Religion object in the Seshat API.
 
@@ -44,7 +44,7 @@ class WidespreadReligion(BaseModel):
     pass
 
 
-class OfficialReligion(BaseModel):
+class OfficialReligions(BaseModel):
     """
     A class representing a single Official Religion object in the Seshat API.
 
@@ -63,7 +63,7 @@ class OfficialReligion(BaseModel):
     pass
 
 
-class ElitesReligion(BaseModel):
+class ElitesReligions(BaseModel):
     """
     A class representing a single Elites Religion object in the Seshat API.
 
@@ -82,7 +82,7 @@ class ElitesReligion(BaseModel):
     pass
 
 
-class TheologicalSyncretismOfDifferentReligion(BaseModel):
+class TheologicalSyncretismOfDifferentReligions(BaseModel):
     """
     A class representing a single Theological Syncretism Of Different Religion
     object in the Seshat API.
@@ -102,7 +102,7 @@ class TheologicalSyncretismOfDifferentReligion(BaseModel):
     pass
 
 
-class SyncretismOfReligiousPracticesAtTheLevelOfIndividualBeliever(BaseModel):
+class SyncretismOfReligiousPracticesAtTheLevelOfIndividualBelievers(BaseModel):
     """
     A class representing a single Syncretism of Religious Practices at the
     Level of Individual Believer object in the Seshat API.
@@ -122,7 +122,7 @@ class SyncretismOfReligiousPracticesAtTheLevelOfIndividualBeliever(BaseModel):
     pass
 
 
-class ReligiousFragmentation(BaseModel):
+class ReligiousFragmentations(BaseModel):
     """
     A class representing a single Religious Fragmentation object in the Seshat
     API.
@@ -142,7 +142,7 @@ class ReligiousFragmentation(BaseModel):
     pass
 
 
-class FrequencyOfGovernmentalViolenceAgainstReligiousGroup(BaseModel):
+class FrequencyOfGovernmentalViolenceAgainstReligiousGroups(BaseModel):
     """
     A class representing a single Frequency of Governmental Violence Against
     Religious Group object in the Seshat API.
@@ -162,7 +162,7 @@ class FrequencyOfGovernmentalViolenceAgainstReligiousGroup(BaseModel):
     pass
 
 
-class GovernmentRestrictionsOnPublicWorship(BaseModel):
+class GovernmentRestrictionsOnPublicWorships(BaseModel):
     """
     A class representing a single Government Restrictions On Public Worship
     object in the Seshat API.
@@ -182,7 +182,7 @@ class GovernmentRestrictionsOnPublicWorship(BaseModel):
     pass
 
 
-class GovernmentRestrictionsOnPublicProselytizing(BaseModel):
+class GovernmentRestrictionsOnPublicProselytizings(BaseModel):
     """
     A class representing a single Government Restrictions On Public
     Proselytizing object in the Seshat API.
@@ -202,7 +202,7 @@ class GovernmentRestrictionsOnPublicProselytizing(BaseModel):
     pass
 
 
-class GovernmentRestrictionsOnConversion(BaseModel):
+class GovernmentRestrictionsOnConversions(BaseModel):
     """
     A class representing a single Government Restrictions On Conversion object
     in the Seshat API.
@@ -222,7 +222,7 @@ class GovernmentRestrictionsOnConversion(BaseModel):
     pass
 
 
-class GovernmentPressureToConvert(BaseModel):
+class GovernmentPressureToConverts(BaseModel):
     """
     A class representing a single Government Pressure To Convert object in the
     Seshat API.
@@ -308,7 +308,7 @@ class GovernmentalObligationsForReligiousGroupToApplyForOfficialRecognition(
     pass
 
 
-class GovernmentRestrictionsOnConstructionOfReligiousBuilding(BaseModel):
+class GovernmentRestrictionsOnConstructionOfReligiousBuildings(BaseModel):
     """
     A class representing a single Government Restrictions on Construction of
     Religious Building object in the Seshat API.
@@ -328,7 +328,7 @@ class GovernmentRestrictionsOnConstructionOfReligiousBuilding(BaseModel):
     pass
 
 
-class GovernmentRestrictionsOnReligiousEducation(BaseModel):
+class GovernmentRestrictionsOnReligiousEducations(BaseModel):
     """
     A class representing a single Government Restrictions on Religious
     Education object in the Seshat API.
@@ -348,7 +348,7 @@ class GovernmentRestrictionsOnReligiousEducation(BaseModel):
     pass
 
 
-class GovernmentRestrictionsOnCirculationOfReligiousLiterature(BaseModel):
+class GovernmentRestrictionsOnCirculationOfReligiousLiteratures(BaseModel):
     """
     A class representing a single Government Restrictions on Circulation of
     Religious Literature object in the Seshat API.
@@ -390,7 +390,7 @@ class GovernmentDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFu
     pass
 
 
-class FrequencyOfSocietalViolenceAgainstReligiousGroup(BaseModel):
+class FrequencyOfSocietalViolenceAgainstReligiousGroups(BaseModel):
     """
     A class representing a single Frequency of Societal Violence Against
     Religious Group object in the Seshat API.
@@ -432,7 +432,7 @@ class SocietalDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunc
     pass
 
 
-class SocietalPressureToConvertOrAgainstConversion(BaseModel):
+class SocietalPressureToConvertOrAgainstConversions(BaseModel):
     """
     A class representing a single Societal Pressure to Convert or Against
     Conversion object in the Seshat API.

@@ -1,27 +1,27 @@
 from ..base_model import BaseAPICall
 from ..models import (
-    PrivateComment,
-    PrivateCommentPart,
-    MacroRegion,
-    Region,
+    PrivateComments,
+    PrivateCommentParts,
+    MacroRegions,
+    Regions,
     NGA,
-    Polity,
-    Capital,
-    NGAPolityRelation,
-    Country,
-    Section,
-    Subsection,
-    VariableHierarchy,
-    Reference,
-    Citation,
-    Comment,
-    CommentPart,
-    CommentPartThroughCitation,
-    Religion,
-    CliopatriaShapefile,
-    GADMShapefile,
-    GADMCountry,
-    GADMProvince,
+    Polities,
+    Capitals,
+    NGAPolityRelations,
+    Countries,
+    Sections,
+    Subsections,
+    VariableHierarchies,
+    References,
+    Citations,
+    Comments,
+    CommentParts,
+    CommentPartThroughCitations,
+    Religions,
+    CliopatriaShapefiles,
+    GADMShapefiles,
+    GADMCountries,
+    GADMProvinces,
 )
 
 __all__ = [
@@ -394,7 +394,7 @@ class CommentPartsThroughCitations(BaseAPICall):
     >>> comment_parts_through_citations = CommentPartsThroughCitations(client)
     """
     ENDPOINT = "/core/comment-parts-through-citations"
-    SINGLE_MODEL = CommentPartThroughCitation
+    SINGLE_MODEL = CommentPartThroughCitations
 
 
 class Religions(BaseAPICall):

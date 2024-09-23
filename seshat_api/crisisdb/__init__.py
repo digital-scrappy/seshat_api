@@ -1,27 +1,27 @@
 from ..base_model import BaseAPICall
 
 from ..models import (
-    USLocation,
-    USViolenceDataSource,
-    CrisisConsequence,
-    PowerTransition,
-    HumanSacrifice,
-    ExternalConflict,
-    ExternalConflictSide,
-    AgriculturalPopulationArableLand,
-    GrossGrainSharedPerAgriculturalPopulation,
-    NetGrainSharedPerAgriculturalPopulation,
-    MilitaryExpense,
-    SilverInflow,
-    SilverStock,
-    TotalPopulation,
-    GDPPerCapita,
-    DroughtEvent,
-    LocustEvent,
-    SocioeconomicTurmoilEvent,
-    CropFailureEvent,
-    FamineEvent,
-    DiseaseOutbreak,
+    USLocations,
+    USViolenceDataSources,
+    CrisisConsequences,
+    PowerTransitions,
+    HumanSacrifices,
+    ExternalConflicts,
+    ExternalConflictSides,
+    AgriculturalPopulationArableLands,
+    GrossGrainSharedPerAgriculturalPopulations,
+    NetGrainSharedPerAgriculturalPopulations,
+    MilitaryExpenses,
+    SilverInflows,
+    SilverStocks,
+    TotalPopulations,
+    GDPPerCapitas,
+    DroughtEvents,
+    LocustEvents,
+    SocioeconomicTurmoilEvents,
+    CropFailureEvents,
+    FamineEvents,
+    DiseaseOutbreaks,
 )
 
 __all__ = [
@@ -33,8 +33,8 @@ __all__ = [
     "ExternalConflicts",
     "ExternalConflictSides",
     "AgriculturalPopulationsArableLands",
-    "GrossGrainSharedPerAgriculturalPopulation",
-    "NetGrainSharedPerAgriculturalPopulation",
+    "GrossGrainSharedPerAgriculturalPopulations",
+    "NetGrainSharedPerAgriculturalPopulations",
     "MilitaryExpenses",
     "SilverInflows",
     "SilverStocks",
@@ -213,10 +213,10 @@ class AgriculturalPopulationsArableLands(BaseAPICall):
     >>> agricultural_populations_arable_lands = AgriculturalPopulationsArableLands(client)
     """
     ENDPOINT = "/crisisdb/agricultural-populationsarable-lands"
-    SINGLE_MODEL = AgriculturalPopulationArableLand
+    SINGLE_MODEL = AgriculturalPopulationArableLands
 
 
-class GrossGrainSharedPerAgriculturalPopulation(BaseAPICall):
+class GrossGrainSharedPerAgriculturalPopulations(BaseAPICall):
     """
     A class for interacting with the gross grain shared per agricultural
     population endpoint of the Seshat API.
@@ -229,15 +229,15 @@ class GrossGrainSharedPerAgriculturalPopulation(BaseAPICall):
     Example
     -------
     >>> from seshat_api import SeshatAPI
-    >>> from seshat_api.crisisdb import GrossGrainSharedPerAgriculturalPopulation
+    >>> from seshat_api.crisisdb import GrossGrainSharedPerAgriculturalPopulations
     >>> client = SeshatAPI()
-    >>> gross_grain_shared_per_agricultural_population = GrossGrainSharedPerAgriculturalPopulation(client)
+    >>> gross_grain_shared_per_agricultural_population = GrossGrainSharedPerAgriculturalPopulations(client)
     """
     ENDPOINT = "/crisisdb/gross-grain-shared-per-agricultural-populations"
-    SINGLE_MODEL = GrossGrainSharedPerAgriculturalPopulation
+    SINGLE_MODEL = GrossGrainSharedPerAgriculturalPopulations
 
 
-class NetGrainSharedPerAgriculturalPopulation(BaseAPICall):
+class NetGrainSharedPerAgriculturalPopulations(BaseAPICall):
     """
     A class for interacting with the net grain shared per agricultural
     population endpoint of the Seshat API.
@@ -250,12 +250,12 @@ class NetGrainSharedPerAgriculturalPopulation(BaseAPICall):
     Example
     -------
     >>> from seshat_api import SeshatAPI
-    >>> from seshat_api.crisisdb import NetGrainSharedPerAgriculturalPopulation
+    >>> from seshat_api.crisisdb import NetGrainSharedPerAgriculturalPopulations
     >>> client = SeshatAPI()
-    >>> net_grain_shared_per_agricultural_population = NetGrainSharedPerAgriculturalPopulation(client)
+    >>> net_grain_shared_per_agricultural_population = NetGrainSharedPerAgriculturalPopulations(client)
     """
     ENDPOINT = "/crisisdb/net-grain-shared-per-agricultural-populations"
-    SINGLE_MODEL = NetGrainSharedPerAgriculturalPopulation
+    SINGLE_MODEL = NetGrainSharedPerAgriculturalPopulations
 
 
 class MilitaryExpenses(BaseAPICall):

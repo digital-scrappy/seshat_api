@@ -1,27 +1,27 @@
 from ..base_model import BaseAPICall
 
 from ..models import (
-    WidespreadReligion,
-    OfficialReligion,
-    ElitesReligion,
-    TheologicalSyncretismOfDifferentReligion,
-    SyncretismOfReligiousPracticesAtTheLevelOfIndividualBeliever,
-    ReligiousFragmentation,
-    FrequencyOfGovernmentalViolenceAgainstReligiousGroup,
-    GovernmentRestrictionsOnPublicWorship,
-    GovernmentRestrictionsOnPublicProselytizing,
-    GovernmentRestrictionsOnConversion,
-    GovernmentPressureToConvert,
-    GovernmentRestrictionsOnPropertyOwnershipForAdherentsOfAndReligiousGroup,
-    TaxesBasedOnReligiousAdherenceOrOnReligiousActivityAndInstitution,
-    GovernmentalObligationsForReligiousGroupToApplyForOfficialRecognition,
-    GovernmentRestrictionsOnConstructionOfReligiousBuilding,
-    GovernmentRestrictionsOnReligiousEducation,
-    GovernmentRestrictionsOnCirculationOfReligiousLiterature,
-    GovernmentDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunction,  # noqa
-    FrequencyOfSocietalViolenceAgainstReligiousGroup,
-    SocietalDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunction,  # noqa
-    SocietalPressureToConvertOrAgainstConversion,
+    WidespreadReligions,
+    OfficialReligions,
+    ElitesReligions,
+    TheologicalSyncretismOfDifferentReligions,
+    SyncretismOfReligiousPracticesAtTheLevelOfIndividualBelievers,
+    ReligiousFragmentations,
+    FrequencyOfGovernmentalViolenceAgainstReligiousGroups,
+    GovernmentRestrictionsOnPublicWorships,
+    GovernmentRestrictionsOnPublicProselytizings,
+    GovernmentRestrictionsOnConversions,
+    GovernmentPressureToConverts,
+    GovernmentRestrictionsOnPropertyOwnershipForAdherentsOfAndReligiousGroups,
+    TaxesBasedOnReligiousAdherenceOrOnReligiousActivityAndInstitutions,
+    GovernmentalObligationsForReligiousGroupToApplyForOfficialRecognitions,
+    GovernmentRestrictionsOnConstructionOfReligiousBuildings,
+    GovernmentRestrictionsOnReligiousEducations,
+    GovernmentRestrictionsOnCirculationOfReligiousLiteratures,
+    GovernmentDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunctions,  # noqa
+    FrequencyOfSocietalViolenceAgainstReligiousGroups,
+    SocietalDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunctions,  # noqa
+    SocietalPressureToConvertOrAgainstConversions,
 )
 
 __all__ = [
@@ -280,7 +280,7 @@ class TaxesBasedOnReligiousAdherenceOrOnReligiousActivitiesAndInstitutions(
 ):
     ENDPOINT = "/rt/taxes-based-on-religious-adherence-or-on-religious-activities-and-institutions"  # noqa
     SINGLE_MODEL = (
-        TaxesBasedOnReligiousAdherenceOrOnReligiousActivityAndInstitution
+        TaxesBasedOnReligiousAdherenceOrOnReligiousActivityAndInstitutions
     )
 
 
@@ -289,7 +289,7 @@ class GovernmentalObligationsForReligiousGroupsToApplyForOfficialRecognitions(
 ):
     ENDPOINT = "/rt/governmental-obligations-for-religious-groups-to-apply-for-official-recognitions"  # noqa
     SINGLE_MODEL = (
-        GovernmentalObligationsForReligiousGroupToApplyForOfficialRecognition
+        GovernmentalObligationsForReligiousGroupToApplyForOfficialRecognitions
     )
 
 
@@ -364,7 +364,7 @@ class GovernmentDiscriminationAgainstReligiousGroupsTakingUpCertainOccupationsOr
     BaseAPICall
 ):
     ENDPOINT = "/rt/government-discrimination-against-religious-groups-taking-up-certain-occupations-or-functions"
-    SINGLE_MODEL = GovernmentDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunction  # noqa
+    SINGLE_MODEL = GovernmentDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunctions  # noqa
 
 
 class FrequencyOfSocietalViolenceAgainstReligiousGroups(BaseAPICall):
@@ -392,7 +392,7 @@ class SocietalDiscriminationAgainstReligiousGroupsTakingUpCertainOccupationsOrFu
     BaseAPICall
 ):
     ENDPOINT = "/rt/societal-discrimination-against-religious-groups-taking-up-certain-occupations-or-functions"  # noqa
-    SINGLE_MODEL = SocietalDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunction  # noqa
+    SINGLE_MODEL = SocietalDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunctions  # noqa
 
 
 class SocietalPressureToConvertOrAgainstConversions(BaseAPICall):

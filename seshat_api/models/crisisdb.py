@@ -1,31 +1,31 @@
 from ._base import BaseModel
 
 __all__ = [
-    "USLocation",
-    "USViolenceDataSource",
-    "CrisisConsequence",
-    "PowerTransition",
-    "HumanSacrifice",
-    "ExternalConflict",
-    "ExternalConflictSide",
-    "AgriculturalPopulationArableLand",
-    "GrossGrainSharedPerAgriculturalPopulation",
-    "NetGrainSharedPerAgriculturalPopulation",
-    "MilitaryExpense",
-    "SilverInflow",
-    "SilverStock",
-    "TotalPopulation",
-    "GDPPerCapita",
-    "DroughtEvent",
-    "LocustEvent",
-    "SocioeconomicTurmoilEvent",
-    "CropFailureEvent",
-    "FamineEvent",
-    "DiseaseOutbreak",
+    "USLocations",
+    "USViolenceDataSources",
+    "CrisisConsequences",
+    "PowerTransitions",
+    "HumanSacrifices",
+    "ExternalConflicts",
+    "ExternalConflictSides",
+    "AgriculturalPopulationArableLands",
+    "GrossGrainSharedPerAgriculturalPopulations",
+    "NetGrainSharedPerAgriculturalPopulations",
+    "MilitaryExpenses",
+    "SilverInflows",
+    "SilverStocks",
+    "TotalPopulations",
+    "GDPPerCapitas",
+    "DroughtEvents",
+    "LocustEvents",
+    "SocioeconomicTurmoilEvents",
+    "CropFailureEvents",
+    "FamineEvents",
+    "DiseaseOutbreaks",
 ]
 
 
-class USLocation(BaseModel):
+class USLocations(BaseModel):
     """
     A class representing a single US Location object in the Seshat API.
 
@@ -44,7 +44,7 @@ class USLocation(BaseModel):
     pass
 
 
-class USViolenceDataSource(BaseModel):
+class USViolenceDataSources(BaseModel):
     """
     A class representing a single US Violence Data Source object in the Seshat
     API.
@@ -64,7 +64,7 @@ class USViolenceDataSource(BaseModel):
     pass
 
 
-class CrisisConsequence(BaseModel):
+class CrisisConsequences(BaseModel):
     """
     A class representing a single Crisis Consequence object in the Seshat API.
 
@@ -83,7 +83,7 @@ class CrisisConsequence(BaseModel):
     pass
 
 
-class PowerTransition(BaseModel):
+class PowerTransitions(BaseModel):
     """
     A class representing a single Power Transition object in the Seshat API.
 
@@ -102,7 +102,7 @@ class PowerTransition(BaseModel):
     pass
 
 
-class HumanSacrifice(BaseModel):
+class HumanSacrifices(BaseModel):
     """
     A class representing a single Human Sacrifice object in the Seshat API.
 
@@ -121,7 +121,7 @@ class HumanSacrifice(BaseModel):
     pass
 
 
-class ExternalConflict(BaseModel):
+class ExternalConflicts(BaseModel):
     """
     A class representing a single External Conflict object in the Seshat API.
 
@@ -140,7 +140,7 @@ class ExternalConflict(BaseModel):
     pass
 
 
-class ExternalConflictSide(BaseModel):
+class ExternalConflictSides(BaseModel):
     """
     A class representing a single External Conflict Side object in the Seshat
     API.
@@ -160,7 +160,7 @@ class ExternalConflictSide(BaseModel):
     pass
 
 
-class AgriculturalPopulationArableLand(BaseModel):
+class AgriculturalPopulationArableLands(BaseModel):
     """
     A class representing a single Agricultural Population Arable Land object in
     the Seshat API.
@@ -180,7 +180,7 @@ class AgriculturalPopulationArableLand(BaseModel):
     pass
 
 
-class GrossGrainSharedPerAgriculturalPopulation(BaseModel):
+class GrossGrainSharedPerAgriculturalPopulations(BaseModel):
     """
     A class representing a single Gross Grain Shared Per Agricultural
     Population object in the Seshat API.
@@ -200,7 +200,7 @@ class GrossGrainSharedPerAgriculturalPopulation(BaseModel):
     pass
 
 
-class NetGrainSharedPerAgriculturalPopulation(BaseModel):
+class NetGrainSharedPerAgriculturalPopulations(BaseModel):
     """
     A class representing a single Net Grain Shared Per Agricultural Population
     object in the Seshat API.
@@ -220,7 +220,7 @@ class NetGrainSharedPerAgriculturalPopulation(BaseModel):
     pass
 
 
-class MilitaryExpense(BaseModel):
+class MilitaryExpenses(BaseModel):
     """
     A class representing a single Military Expense object in the Seshat API.
 
@@ -239,7 +239,7 @@ class MilitaryExpense(BaseModel):
     pass
 
 
-class SilverInflow(BaseModel):
+class SilverInflows(BaseModel):
     """
     A class representing a single Silver Inflow object in the Seshat API.
 
@@ -258,7 +258,7 @@ class SilverInflow(BaseModel):
     pass
 
 
-class SilverStock(BaseModel):
+class SilverStocks(BaseModel):
     """
     A class representing a single Silver Stock object in the Seshat API.
 
@@ -277,7 +277,7 @@ class SilverStock(BaseModel):
     pass
 
 
-class TotalPopulation(BaseModel):
+class TotalPopulations(BaseModel):
     """
     A class representing a single Total Population object in the Seshat API.
 
@@ -296,7 +296,7 @@ class TotalPopulation(BaseModel):
     pass
 
 
-class GDPPerCapita(BaseModel):
+class GDPPerCapitas(BaseModel):
     """
     A class representing a single GDP Per Capita object in the Seshat API.
 
@@ -315,7 +315,7 @@ class GDPPerCapita(BaseModel):
     pass
 
 
-class DroughtEvent(BaseModel):
+class DroughtEvents(BaseModel):
     """
     A class representing a single Drought Event object in the Seshat API.
 
@@ -334,7 +334,7 @@ class DroughtEvent(BaseModel):
     pass
 
 
-class LocustEvent(BaseModel):
+class LocustEvents(BaseModel):
     """
     A class representing a single Locust Event object in the Seshat API.
 
@@ -353,7 +353,7 @@ class LocustEvent(BaseModel):
     pass
 
 
-class SocioeconomicTurmoilEvent(BaseModel):
+class SocioeconomicTurmoilEvents(BaseModel):
     """
     A class representing a single Socioeconomic Turmoil Event object in the
     Seshat API.
@@ -373,7 +373,7 @@ class SocioeconomicTurmoilEvent(BaseModel):
     pass
 
 
-class CropFailureEvent(BaseModel):
+class CropFailureEvents(BaseModel):
     """
     A class representing a single Crop Failure Event object in the Seshat API.
 
@@ -392,7 +392,7 @@ class CropFailureEvent(BaseModel):
     pass
 
 
-class FamineEvent(BaseModel):
+class FamineEvents(BaseModel):
     """
     A class representing a single Famine Event object in the Seshat API.
 
@@ -411,7 +411,7 @@ class FamineEvent(BaseModel):
     pass
 
 
-class DiseaseOutbreak(BaseModel):
+class DiseaseOutbreaks(BaseModel):
     """
     A class representing a single Disease Outbreak object in the Seshat API.
 
