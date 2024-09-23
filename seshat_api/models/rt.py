@@ -264,7 +264,7 @@ class GovernmentRestrictionsOnPropertyOwnershipForAdherentsOfAndReligiousGroups(
     pass
 
 
-class TaxesBasedOnReligiousAdherenceOrOnReligiousActivityAndInstitution(
+class TaxesBasedOnReligiousAdherenceOrOnReligiousActivityAndInstitutions(
     BaseModel
 ):
     """
