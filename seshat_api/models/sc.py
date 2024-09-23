@@ -28,7 +28,7 @@ __all__ = [
     "Bridges",
     "Canals",
     "Ports",
-    "MineOrQuarrys",
+    "MineOrQuarries",
     "MnemonicDevices",
     "NonwrittenRecords",
     "WrittenRecords",
@@ -40,8 +40,8 @@ __all__ = [
     "SacredTexts",
     "ReligiousLiteratures",
     "PracticalLiteratures",
-    "Historys",
-    "Philosophys",
+    "Histories",
+    "Philosophies",
     "ScientificLiteratures",
     "Fictions",
     "Articles",
@@ -49,7 +49,7 @@ __all__ = [
     "PreciousMetals",
     "ForeignCoins",
     "IndigenousCoins",
-    "PaperCurrencys",
+    "PaperCurrencies",
     "Couriers",
     "PostalStations",
     "GeneralPostalServices",
@@ -72,8 +72,8 @@ __all__ = [
     "GeometricalMeasurementSystems",
     "OtherMeasurementSystems",
     "DebtAndCreditStructures",
-    "StoreOfWealths",
-    "SourceOfSupports",
+    "StoresOfWealth",
+    "SourcesOfSupport",
     "OccupationalComplexities",
     "SpecialPurposeHouses",
     "OtherSpecialPurposeSites",
@@ -470,7 +470,7 @@ class IrrigationSystems(BaseModel):
     pass
 
 
-class DrinkingWaterSupplys(BaseModel):
+class DrinkingWaterSupplies(BaseModel):
     """
     A class representing a single Drinking Water Supply object in the Seshat
     API.
@@ -604,7 +604,7 @@ class Ports(BaseModel):
     pass
 
 
-class MineOrQuarrys(BaseModel):
+class MineOrQuarries(BaseModel):
     """
     A class representing a single Mine or Quarry object in the Seshat API.
 
@@ -837,9 +837,9 @@ class PracticalLiteratures(BaseModel):
     pass
 
 
-class Historys(BaseModel):
+class Histories(BaseModel):
     """
-    A class representing a single History object in the Seshat API.
+    A class representing a single Histories object in the Seshat API.
 
     Parameters
     ----------
@@ -856,9 +856,9 @@ class Historys(BaseModel):
     pass
 
 
-class Philosophys(BaseModel):
+class Philosophies(BaseModel):
     """
-    A class representing a single Philosophy object in the Seshat API.
+    A class representing a single Philosophies object in the Seshat API.
 
     Parameters
     ----------
@@ -1009,7 +1009,7 @@ class IndigenousCoins(BaseModel):
     pass
 
 
-class PaperCurrencys(BaseModel):
+class PaperCurrencies(BaseModel):
     """
     A class representing a single Paper Currency object in the Seshat API.
 
@@ -1460,7 +1460,7 @@ class DebtAndCreditStructures(BaseModel):
     pass
 
 
-class StoreOfWealths(BaseModel):
+class StoresOfWealth(BaseModel):
     """
     A class representing a single Store of Wealth object in the Seshat API.
 
@@ -1479,7 +1479,7 @@ class StoreOfWealths(BaseModel):
     pass
 
 
-class SourceOfSupports(BaseModel):
+class SourcesOfSupport(BaseModel):
     """
     A class representing a single Source of Support object in the Seshat API.
 

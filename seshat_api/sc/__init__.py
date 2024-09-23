@@ -28,7 +28,7 @@ from ..models import (
     Bridges,
     Canals,
     Ports,
-    MineOrQuarry,
+    MineOrQuarries,
     MnemonicDevices,
     NonwrittenRecords,
     WrittenRecords,
@@ -40,8 +40,8 @@ from ..models import (
     SacredTexts,
     ReligiousLiteratures,
     PracticalLiteratures,
-    History,
-    Philosophy,
+    Histories,
+    Philosophies,
     ScientificLiteratures,
     Fictions,
     Articles,
@@ -49,7 +49,7 @@ from ..models import (
     PreciousMetals,
     ForeignCoins,
     IndigenousCoins,
-    PaperCurrency,
+    PaperCurrencies,
     Couriers,
     PostalStations,
     GeneralPostalServices,
@@ -72,8 +72,8 @@ from ..models import (
     GeometricalMeasurementSystems,
     OtherMeasurementSystems,
     DebtAndCreditStructures,
-    StoreOfWealth,
-    SourceOfSupport,
+    StoresOfWealth,
+    SourcesOfSupport,
     OccupationalComplexities,
     SpecialPurposeHouses,
     OtherSpecialPurposeSites,
@@ -153,8 +153,8 @@ __all__ = [
     "GeometricalMeasurementSystems",
     "OtherMeasurementSystems",
     "DebtAndCreditStructures",
-    "StoresOfWealths",
-    "SourcesOfSupports",
+    "StoresOfWealth",
+    "SourcesOfSupport",
     "OccupationalComplexities",
     "SpecialPurposeHouses",
     "OtherSpecialPurposeSites",
@@ -1635,7 +1635,7 @@ class DebtAndCreditStructures(BaseAPICall):
     SINGLE_MODEL = DebtAndCreditStructures
 
 
-class StoresOfWealths(BaseAPICall):
+class StoresOfWealth(BaseAPICall):
     """
     A class for interacting with the stores of wealth endpoint of the Seshat
     API.
@@ -1653,10 +1653,10 @@ class StoresOfWealths(BaseAPICall):
     >>> stores_of_wealth = StoresOfWealth(client)
     """
     ENDPOINT = "/sc/stores-of-wealth"
-    SINGLE_MODEL = StoreOfWealths
+    SINGLE_MODEL = StoresOfWealth
 
 
-class SourcesOfSupports(BaseAPICall):
+class SourcesOfSupport(BaseAPICall):
     """
     A class for interacting with the sources of support endpoint of the Seshat
     API.
@@ -1674,7 +1674,7 @@ class SourcesOfSupports(BaseAPICall):
     >>> sources_of_support = SourcesOfSupport(client)
     """
     ENDPOINT = "/sc/sources-of-support"
-    SINGLE_MODEL = SourceOfSupports
+    SINGLE_MODEL = SourcesOfSupport
 
 
 class OccupationalComplexities(BaseAPICall):

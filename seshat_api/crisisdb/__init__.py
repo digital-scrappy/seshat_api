@@ -213,7 +213,7 @@ class AgriculturalPopulationsArableLands(BaseAPICall):
     >>> agricultural_populations_arable_lands = AgriculturalPopulationsArableLands(client)
     """
     ENDPOINT = "/crisisdb/agricultural-populationsarable-lands"
-    SINGLE_MODEL = AgriculturalPopulationArableLandss
+    SINGLE_MODEL = AgriculturalPopulationArableLands
 
 
 class GrossGrainSharedPerAgriculturalPopulations(BaseAPICall):
@@ -234,7 +234,7 @@ class GrossGrainSharedPerAgriculturalPopulations(BaseAPICall):
     >>> gross_grain_shared_per_agricultural_population = GrossGrainSharedPerAgriculturalPopulations(client)
     """
     ENDPOINT = "/crisisdb/gross-grain-shared-per-agricultural-populations"
-    SINGLE_MODEL = GrossGrainSharedPerAgriculturalPopulationss
+    SINGLE_MODEL = GrossGrainSharedPerAgriculturalPopulations
 
 
 class NetGrainSharedPerAgriculturalPopulations(BaseAPICall):
