@@ -1,37 +1,36 @@
 from ..base_model import BaseAPICall
 from ..models import (
-    PrivateComment,
-    PrivateCommentPart,
-    MacroRegion,
-    Region,
-    NGA,
-    Polity,
-    Capital,
-    NGAPolityRelation,
-    Country,
-    Section,
-    Subsection,
-    VariableHierarchy,
-    Reference,
-    Citation,
-    Comment,
-    CommentPart,
-    CommentPartThroughCitation,
-    Religion,
-    CliopatriaShapefile,
-    GADMShapefile,
-    GADMCountry,
-    GADMProvince,
+    PrivateComments,
+    PrivateCommentsParts,
+    MacroRegions,
+    Regions,
+    NGAs,
+    Polities,
+    Capitals,
+    NGAPolityRelations,
+    Countries,
+    Sections,
+    Subsections,
+    VariableHierarchies,
+    References,
+    Citations,
+    Comments,
+    CommentParts,
+    CommentPartThroughCitations,
+    Religions,
+    CliopatriaShapefiles,
+    GADMShapefiles,
+    GADMCountries,
+    GADMProvinces,
 )
 
 __all__ = [
     "Polities",
     "PrivateComments",
-    "PrivateCommentParts",
+    "PrivateCommentsParts",
     "MacroRegions",
     "Regions",
     "NGAs",
-    "Polities",
     "Capitals",
     "NGAPolityRelations",
     "Countries",
@@ -69,10 +68,10 @@ class PrivateComments(BaseAPICall):
     >>> private_comments = PrivateComments(client)
     """
     ENDPOINT = "/core/private-comments"
-    SINGLE_MODEL = PrivateComment
+    SINGLE_MODEL = PrivateComments
 
 
-class PrivateCommentParts(BaseAPICall):
+class PrivateCommentsParts(BaseAPICall):
     """
     A class for interacting with the private comment parts endpoint of the
     Seshat API.
@@ -85,12 +84,12 @@ class PrivateCommentParts(BaseAPICall):
     Example
     -------
     >>> from seshat_api import SeshatAPI
-    >>> from seshat_api.core import PrivateCommentParts
+    >>> from seshat_api.core import PrivateCommentsParts
     >>> client = SeshatAPI()
-    >>> private_comment_parts = PrivateCommentParts(client)
+    >>> private_comment_parts = PrivateCommentsParts(client)
     """
     ENDPOINT = "/core/private-comments-parts"
-    SINGLE_MODEL = PrivateCommentPart
+    SINGLE_MODEL = PrivateCommentsParts
 
 
 class MacroRegions(BaseAPICall):
@@ -110,7 +109,7 @@ class MacroRegions(BaseAPICall):
     >>> macro_regions = MacroRegions(client)
     """
     ENDPOINT = "/core/macro-regions"
-    SINGLE_MODEL = MacroRegion
+    SINGLE_MODEL = MacroRegions
 
 
 class Regions(BaseAPICall):
@@ -130,7 +129,7 @@ class Regions(BaseAPICall):
     >>> regions = Regions(client)
     """
     ENDPOINT = "/core/regions"
-    SINGLE_MODEL = Region
+    SINGLE_MODEL = Regions
 
 
 class NGAs(BaseAPICall):
@@ -151,7 +150,7 @@ class NGAs(BaseAPICall):
     >>> ngas = NGAs(client)
     """
     ENDPOINT = "/core/ngas"
-    SINGLE_MODEL = NGA
+    SINGLE_MODEL = NGAs
 
 
 class Polities(BaseAPICall):
@@ -171,7 +170,7 @@ class Polities(BaseAPICall):
     >>> polities = Polities(client)
     """
     ENDPOINT = "/core/polities"
-    SINGLE_MODEL = Polity
+    SINGLE_MODEL = Polities
 
 
 class Capitals(BaseAPICall):
@@ -191,7 +190,7 @@ class Capitals(BaseAPICall):
     >>> capitals = Capitals(client)
     """
     ENDPOINT = "/core/capitals"
-    SINGLE_MODEL = Capital
+    SINGLE_MODEL = Capitals
 
 
 class NGAPolityRelations(BaseAPICall):
@@ -212,7 +211,7 @@ class NGAPolityRelations(BaseAPICall):
     >>> nga_polity_relations = NGAPolityRelations(client)
     """
     ENDPOINT = "/core/nga-polity-relations"
-    SINGLE_MODEL = NGAPolityRelation
+    SINGLE_MODEL = NGAPolityRelations
 
 
 class Countries(BaseAPICall):
@@ -232,7 +231,7 @@ class Countries(BaseAPICall):
     >>> countries = Countries(client)
     """
     ENDPOINT = "/core/countries"
-    SINGLE_MODEL = Country
+    SINGLE_MODEL = Countries
 
 
 class Sections(BaseAPICall):
@@ -252,7 +251,7 @@ class Sections(BaseAPICall):
     >>> sections = Sections(client)
     """
     ENDPOINT = "/core/sections"
-    SINGLE_MODEL = Section
+    SINGLE_MODEL = Sections
 
 
 class Subsections(BaseAPICall):
@@ -272,7 +271,7 @@ class Subsections(BaseAPICall):
     >>> subsections = Subsections(client)
     """
     ENDPOINT = "/core/subsections"
-    SINGLE_MODEL = Subsection
+    SINGLE_MODEL = Subsections
 
 
 class VariableHierarchies(BaseAPICall):
@@ -293,7 +292,7 @@ class VariableHierarchies(BaseAPICall):
     >>> variable_hierarchies = VariableHierarchies(client)
     """
     ENDPOINT = "/core/variable-hierarchies"
-    SINGLE_MODEL = VariableHierarchy
+    SINGLE_MODEL = VariableHierarchies
 
 
 class References(BaseAPICall):
@@ -313,7 +312,7 @@ class References(BaseAPICall):
     >>> references = References(client)
     """
     ENDPOINT = "/core/references"
-    SINGLE_MODEL = Reference
+    SINGLE_MODEL = References
 
 
 class Citations(BaseAPICall):
@@ -333,7 +332,7 @@ class Citations(BaseAPICall):
     >>> citations = Citations(client)
     """
     ENDPOINT = "/core/citations"
-    SINGLE_MODEL = Citation
+    SINGLE_MODEL = Citations
 
 
 class Comments(BaseAPICall):
@@ -353,7 +352,7 @@ class Comments(BaseAPICall):
     >>> comments = Comments(client)
     """
     ENDPOINT = "/core/comments"
-    SINGLE_MODEL = Comment
+    SINGLE_MODEL = Comments
 
 
 class CommentParts(BaseAPICall):
@@ -373,7 +372,7 @@ class CommentParts(BaseAPICall):
     >>> comment_parts = CommentParts(client)
     """
     ENDPOINT = "/core/comment-parts"
-    SINGLE_MODEL = CommentPart
+    SINGLE_MODEL = CommentParts
 
 
 class CommentPartsThroughCitations(BaseAPICall):
@@ -394,7 +393,7 @@ class CommentPartsThroughCitations(BaseAPICall):
     >>> comment_parts_through_citations = CommentPartsThroughCitations(client)
     """
     ENDPOINT = "/core/comment-parts-through-citations"
-    SINGLE_MODEL = CommentPartThroughCitation
+    SINGLE_MODEL = CommentPartThroughCitations
 
 
 class Religions(BaseAPICall):
@@ -414,7 +413,7 @@ class Religions(BaseAPICall):
     >>> religions = Religions(client)
     """
     ENDPOINT = "/core/religions"
-    SINGLE_MODEL = Religion
+    SINGLE_MODEL = Religions
 
 
 class CliopatriaShapefiles(BaseAPICall):
@@ -435,7 +434,7 @@ class CliopatriaShapefiles(BaseAPICall):
     >>> cliopatria_shapefiles = CliopatriaShapefiles(client)
     """
     ENDPOINT = "/core/cliopatria-shapefiles"
-    SINGLE_MODEL = CliopatriaShapefile
+    SINGLE_MODEL = CliopatriaShapefiles
 
 
 class GADMShapefiles(BaseAPICall):
@@ -456,7 +455,7 @@ class GADMShapefiles(BaseAPICall):
     >>> gadm_shapefiles = GADMShapefiles(client)
     """
     ENDPOINT = "/core/gadm-shapefiles"
-    SINGLE_MODEL = GADMShapefile
+    SINGLE_MODEL = GADMShapefiles
 
 
 class GADMCountries(BaseAPICall):
@@ -476,7 +475,7 @@ class GADMCountries(BaseAPICall):
     >>> gadm_countries = GADMCountries(client)
     """
     ENDPOINT = "/core/gadm-countries"
-    SINGLE_MODEL = GADMCountry
+    SINGLE_MODEL = GADMCountries
 
 
 class GADMProvinces(BaseAPICall):
@@ -496,4 +495,4 @@ class GADMProvinces(BaseAPICall):
     >>> gadm_provinces = GADMProvinces(client)
     """
     ENDPOINT = "/core/gadm-provinces"
-    SINGLE_MODEL = GADMProvince
+    SINGLE_MODEL = GADMProvinces

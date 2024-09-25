@@ -1,88 +1,88 @@
 from ._base import BaseModel
 
 __all__ = [
-    "ResearchAssistant",
-    "PolityTerritory",
-    "PolityPopulation",
-    "PopulationOfTheLargestSettlement",
-    "SettlementHierarchy",
-    "AdministrativeLevel",
-    "ReligiousLevel",
-    "MilitaryLevel",
-    "ProfessionalMilitaryOfficer",
-    "ProfessionalSoldier",
-    "ProfessionalPriesthood",
-    "FullTimeBureaucrat",
-    "ExaminationSystem",
-    "MeritPromotion",
-    "SpecializedGovernmentBuilding",
-    "FormalLegalCode",
-    "Judge",
-    "Court",
-    "ProfessionalLawyer",
-    "IrrigationSystem",
-    "DrinkingWaterSupply",
-    "Market",
-    "FoodStorageSite",
-    "Road",
-    "Bridge",
-    "Canal",
-    "Port",
-    "MineOrQuarry",
-    "MnemonicDevice",
-    "NonwrittenRecord",
-    "WrittenRecord",
-    "Script",
-    "NonPhoneticWriting",
-    "PhoneticAlphabeticWriting",
-    "ListsTablesAndClassification",
-    "Calendar",
-    "SacredText",
-    "ReligiousLiterature",
-    "PracticalLiterature",
-    "History",
-    "Philosophy",
-    "ScientificLiterature",
-    "Fiction",
-    "Article",
-    "Token",
-    "PreciousMetal",
-    "ForeignCoin",
-    "IndigenousCoin",
-    "PaperCurrency",
-    "Courier",
-    "PostalStation",
-    "GeneralPostalService",
-    "CommunalBuilding",
-    "UtilitarianPublicBuilding",
-    "SymbolicBuilding",
-    "EntertainmentBuilding",
-    "KnowledgeOrInformationBuilding",
-    "OtherUtilitarianPublicBuilding",
-    "SpecialPurposeSite",
-    "CeremonialSite",
-    "BurialSite",
-    "TradingEmporium",
-    "Enclosure",
-    "LengthMeasurementSystem",
-    "AreaMeasurementSystem",
-    "VolumeMeasurementSystem",
-    "WeightMeasurementSystem",
-    "TimeMeasurementSystem",
-    "GeometricalMeasurementSystem",
-    "OtherMeasurementSystem",
-    "DebtAndCreditStructure",
-    "StoreOfWealth",
-    "SourceOfSupport",
-    "OccupationalComplexity",
-    "SpecialPurposeHouse",
-    "OtherSpecialPurposeSite",
-    "LargestCommunicationDistance",
-    "FastestIndividualCommunication",
+    "ResearchAssistants",
+    "PolityTerritories",
+    "PolityPopulations",
+    "PopulationOfTheLargestSettlements",
+    "SettlementHierarchies",
+    "AdministrativeLevels",
+    "ReligiousLevels",
+    "MilitaryLevels",
+    "ProfessionalMilitaryOfficers",
+    "ProfessionalSoldiers",
+    "ProfessionalPriesthoods",
+    "FullTimeBureaucrats",
+    "ExaminationSystems",
+    "MeritPromotions",
+    "SpecializedGovernmentBuildings",
+    "FormalLegalCodes",
+    "Judges",
+    "Courts",
+    "ProfessionalLawyers",
+    "IrrigationSystems",
+    "DrinkingWaterSupplies",
+    "Markets",
+    "FoodStorageSites",
+    "Roads",
+    "Bridges",
+    "Canals",
+    "Ports",
+    "MinesOrQuarries",
+    "MnemonicDevices",
+    "NonwrittenRecords",
+    "WrittenRecords",
+    "Scripts",
+    "NonPhoneticWritings",
+    "PhoneticAlphabeticWritings",
+    "ListsTablesAndClassifications",
+    "Calendars",
+    "SacredTexts",
+    "ReligiousLiteratures",
+    "PracticalLiteratures",
+    "Histories",
+    "Philosophies",
+    "ScientificLiteratures",
+    "Fictions",
+    "Articles",
+    "Tokens",
+    "PreciousMetals",
+    "ForeignCoins",
+    "IndigenousCoins",
+    "PaperCurrencies",
+    "Couriers",
+    "PostalStations",
+    "GeneralPostalServices",
+    "CommunalBuildings",
+    "UtilitarianPublicBuildings",
+    "SymbolicBuildings",
+    "EntertainmentBuildings",
+    "KnowledgeOrInformationBuildings",
+    "OtherUtilitarianPublicBuildings",
+    "SpecialPurposeSites",
+    "CeremonialSites",
+    "BurialSites",
+    "TradingEmporia",
+    "Enclosures",
+    "LengthMeasurementSystems",
+    "AreaMeasurementSystems",
+    "VolumeMeasurementSystems",
+    "WeightMeasurementSystems",
+    "TimeMeasurementSystems",
+    "GeometricalMeasurementSystems",
+    "OtherMeasurementSystems",
+    "DebtAndCreditStructures",
+    "StoresOfWealth",
+    "SourcesOfSupport",
+    "OccupationalComplexities",
+    "SpecialPurposeHouses",
+    "OtherSpecialPurposeSites",
+    "LargestCommunicationDistances",
+    "FastestIndividualCommunications",
 ]
 
 
-class ResearchAssistant(BaseModel):
+class ResearchAssistants(BaseModel):
     """
     A class representing a single Research Assistant object in the Seshat API.
 
@@ -101,7 +101,7 @@ class ResearchAssistant(BaseModel):
     pass
 
 
-class PolityTerritory(BaseModel):
+class PolityTerritories(BaseModel):
     """
     A class representing a single Polity Territory object in the Seshat API.
 
@@ -120,7 +120,7 @@ class PolityTerritory(BaseModel):
     pass
 
 
-class PolityPopulation(BaseModel):
+class PolityPopulations(BaseModel):
     """
     A class representing a single Polity Population object in the Seshat API.
 
@@ -139,7 +139,7 @@ class PolityPopulation(BaseModel):
     pass
 
 
-class PopulationOfTheLargestSettlement(BaseModel):
+class PopulationOfTheLargestSettlements(BaseModel):
     """
     A class representing a single Population of the Largest Settlement object
     in the Seshat API.
@@ -159,7 +159,7 @@ class PopulationOfTheLargestSettlement(BaseModel):
     pass
 
 
-class SettlementHierarchy(BaseModel):
+class SettlementHierarchies(BaseModel):
     """
     A class representing a single Settlement Hierarchy object in the Seshat
     API.
@@ -179,7 +179,7 @@ class SettlementHierarchy(BaseModel):
     pass
 
 
-class AdministrativeLevel(BaseModel):
+class AdministrativeLevels(BaseModel):
     """
     A class representing a single Administrative Level object in the Seshat
     API.
@@ -199,7 +199,7 @@ class AdministrativeLevel(BaseModel):
     pass
 
 
-class ReligiousLevel(BaseModel):
+class ReligiousLevels(BaseModel):
     """
     A class representing a single Religious Level object in the Seshat API.
 
@@ -218,7 +218,7 @@ class ReligiousLevel(BaseModel):
     pass
 
 
-class MilitaryLevel(BaseModel):
+class MilitaryLevels(BaseModel):
     """
     A class representing a single Military Level object in the Seshat API.
 
@@ -237,7 +237,7 @@ class MilitaryLevel(BaseModel):
     pass
 
 
-class ProfessionalMilitaryOfficer(BaseModel):
+class ProfessionalMilitaryOfficers(BaseModel):
     """
     A class representing a single Professional Military Officer object in the
     Seshat API.
@@ -257,7 +257,7 @@ class ProfessionalMilitaryOfficer(BaseModel):
     pass
 
 
-class ProfessionalSoldier(BaseModel):
+class ProfessionalSoldiers(BaseModel):
     """
     A class representing a single Professional Soldier object in the Seshat
     API.
@@ -277,7 +277,7 @@ class ProfessionalSoldier(BaseModel):
     pass
 
 
-class ProfessionalPriesthood(BaseModel):
+class ProfessionalPriesthoods(BaseModel):
     """
     A class representing a single Professional Priesthood object in the Seshat
     API.
@@ -297,7 +297,7 @@ class ProfessionalPriesthood(BaseModel):
     pass
 
 
-class FullTimeBureaucrat(BaseModel):
+class FullTimeBureaucrats(BaseModel):
     """
     A class representing a single Full Time Bureaucrat object in the Seshat
     API.
@@ -317,7 +317,7 @@ class FullTimeBureaucrat(BaseModel):
     pass
 
 
-class ExaminationSystem(BaseModel):
+class ExaminationSystems(BaseModel):
     """
     A class representing a single Examination System object in the Seshat API.
 
@@ -336,7 +336,7 @@ class ExaminationSystem(BaseModel):
     pass
 
 
-class MeritPromotion(BaseModel):
+class MeritPromotions(BaseModel):
     """
     A class representing a single Merit Promotion object in the Seshat API.
 
@@ -355,7 +355,7 @@ class MeritPromotion(BaseModel):
     pass
 
 
-class SpecializedGovernmentBuilding(BaseModel):
+class SpecializedGovernmentBuildings(BaseModel):
     """
     A class representing a single Specialized Government Building object in the
     Seshat API.
@@ -375,7 +375,7 @@ class SpecializedGovernmentBuilding(BaseModel):
     pass
 
 
-class FormalLegalCode(BaseModel):
+class FormalLegalCodes(BaseModel):
     """
     A class representing a single Formal Legal Code object in the Seshat API.
 
@@ -394,7 +394,7 @@ class FormalLegalCode(BaseModel):
     pass
 
 
-class Judge(BaseModel):
+class Judges(BaseModel):
     """
     A class representing a single Judge object in the Seshat API.
 
@@ -413,7 +413,7 @@ class Judge(BaseModel):
     pass
 
 
-class Court(BaseModel):
+class Courts(BaseModel):
     """
     A class representing a single Court object in the Seshat API.
 
@@ -432,7 +432,7 @@ class Court(BaseModel):
     pass
 
 
-class ProfessionalLawyer(BaseModel):
+class ProfessionalLawyers(BaseModel):
     """
     A class representing a single Professional Lawyer object in the Seshat API.
 
@@ -451,7 +451,7 @@ class ProfessionalLawyer(BaseModel):
     pass
 
 
-class IrrigationSystem(BaseModel):
+class IrrigationSystems(BaseModel):
     """
     A class representing a single Irrigation System object in the Seshat API.
 
@@ -470,7 +470,7 @@ class IrrigationSystem(BaseModel):
     pass
 
 
-class DrinkingWaterSupply(BaseModel):
+class DrinkingWaterSupplies(BaseModel):
     """
     A class representing a single Drinking Water Supply object in the Seshat
     API.
@@ -490,7 +490,7 @@ class DrinkingWaterSupply(BaseModel):
     pass
 
 
-class Market(BaseModel):
+class Markets(BaseModel):
     """
     A class representing a single Market object in the Seshat API.
 
@@ -509,7 +509,7 @@ class Market(BaseModel):
     pass
 
 
-class FoodStorageSite(BaseModel):
+class FoodStorageSites(BaseModel):
     """
     A class representing a single Food Storage Site object in the Seshat API.
 
@@ -528,7 +528,7 @@ class FoodStorageSite(BaseModel):
     pass
 
 
-class Road(BaseModel):
+class Roads(BaseModel):
     """
     A class representing a single Road object in the Seshat API.
 
@@ -547,7 +547,7 @@ class Road(BaseModel):
     pass
 
 
-class Bridge(BaseModel):
+class Bridges(BaseModel):
     """
     A class representing a single Bridge object in the Seshat API.
 
@@ -566,7 +566,7 @@ class Bridge(BaseModel):
     pass
 
 
-class Canal(BaseModel):
+class Canals(BaseModel):
     """
     A class representing a single Canal object in the Seshat API.
 
@@ -585,7 +585,7 @@ class Canal(BaseModel):
     pass
 
 
-class Port(BaseModel):
+class Ports(BaseModel):
     """
     A class representing a single Port object in the Seshat API.
 
@@ -604,7 +604,7 @@ class Port(BaseModel):
     pass
 
 
-class MineOrQuarry(BaseModel):
+class MinesOrQuarries(BaseModel):
     """
     A class representing a single Mine or Quarry object in the Seshat API.
 
@@ -623,7 +623,7 @@ class MineOrQuarry(BaseModel):
     pass
 
 
-class MnemonicDevice(BaseModel):
+class MnemonicDevices(BaseModel):
     """
     A class representing a single Mnemonic Device object in the Seshat API.
 
@@ -642,7 +642,7 @@ class MnemonicDevice(BaseModel):
     pass
 
 
-class NonwrittenRecord(BaseModel):
+class NonwrittenRecords(BaseModel):
     """
     A class representing a single Nonwritten Record object in the Seshat API.
 
@@ -661,7 +661,7 @@ class NonwrittenRecord(BaseModel):
     pass
 
 
-class WrittenRecord(BaseModel):
+class WrittenRecords(BaseModel):
     """
     A class representing a single Written Record object in the Seshat API.
 
@@ -680,7 +680,7 @@ class WrittenRecord(BaseModel):
     pass
 
 
-class Script(BaseModel):
+class Scripts(BaseModel):
     """
     A class representing a single Script object in the Seshat API.
 
@@ -699,7 +699,7 @@ class Script(BaseModel):
     pass
 
 
-class NonPhoneticWriting(BaseModel):
+class NonPhoneticWritings(BaseModel):
     """
     A class representing a single Non-Phonetic Writing object in the Seshat
     API.
@@ -719,7 +719,7 @@ class NonPhoneticWriting(BaseModel):
     pass
 
 
-class PhoneticAlphabeticWriting(BaseModel):
+class PhoneticAlphabeticWritings(BaseModel):
     """
     A class representing a single Phonetic Alphabetic Writing object in the
     Seshat API.
@@ -739,7 +739,7 @@ class PhoneticAlphabeticWriting(BaseModel):
     pass
 
 
-class ListsTablesAndClassification(BaseModel):
+class ListsTablesAndClassifications(BaseModel):
     """
     A class representing a single Lists, Tables, and Classification object in
     the Seshat API.
@@ -759,7 +759,7 @@ class ListsTablesAndClassification(BaseModel):
     pass
 
 
-class Calendar(BaseModel):
+class Calendars(BaseModel):
     """
     A class representing a single Calendar object in the Seshat API.
 
@@ -778,7 +778,7 @@ class Calendar(BaseModel):
     pass
 
 
-class SacredText(BaseModel):
+class SacredTexts(BaseModel):
     """
     A class representing a single Sacred Text object in the Seshat API.
 
@@ -797,7 +797,7 @@ class SacredText(BaseModel):
     pass
 
 
-class ReligiousLiterature(BaseModel):
+class ReligiousLiteratures(BaseModel):
     """
     A class representing a single Religious Literature object in the Seshat
     API.
@@ -817,7 +817,7 @@ class ReligiousLiterature(BaseModel):
     pass
 
 
-class PracticalLiterature(BaseModel):
+class PracticalLiteratures(BaseModel):
     """
     A class representing a single Practical Literature object in the Seshat
     API.
@@ -837,9 +837,9 @@ class PracticalLiterature(BaseModel):
     pass
 
 
-class History(BaseModel):
+class Histories(BaseModel):
     """
-    A class representing a single History object in the Seshat API.
+    A class representing a single Histories object in the Seshat API.
 
     Parameters
     ----------
@@ -856,9 +856,9 @@ class History(BaseModel):
     pass
 
 
-class Philosophy(BaseModel):
+class Philosophies(BaseModel):
     """
-    A class representing a single Philosophy object in the Seshat API.
+    A class representing a single Philosophies object in the Seshat API.
 
     Parameters
     ----------
@@ -875,7 +875,7 @@ class Philosophy(BaseModel):
     pass
 
 
-class ScientificLiterature(BaseModel):
+class ScientificLiteratures(BaseModel):
     """
     A class representing a single Scientific Literature object in the Seshat
     API.
@@ -895,7 +895,7 @@ class ScientificLiterature(BaseModel):
     pass
 
 
-class Fiction(BaseModel):
+class Fictions(BaseModel):
     """
     A class representing a single Fiction object in the Seshat API.
 
@@ -914,7 +914,7 @@ class Fiction(BaseModel):
     pass
 
 
-class Article(BaseModel):
+class Articles(BaseModel):
     """
     A class representing a single Article object in the Seshat API.
 
@@ -933,7 +933,7 @@ class Article(BaseModel):
     pass
 
 
-class Token(BaseModel):
+class Tokens(BaseModel):
     """
     A class representing a single Token object in the Seshat API.
 
@@ -952,7 +952,7 @@ class Token(BaseModel):
     pass
 
 
-class PreciousMetal(BaseModel):
+class PreciousMetals(BaseModel):
     """
     A class representing a single Precious Metal object in the Seshat API.
 
@@ -971,7 +971,7 @@ class PreciousMetal(BaseModel):
     pass
 
 
-class ForeignCoin(BaseModel):
+class ForeignCoins(BaseModel):
     """
     A class representing a single Foreign Coin object in the Seshat API.
 
@@ -990,7 +990,7 @@ class ForeignCoin(BaseModel):
     pass
 
 
-class IndigenousCoin(BaseModel):
+class IndigenousCoins(BaseModel):
     """
     A class representing a single Indigenous Coin object in the Seshat API.
 
@@ -1009,7 +1009,7 @@ class IndigenousCoin(BaseModel):
     pass
 
 
-class PaperCurrency(BaseModel):
+class PaperCurrencies(BaseModel):
     """
     A class representing a single Paper Currency object in the Seshat API.
 
@@ -1028,7 +1028,7 @@ class PaperCurrency(BaseModel):
     pass
 
 
-class Courier(BaseModel):
+class Couriers(BaseModel):
     """
     A class representing a single Courier object in the Seshat API.
 
@@ -1047,7 +1047,7 @@ class Courier(BaseModel):
     pass
 
 
-class PostalStation(BaseModel):
+class PostalStations(BaseModel):
     """
     A class representing a single Postal Station object in the Seshat API.
 
@@ -1066,7 +1066,7 @@ class PostalStation(BaseModel):
     pass
 
 
-class GeneralPostalService(BaseModel):
+class GeneralPostalServices(BaseModel):
     """
     A class representing a single General Postal Service object in the Seshat
     API.
@@ -1086,7 +1086,7 @@ class GeneralPostalService(BaseModel):
     pass
 
 
-class CommunalBuilding(BaseModel):
+class CommunalBuildings(BaseModel):
     """
     A class representing a single Communal Building object in the Seshat API.
 
@@ -1105,7 +1105,7 @@ class CommunalBuilding(BaseModel):
     pass
 
 
-class UtilitarianPublicBuilding(BaseModel):
+class UtilitarianPublicBuildings(BaseModel):
     """
     A class representing a single Utilitarian Public Building object in the
     Seshat API.
@@ -1125,7 +1125,7 @@ class UtilitarianPublicBuilding(BaseModel):
     pass
 
 
-class SymbolicBuilding(BaseModel):
+class SymbolicBuildings(BaseModel):
     """
     A class representing a single Symbolic Building object in the Seshat API.
 
@@ -1144,7 +1144,7 @@ class SymbolicBuilding(BaseModel):
     pass
 
 
-class EntertainmentBuilding(BaseModel):
+class EntertainmentBuildings(BaseModel):
     """
     A class representing a single Entertainment Building object in the Seshat
     API.
@@ -1164,7 +1164,7 @@ class EntertainmentBuilding(BaseModel):
     pass
 
 
-class KnowledgeOrInformationBuilding(BaseModel):
+class KnowledgeOrInformationBuildings(BaseModel):
     """
     A class representing a single Knowledge or Information Building object in
     the Seshat API.
@@ -1184,7 +1184,7 @@ class KnowledgeOrInformationBuilding(BaseModel):
     pass
 
 
-class OtherUtilitarianPublicBuilding(BaseModel):
+class OtherUtilitarianPublicBuildings(BaseModel):
     """
     A class representing a single Other Utilitarian Public Building object in
     the Seshat API.
@@ -1204,7 +1204,7 @@ class OtherUtilitarianPublicBuilding(BaseModel):
     pass
 
 
-class SpecialPurposeSite(BaseModel):
+class SpecialPurposeSites(BaseModel):
     """
     A class representing a single Special Purpose Site object in the Seshat
     API.
@@ -1224,7 +1224,7 @@ class SpecialPurposeSite(BaseModel):
     pass
 
 
-class CeremonialSite(BaseModel):
+class CeremonialSites(BaseModel):
     """
     A class representing a single Ceremonial Site object in the Seshat API.
 
@@ -1243,7 +1243,7 @@ class CeremonialSite(BaseModel):
     pass
 
 
-class BurialSite(BaseModel):
+class BurialSites(BaseModel):
     """
     A class representing a single Burial Site object in the Seshat API.
 
@@ -1262,7 +1262,7 @@ class BurialSite(BaseModel):
     pass
 
 
-class TradingEmporium(BaseModel):
+class TradingEmporia(BaseModel):
     """
     A class representing a single Trading Emporium object in the Seshat API.
 
@@ -1281,7 +1281,7 @@ class TradingEmporium(BaseModel):
     pass
 
 
-class Enclosure(BaseModel):
+class Enclosures(BaseModel):
     """
     A class representing a single Enclosure object in the Seshat API.
 
@@ -1300,7 +1300,7 @@ class Enclosure(BaseModel):
     pass
 
 
-class LengthMeasurementSystem(BaseModel):
+class LengthMeasurementSystems(BaseModel):
     """
     A class representing a single Length Measurement System object in the
     Seshat API.
@@ -1320,7 +1320,7 @@ class LengthMeasurementSystem(BaseModel):
     pass
 
 
-class AreaMeasurementSystem(BaseModel):
+class AreaMeasurementSystems(BaseModel):
     """
     A class representing a single Area Measurement System object in the Seshat
     API.
@@ -1340,7 +1340,7 @@ class AreaMeasurementSystem(BaseModel):
     pass
 
 
-class VolumeMeasurementSystem(BaseModel):
+class VolumeMeasurementSystems(BaseModel):
     """
     A class representing a single Volume Measurement System object in the
     Seshat API.
@@ -1360,7 +1360,7 @@ class VolumeMeasurementSystem(BaseModel):
     pass
 
 
-class WeightMeasurementSystem(BaseModel):
+class WeightMeasurementSystems(BaseModel):
     """
     A class representing a single Weight Measurement System object in the
     Seshat API.
@@ -1380,7 +1380,7 @@ class WeightMeasurementSystem(BaseModel):
     pass
 
 
-class TimeMeasurementSystem(BaseModel):
+class TimeMeasurementSystems(BaseModel):
     """
     A class representing a single Time Measurement System object in the Seshat
     API.
@@ -1400,7 +1400,7 @@ class TimeMeasurementSystem(BaseModel):
     pass
 
 
-class GeometricalMeasurementSystem(BaseModel):
+class GeometricalMeasurementSystems(BaseModel):
     """
     A class representing a single Geometrical Measurement System object in the
     Seshat API.
@@ -1420,7 +1420,7 @@ class GeometricalMeasurementSystem(BaseModel):
     pass
 
 
-class OtherMeasurementSystem(BaseModel):
+class OtherMeasurementSystems(BaseModel):
     """
     A class representing a single Other Measurement System object in the
     Seshat API.
@@ -1440,7 +1440,7 @@ class OtherMeasurementSystem(BaseModel):
     pass
 
 
-class DebtAndCreditStructure(BaseModel):
+class DebtAndCreditStructures(BaseModel):
     """
     A class representing a single Debt and Credit Structure object in the
     Seshat API.
@@ -1460,7 +1460,7 @@ class DebtAndCreditStructure(BaseModel):
     pass
 
 
-class StoreOfWealth(BaseModel):
+class StoresOfWealth(BaseModel):
     """
     A class representing a single Store of Wealth object in the Seshat API.
 
@@ -1479,7 +1479,7 @@ class StoreOfWealth(BaseModel):
     pass
 
 
-class SourceOfSupport(BaseModel):
+class SourcesOfSupport(BaseModel):
     """
     A class representing a single Source of Support object in the Seshat API.
 
@@ -1498,7 +1498,7 @@ class SourceOfSupport(BaseModel):
     pass
 
 
-class OccupationalComplexity(BaseModel):
+class OccupationalComplexities(BaseModel):
     """
     A class representing a single Occupational Complexity object in the Seshat
     API.
@@ -1518,7 +1518,7 @@ class OccupationalComplexity(BaseModel):
     pass
 
 
-class SpecialPurposeHouse(BaseModel):
+class SpecialPurposeHouses(BaseModel):
     """
     A class representing a single Special Purpose House object in the Seshat
     API.
@@ -1538,7 +1538,7 @@ class SpecialPurposeHouse(BaseModel):
     pass
 
 
-class OtherSpecialPurposeSite(BaseModel):
+class OtherSpecialPurposeSites(BaseModel):
     """
     A class representing a single Other Special Purpose Site object in the
     Seshat API.
@@ -1558,7 +1558,7 @@ class OtherSpecialPurposeSite(BaseModel):
     pass
 
 
-class LargestCommunicationDistance(BaseModel):
+class LargestCommunicationDistances(BaseModel):
     """
     A class representing a single Largest Communication Distance object in the
     Seshat API.
@@ -1578,7 +1578,7 @@ class LargestCommunicationDistance(BaseModel):
     pass
 
 
-class FastestIndividualCommunication(BaseModel):
+class FastestIndividualCommunications(BaseModel):
     """
     A class representing a single Fastest Individual Communication object in
     the Seshat API.

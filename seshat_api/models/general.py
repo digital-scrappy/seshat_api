@@ -1,36 +1,36 @@
 from ._base import BaseModel
 
 __all__ = [
-    "PolityResearchAssistant",
-    "PolityOriginalName",
-    "PolityAlternativeName",
-    "PolityDuration",
-    "PolityPeakYear",
-    "PolityDegreeOfCentralization",
-    "PolitySuprapolity",
-    "PolityUTMTimezone",
-    "PolityCapital",
-    "PolityLanguage",
-    "PolityLinguisticFamily",
-    "PolityLanguageGenus",
-    "PolityReligionGenus",
-    "PolityReligionFamily",
-    "PolityReligion",
-    "PolityRelationshipToPrecedingEntity",
-    "PolityPrecedingEntity",
-    "PolitySucceedingEntity",
-    "PolitySupraculturalEntity",
-    "PolityScaleOfSupraculturalInteraction",
-    "PolityAlternateReligionGenus",
-    "PolityAlternateReligionFamily",
-    "PolityAlternateReligion",
-    "PolityExpert",
-    "PolityEditor",
-    "PolityReligiousTradition",
+    "PolityResearchAssistants",
+    "PolityOriginalNames",
+    "PolityAlternativeNames",
+    "PolityDurations",
+    "PolityPeakYears",
+    "PolityDegreeOfCentralizations",
+    "PolitySuprapolities",
+    "PolityUTMTimezones",
+    "PolityCapitals",
+    "PolityLanguages",
+    "PolityLinguisticFamilies",
+    "PolityLanguageGenuses",
+    "PolityReligionGenuses",
+    "PolityReligionFamilies",
+    "PolityReligions",
+    "PolityRelationshipToPrecedingEntities",
+    "PolityPrecedingEntities",
+    "PolitySucceedingEntities",
+    "PolitySupraculturalEntities",
+    "PolityScaleOfSupraculturalInteractions",
+    "PolityAlternateReligionGenuses",
+    "PolityAlternateReligionFamilies",
+    "PolityAlternateReligions",
+    "PolityExperts",
+    "PolityEditors",
+    "PolityReligiousTraditions",
 ]
 
 
-class PolityResearchAssistant(BaseModel):
+class PolityResearchAssistants(BaseModel):
     """
     A class representing a single Polity Research Assistant object in the
     Seshat API.
@@ -50,7 +50,7 @@ class PolityResearchAssistant(BaseModel):
     pass
 
 
-class PolityOriginalName(BaseModel):
+class PolityOriginalNames(BaseModel):
     """
     A class representing a single Polity Original Name object in the Seshat
     API.
@@ -70,7 +70,7 @@ class PolityOriginalName(BaseModel):
     pass
 
 
-class PolityAlternativeName(BaseModel):
+class PolityAlternativeNames(BaseModel):
     """
     A class representing a single Polity Alternative Name object in the Seshat
     API.
@@ -90,7 +90,7 @@ class PolityAlternativeName(BaseModel):
     pass
 
 
-class PolityDuration(BaseModel):
+class PolityDurations(BaseModel):
     """
     A class representing a single Polity Duration object in the Seshat API.
 
@@ -109,7 +109,7 @@ class PolityDuration(BaseModel):
     pass
 
 
-class PolityPeakYear(BaseModel):
+class PolityPeakYears(BaseModel):
     """
     A class representing a single Polity Peak Year object in the Seshat API.
 
@@ -128,7 +128,7 @@ class PolityPeakYear(BaseModel):
     pass
 
 
-class PolityDegreeOfCentralization(BaseModel):
+class PolityDegreeOfCentralizations(BaseModel):
     """
     A class representing a single Polity Degree of Centralization object in the
     Seshat API.
@@ -148,7 +148,7 @@ class PolityDegreeOfCentralization(BaseModel):
     pass
 
 
-class PolitySuprapolity(BaseModel):
+class PolitySuprapolities(BaseModel):
     """
     A class representing a single Polity Suprapolity object in the Seshat API.
 
@@ -167,7 +167,7 @@ class PolitySuprapolity(BaseModel):
     pass
 
 
-class PolityUTMTimezone(BaseModel):
+class PolityUTMTimezones(BaseModel):
     """
     A class representing a single Polity UTM Timezone object in the Seshat API.
 
@@ -186,7 +186,7 @@ class PolityUTMTimezone(BaseModel):
     pass
 
 
-class PolityCapital(BaseModel):
+class PolityCapitals(BaseModel):
     """
     A class representing a single Polity Capital object in the Seshat API.
 
@@ -205,7 +205,7 @@ class PolityCapital(BaseModel):
     pass
 
 
-class PolityLanguage(BaseModel):
+class PolityLanguages(BaseModel):
     """
     A class representing a single Polity Language object in the Seshat API.
 
@@ -224,7 +224,7 @@ class PolityLanguage(BaseModel):
     pass
 
 
-class PolityLinguisticFamily(BaseModel):
+class PolityLinguisticFamilies(BaseModel):
     """
     A class representing a single Polity Linguistic Family object in the Seshat
     API.
@@ -244,7 +244,7 @@ class PolityLinguisticFamily(BaseModel):
     pass
 
 
-class PolityLanguageGenus(BaseModel):
+class PolityLanguageGenuses(BaseModel):
     """
     A class representing a single Polity Language Genus object in the Seshat
     API.
@@ -264,7 +264,7 @@ class PolityLanguageGenus(BaseModel):
     pass
 
 
-class PolityReligionGenus(BaseModel):
+class PolityReligionGenuses(BaseModel):
     """
     A class representing a single Polity Religion Genus object in the Seshat
     API.
@@ -284,7 +284,7 @@ class PolityReligionGenus(BaseModel):
     pass
 
 
-class PolityReligionFamily(BaseModel):
+class PolityReligionFamilies(BaseModel):
     """
     A class representing a single Polity Religion Family object in the Seshat
     API.
@@ -304,7 +304,7 @@ class PolityReligionFamily(BaseModel):
     pass
 
 
-class PolityReligion(BaseModel):
+class PolityReligions(BaseModel):
     """
     A class representing a single Polity Religion object in the Seshat API.
 
@@ -323,7 +323,7 @@ class PolityReligion(BaseModel):
     pass
 
 
-class PolityRelationshipToPrecedingEntity(BaseModel):
+class PolityRelationshipToPrecedingEntities(BaseModel):
     """
     A class representing a single Polity Relationship to Preceding Entity
     object in the Seshat API.
@@ -343,7 +343,7 @@ class PolityRelationshipToPrecedingEntity(BaseModel):
     pass
 
 
-class PolityPrecedingEntity(BaseModel):
+class PolityPrecedingEntities(BaseModel):
     """
     A class representing a single Polity Preceding Entity object in the Seshat
     API.
@@ -363,7 +363,7 @@ class PolityPrecedingEntity(BaseModel):
     pass
 
 
-class PolitySucceedingEntity(BaseModel):
+class PolitySucceedingEntities(BaseModel):
     """
     A class representing a single Polity Succeeding Entity object in the Seshat
     API.
@@ -383,7 +383,7 @@ class PolitySucceedingEntity(BaseModel):
     pass
 
 
-class PolitySupraculturalEntity(BaseModel):
+class PolitySupraculturalEntities(BaseModel):
     """
     A class representing a single Polity Supracultural Entity object in the
     Seshat API.
@@ -403,7 +403,7 @@ class PolitySupraculturalEntity(BaseModel):
     pass
 
 
-class PolityScaleOfSupraculturalInteraction(BaseModel):
+class PolityScaleOfSupraculturalInteractions(BaseModel):
     """
     A class representing a single Polity Scale of Supracultural Interaction
     object in the Seshat API.
@@ -423,7 +423,7 @@ class PolityScaleOfSupraculturalInteraction(BaseModel):
     pass
 
 
-class PolityAlternateReligionGenus(BaseModel):
+class PolityAlternateReligionGenuses(BaseModel):
     """
     A class representing a single Polity Alternate Religion Genus object in the
     Seshat API.
@@ -443,7 +443,7 @@ class PolityAlternateReligionGenus(BaseModel):
     pass
 
 
-class PolityAlternateReligionFamily(BaseModel):
+class PolityAlternateReligionFamilies(BaseModel):
     """
     A class representing a single Polity Alternate Religion Family object in
     the Seshat API.
@@ -463,7 +463,7 @@ class PolityAlternateReligionFamily(BaseModel):
     pass
 
 
-class PolityAlternateReligion(BaseModel):
+class PolityAlternateReligions(BaseModel):
     """
     A class representing a single Polity Alternate Religion object in the
     Seshat API.
@@ -483,7 +483,7 @@ class PolityAlternateReligion(BaseModel):
     pass
 
 
-class PolityExpert(BaseModel):
+class PolityExperts(BaseModel):
     """
     A class representing a single Polity Expert object in the Seshat API.
 
@@ -502,7 +502,7 @@ class PolityExpert(BaseModel):
     pass
 
 
-class PolityEditor(BaseModel):
+class PolityEditors(BaseModel):
     """
     A class representing a single Polity Editor object in the Seshat API.
 
@@ -521,7 +521,7 @@ class PolityEditor(BaseModel):
     pass
 
 
-class PolityReligiousTradition(BaseModel):
+class PolityReligiousTraditions(BaseModel):
     """
     A class representing a single Polity Religious Tradition object in the
     Seshat API.

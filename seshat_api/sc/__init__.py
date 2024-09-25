@@ -1,84 +1,84 @@
 from ..base_model import BaseAPICall
 
 from ..models import (
-    ResearchAssistant,
-    PolityTerritory,
-    PolityPopulation,
-    PopulationOfTheLargestSettlement,
-    SettlementHierarchy,
-    AdministrativeLevel,
-    ReligiousLevel,
-    MilitaryLevel,
-    ProfessionalMilitaryOfficer,
-    ProfessionalSoldier,
-    ProfessionalPriesthood,
-    FullTimeBureaucrat,
-    ExaminationSystem,
-    MeritPromotion,
-    SpecializedGovernmentBuilding,
-    FormalLegalCode,
-    Judge,
-    Court,
-    ProfessionalLawyer,
-    IrrigationSystem,
-    DrinkingWaterSupply,
-    Market,
-    FoodStorageSite,
-    Road,
-    Bridge,
-    Canal,
-    Port,
-    MineOrQuarry,
-    MnemonicDevice,
-    NonwrittenRecord,
-    WrittenRecord,
-    Script,
-    NonPhoneticWriting,
-    PhoneticAlphabeticWriting,
-    ListsTablesAndClassification,
-    Calendar,
-    SacredText,
-    ReligiousLiterature,
-    PracticalLiterature,
-    History,
-    Philosophy,
-    ScientificLiterature,
-    Fiction,
-    Article,
-    Token,
-    PreciousMetal,
-    ForeignCoin,
-    IndigenousCoin,
-    PaperCurrency,
-    Courier,
-    PostalStation,
-    GeneralPostalService,
-    CommunalBuilding,
-    UtilitarianPublicBuilding,
-    SymbolicBuilding,
-    EntertainmentBuilding,
-    KnowledgeOrInformationBuilding,
-    OtherUtilitarianPublicBuilding,
-    SpecialPurposeSite,
-    CeremonialSite,
-    BurialSite,
-    TradingEmporium,
-    Enclosure,
-    LengthMeasurementSystem,
-    AreaMeasurementSystem,
-    VolumeMeasurementSystem,
-    WeightMeasurementSystem,
-    TimeMeasurementSystem,
-    GeometricalMeasurementSystem,
-    OtherMeasurementSystem,
-    DebtAndCreditStructure,
-    StoreOfWealth,
-    SourceOfSupport,
-    OccupationalComplexity,
-    SpecialPurposeHouse,
-    OtherSpecialPurposeSite,
-    LargestCommunicationDistance,
-    FastestIndividualCommunication,
+    ResearchAssistants,
+    PolityTerritories,
+    PolityPopulations,
+    PopulationOfTheLargestSettlements,
+    SettlementHierarchies,
+    AdministrativeLevels,
+    ReligiousLevels,
+    MilitaryLevels,
+    ProfessionalMilitaryOfficers,
+    ProfessionalSoldiers,
+    ProfessionalPriesthoods,
+    FullTimeBureaucrats,
+    ExaminationSystems,
+    MeritPromotions,
+    SpecializedGovernmentBuildings,
+    FormalLegalCodes,
+    Judges,
+    Courts,
+    ProfessionalLawyers,
+    IrrigationSystems,
+    DrinkingWaterSupplies,
+    Markets,
+    FoodStorageSites,
+    Roads,
+    Bridges,
+    Canals,
+    Ports,
+    MinesOrQuarries,
+    MnemonicDevices,
+    NonwrittenRecords,
+    WrittenRecords,
+    Scripts,
+    NonPhoneticWritings,
+    PhoneticAlphabeticWritings,
+    ListsTablesAndClassifications,
+    Calendars,
+    SacredTexts,
+    ReligiousLiteratures,
+    PracticalLiteratures,
+    Histories,
+    Philosophies,
+    ScientificLiteratures,
+    Fictions,
+    Articles,
+    Tokens,
+    PreciousMetals,
+    ForeignCoins,
+    IndigenousCoins,
+    PaperCurrencies,
+    Couriers,
+    PostalStations,
+    GeneralPostalServices,
+    CommunalBuildings,
+    UtilitarianPublicBuildings,
+    SymbolicBuildings,
+    EntertainmentBuildings,
+    KnowledgeOrInformationBuildings,
+    OtherUtilitarianPublicBuildings,
+    SpecialPurposeSites,
+    CeremonialSites,
+    BurialSites,
+    TradingEmporia,
+    Enclosures,
+    LengthMeasurementSystems,
+    AreaMeasurementSystems,
+    VolumeMeasurementSystems,
+    WeightMeasurementSystems,
+    TimeMeasurementSystems,
+    GeometricalMeasurementSystems,
+    OtherMeasurementSystems,
+    DebtAndCreditStructures,
+    StoresOfWealth,
+    SourcesOfSupport,
+    OccupationalComplexities,
+    SpecialPurposeHouses,
+    OtherSpecialPurposeSites,
+    LargestCommunicationDistances,
+    FastestIndividualCommunications,
 )
 
 __all__ = [
@@ -181,7 +181,7 @@ class ResearchAssistants(BaseAPICall):
     >>> research_assistants = ResearchAssistants(client)
     """
     ENDPOINT = "/sc/research-assistants"
-    SINGLE_MODEL = ResearchAssistant
+    SINGLE_MODEL = ResearchAssistants
 
 
 class PolityTerritories(BaseAPICall):
@@ -202,7 +202,7 @@ class PolityTerritories(BaseAPICall):
     >>> polity_territories = PolityTerritories(client)
     """
     ENDPOINT = "/sc/polity-territories"
-    SINGLE_MODEL = PolityTerritory
+    SINGLE_MODEL = PolityTerritories
 
 
 class PolityPopulations(BaseAPICall):
@@ -223,7 +223,7 @@ class PolityPopulations(BaseAPICall):
     >>> polity_populations = PolityPopulations(client)
     """
     ENDPOINT = "/sc/polity-populations"
-    SINGLE_MODEL = PolityPopulation
+    SINGLE_MODEL = PolityPopulations
 
 
 class PopulationOfTheLargestSettlements(BaseAPICall):
@@ -244,7 +244,7 @@ class PopulationOfTheLargestSettlements(BaseAPICall):
     >>> population_of_the_largest_settlements = PopulationOfTheLargestSettlements(client)
     """
     ENDPOINT = "/sc/population-of-the-largest-settlements"
-    SINGLE_MODEL = PopulationOfTheLargestSettlement
+    SINGLE_MODEL = PopulationOfTheLargestSettlements
 
 
 class SettlementHierarchies(BaseAPICall):
@@ -265,7 +265,7 @@ class SettlementHierarchies(BaseAPICall):
     >>> settlement_hierarchies = SettlementHierarchies(client)
     """
     ENDPOINT = "/sc/settlement-hierarchies"
-    SINGLE_MODEL = SettlementHierarchy
+    SINGLE_MODEL = SettlementHierarchies
 
 
 class AdministrativeLevels(BaseAPICall):
@@ -286,7 +286,7 @@ class AdministrativeLevels(BaseAPICall):
     >>> administrative_levels = AdministrativeLevels(client)
     """
     ENDPOINT = "/sc/administrative-levels"
-    SINGLE_MODEL = AdministrativeLevel
+    SINGLE_MODEL = AdministrativeLevels
 
 
 class ReligiousLevels(BaseAPICall):
@@ -307,7 +307,7 @@ class ReligiousLevels(BaseAPICall):
     >>> religious_levels = ReligiousLevels(client)
     """
     ENDPOINT = "/sc/religious-levels"
-    SINGLE_MODEL = ReligiousLevel
+    SINGLE_MODEL = ReligiousLevels
 
 
 class MilitaryLevels(BaseAPICall):
@@ -328,7 +328,7 @@ class MilitaryLevels(BaseAPICall):
     >>> military_levels = MilitaryLevels(client)
     """
     ENDPOINT = "/sc/military-levels"
-    SINGLE_MODEL = MilitaryLevel
+    SINGLE_MODEL = MilitaryLevels
 
 
 class ProfessionalMilitaryOfficers(BaseAPICall):
@@ -349,7 +349,7 @@ class ProfessionalMilitaryOfficers(BaseAPICall):
     >>> professional_military_officers = ProfessionalMilitaryOfficers(client)
     """
     ENDPOINT = "/sc/professional-military-officers"
-    SINGLE_MODEL = ProfessionalMilitaryOfficer
+    SINGLE_MODEL = ProfessionalMilitaryOfficers
 
 
 class ProfessionalSoldiers(BaseAPICall):
@@ -370,7 +370,7 @@ class ProfessionalSoldiers(BaseAPICall):
     >>> professional_soldiers = ProfessionalSoldiers(client)
     """
     ENDPOINT = "/sc/professional-soldiers"
-    SINGLE_MODEL = ProfessionalSoldier
+    SINGLE_MODEL = ProfessionalSoldiers
 
 
 class ProfessionalPriesthoods(BaseAPICall):
@@ -391,7 +391,7 @@ class ProfessionalPriesthoods(BaseAPICall):
     >>> professional_priesthoods = ProfessionalPriesthoods(client)
     """
     ENDPOINT = "/sc/professional-priesthoods"
-    SINGLE_MODEL = ProfessionalPriesthood
+    SINGLE_MODEL = ProfessionalPriesthoods
 
 
 class FullTimeBureaucrats(BaseAPICall):
@@ -412,7 +412,7 @@ class FullTimeBureaucrats(BaseAPICall):
     >>> full_time_bureaucrats = FullTimeBureaucrats(client)
     """
     ENDPOINT = "/sc/full-time-bureaucrats"
-    SINGLE_MODEL = FullTimeBureaucrat
+    SINGLE_MODEL = FullTimeBureaucrats
 
 
 class ExaminationSystems(BaseAPICall):
@@ -433,7 +433,7 @@ class ExaminationSystems(BaseAPICall):
     >>> examination_systems = ExaminationSystems(client)
     """
     ENDPOINT = "/sc/examination-systems"
-    SINGLE_MODEL = ExaminationSystem
+    SINGLE_MODEL = ExaminationSystems
 
 
 class MeritPromotions(BaseAPICall):
@@ -454,7 +454,7 @@ class MeritPromotions(BaseAPICall):
     >>> merit_promotions = MeritPromotions(client)
     """
     ENDPOINT = "/sc/merit-promotions"
-    SINGLE_MODEL = MeritPromotion
+    SINGLE_MODEL = MeritPromotions
 
 
 class SpecializedGovernmentBuildings(BaseAPICall):
@@ -475,7 +475,7 @@ class SpecializedGovernmentBuildings(BaseAPICall):
     >>> specialized_government_buildings = SpecializedGovernmentBuildings(client)
     """
     ENDPOINT = "/sc/specialized-government-buildings"
-    SINGLE_MODEL = SpecializedGovernmentBuilding
+    SINGLE_MODEL = SpecializedGovernmentBuildings
 
 
 class FormalLegalCodes(BaseAPICall):
@@ -496,7 +496,7 @@ class FormalLegalCodes(BaseAPICall):
     >>> formal_legal_codes = FormalLegalCodes(client)
     """
     ENDPOINT = "/sc/formal-legal-codes"
-    SINGLE_MODEL = FormalLegalCode
+    SINGLE_MODEL = FormalLegalCodes
 
 
 class Judges(BaseAPICall):
@@ -516,7 +516,7 @@ class Judges(BaseAPICall):
     >>> judges = Judges(client)
     """
     ENDPOINT = "/sc/judges"
-    SINGLE_MODEL = Judge
+    SINGLE_MODEL = Judges
 
 
 class Courts(BaseAPICall):
@@ -536,7 +536,7 @@ class Courts(BaseAPICall):
     >>> courts = Courts(client)
     """
     ENDPOINT = "/sc/courts"
-    SINGLE_MODEL = Court
+    SINGLE_MODEL = Courts
 
 
 class ProfessionalLawyers(BaseAPICall):
@@ -557,7 +557,7 @@ class ProfessionalLawyers(BaseAPICall):
     >>> professional_lawyers = ProfessionalLawyers(client)
     """
     ENDPOINT = "/sc/professional-lawyers"
-    SINGLE_MODEL = ProfessionalLawyer
+    SINGLE_MODEL = ProfessionalLawyers
 
 
 class IrrigationSystems(BaseAPICall):
@@ -578,7 +578,7 @@ class IrrigationSystems(BaseAPICall):
     >>> irrigation_systems = IrrigationSystems(client)
     """
     ENDPOINT = "/sc/irrigation-systems"
-    SINGLE_MODEL = IrrigationSystem
+    SINGLE_MODEL = IrrigationSystems
 
 
 class DrinkingWaterSupplies(BaseAPICall):
@@ -599,7 +599,7 @@ class DrinkingWaterSupplies(BaseAPICall):
     >>> drinking_water_supplies = DrinkingWaterSupplies(client)
     """
     ENDPOINT = "/sc/drinking-water-supplies"
-    SINGLE_MODEL = DrinkingWaterSupply
+    SINGLE_MODEL = DrinkingWaterSupplies
 
 
 class Markets(BaseAPICall):
@@ -619,7 +619,7 @@ class Markets(BaseAPICall):
     >>> markets = Markets(client)
     """
     ENDPOINT = "/sc/markets"
-    SINGLE_MODEL = Market
+    SINGLE_MODEL = Markets
 
 
 class FoodStorageSites(BaseAPICall):
@@ -640,7 +640,7 @@ class FoodStorageSites(BaseAPICall):
     >>> food_storage_sites = FoodStorageSites(client)
     """
     ENDPOINT = "/sc/food-storage-sites"
-    SINGLE_MODEL = FoodStorageSite
+    SINGLE_MODEL = FoodStorageSites
 
 
 class Roads(BaseAPICall):
@@ -660,7 +660,7 @@ class Roads(BaseAPICall):
     >>> roads = Roads(client)
     """
     ENDPOINT = "/sc/roads"
-    SINGLE_MODEL = Road
+    SINGLE_MODEL = Roads
 
 
 class Bridges(BaseAPICall):
@@ -680,7 +680,7 @@ class Bridges(BaseAPICall):
     >>> bridges = Bridges(client)
     """
     ENDPOINT = "/sc/bridges"
-    SINGLE_MODEL = Bridge
+    SINGLE_MODEL = Bridges
 
 
 class Canals(BaseAPICall):
@@ -700,7 +700,7 @@ class Canals(BaseAPICall):
     >>> canals = Canals(client)
     """
     ENDPOINT = "/sc/canals"
-    SINGLE_MODEL = Canal
+    SINGLE_MODEL = Canals
 
 
 class Ports(BaseAPICall):
@@ -720,7 +720,7 @@ class Ports(BaseAPICall):
     >>> ports = Ports(client)
     """
     ENDPOINT = "/sc/ports"
-    SINGLE_MODEL = Port
+    SINGLE_MODEL = Ports
 
 
 class MinesOrQuarries(BaseAPICall):
@@ -741,7 +741,7 @@ class MinesOrQuarries(BaseAPICall):
     >>> mines_or_quarries = MinesOrQuarries(client)
     """
     ENDPOINT = "/sc/mines-or-quarries"
-    SINGLE_MODEL = MineOrQuarry
+    SINGLE_MODEL = MinesOrQuarries
 
 
 class MnemonicDevices(BaseAPICall):
@@ -762,7 +762,7 @@ class MnemonicDevices(BaseAPICall):
     >>> mnemonic_devices = MnemonicDevices(client)
     """
     ENDPOINT = "/sc/mnemonic-devices"
-    SINGLE_MODEL = MnemonicDevice
+    SINGLE_MODEL = MnemonicDevices
 
 
 class NonwrittenRecords(BaseAPICall):
@@ -783,7 +783,7 @@ class NonwrittenRecords(BaseAPICall):
     >>> nonwritten_records = NonwrittenRecords(client)
     """
     ENDPOINT = "/sc/nonwritten-records"
-    SINGLE_MODEL = NonwrittenRecord
+    SINGLE_MODEL = NonwrittenRecords
 
 
 class WrittenRecords(BaseAPICall):
@@ -804,7 +804,7 @@ class WrittenRecords(BaseAPICall):
     >>> written_records = WrittenRecords(client)
     """
     ENDPOINT = "/sc/written-records"
-    SINGLE_MODEL = WrittenRecord
+    SINGLE_MODEL = WrittenRecords
 
 
 class Scripts(BaseAPICall):
@@ -824,7 +824,7 @@ class Scripts(BaseAPICall):
     >>> scripts = Scripts(client)
     """
     ENDPOINT = "/sc/scripts"
-    SINGLE_MODEL = Script
+    SINGLE_MODEL = Scripts
 
 
 class NonPhoneticWritings(BaseAPICall):
@@ -845,7 +845,7 @@ class NonPhoneticWritings(BaseAPICall):
     >>> non_phonetic_writings = NonPhoneticWritings(client)
     """
     ENDPOINT = "/sc/non-phonetic-writings"
-    SINGLE_MODEL = NonPhoneticWriting
+    SINGLE_MODEL = NonPhoneticWritings
 
 
 class PhoneticAlphabeticWritings(BaseAPICall):
@@ -866,7 +866,7 @@ class PhoneticAlphabeticWritings(BaseAPICall):
     >>> phonetic_alphabetic_writings = PhoneticAlphabeticWritings(client)
     """
     ENDPOINT = "/sc/phonetic-alphabetic-writings"
-    SINGLE_MODEL = PhoneticAlphabeticWriting
+    SINGLE_MODEL = PhoneticAlphabeticWritings
 
 
 class ListsTablesAndClassifications(BaseAPICall):
@@ -887,7 +887,7 @@ class ListsTablesAndClassifications(BaseAPICall):
     >>> lists_tables_and_classifications = ListsTablesAndClassifications(client)
     """
     ENDPOINT = "/sc/lists-tables-and-classifications"
-    SINGLE_MODEL = ListsTablesAndClassification
+    SINGLE_MODEL = ListsTablesAndClassifications
 
 
 class Calendars(BaseAPICall):
@@ -907,7 +907,7 @@ class Calendars(BaseAPICall):
     >>> calendars = Calendars(client)
     """
     ENDPOINT = "/sc/calendars"
-    SINGLE_MODEL = Calendar
+    SINGLE_MODEL = Calendars
 
 
 class SacredTexts(BaseAPICall):
@@ -927,7 +927,7 @@ class SacredTexts(BaseAPICall):
     >>> sacred_texts = SacredTexts(client)
     """
     ENDPOINT = "/sc/sacred-texts"
-    SINGLE_MODEL = SacredText
+    SINGLE_MODEL = SacredTexts
 
 
 class ReligiousLiteratures(BaseAPICall):
@@ -948,7 +948,7 @@ class ReligiousLiteratures(BaseAPICall):
     >>> religious_literatures = ReligiousLiteratures(client)
     """
     ENDPOINT = "/sc/religious-literatures"
-    SINGLE_MODEL = ReligiousLiterature
+    SINGLE_MODEL = ReligiousLiteratures
 
 
 class PracticalLiteratures(BaseAPICall):
@@ -969,7 +969,7 @@ class PracticalLiteratures(BaseAPICall):
     >>> practical_literatures = PracticalLiteratures(client)
     """
     ENDPOINT = "/sc/practical-literatures"
-    SINGLE_MODEL = PracticalLiterature
+    SINGLE_MODEL = PracticalLiteratures
 
 
 class Histories(BaseAPICall):
@@ -989,7 +989,7 @@ class Histories(BaseAPICall):
     >>> histories = Histories(client)
     """
     ENDPOINT = "/sc/histories"
-    SINGLE_MODEL = History
+    SINGLE_MODEL = Histories
 
 
 class Philosophies(BaseAPICall):
@@ -1009,7 +1009,7 @@ class Philosophies(BaseAPICall):
     >>> philosophies = Philosophies(client)
     """
     ENDPOINT = "/sc/philosophies"
-    SINGLE_MODEL = Philosophy
+    SINGLE_MODEL = Philosophies
 
 
 class ScientificLiteratures(BaseAPICall):
@@ -1030,7 +1030,7 @@ class ScientificLiteratures(BaseAPICall):
     >>> scientific_literatures = ScientificLiteratures(client)
     """
     ENDPOINT = "/sc/scientific-literatures"
-    SINGLE_MODEL = ScientificLiterature
+    SINGLE_MODEL = ScientificLiteratures
 
 
 class Fictions(BaseAPICall):
@@ -1050,7 +1050,7 @@ class Fictions(BaseAPICall):
     >>> fictions = Fictions(client)
     """
     ENDPOINT = "/sc/fictions"
-    SINGLE_MODEL = Fiction
+    SINGLE_MODEL = Fictions
 
 
 class Articles(BaseAPICall):
@@ -1070,7 +1070,7 @@ class Articles(BaseAPICall):
     >>> articles = Articles(client)
     """
     ENDPOINT = "/sc/articles"
-    SINGLE_MODEL = Article
+    SINGLE_MODEL = Articles
 
 
 class Tokens(BaseAPICall):
@@ -1090,7 +1090,7 @@ class Tokens(BaseAPICall):
     >>> tokens = Tokens(client)
     """
     ENDPOINT = "/sc/tokens"
-    SINGLE_MODEL = Token
+    SINGLE_MODEL = Tokens
 
 
 class PreciousMetals(BaseAPICall):
@@ -1111,7 +1111,7 @@ class PreciousMetals(BaseAPICall):
     >>> precious_metals = PreciousMetals(client)
     """
     ENDPOINT = "/sc/precious-metals"
-    SINGLE_MODEL = PreciousMetal
+    SINGLE_MODEL = PreciousMetals
 
 
 class ForeignCoins(BaseAPICall):
@@ -1131,7 +1131,7 @@ class ForeignCoins(BaseAPICall):
     >>> foreign_coins = ForeignCoins(client)
     """
     ENDPOINT = "/sc/foreign-coins"
-    SINGLE_MODEL = ForeignCoin
+    SINGLE_MODEL = ForeignCoins
 
 
 class IndigenousCoins(BaseAPICall):
@@ -1152,7 +1152,7 @@ class IndigenousCoins(BaseAPICall):
     >>> indigenous_coins = IndigenousCoins(client)
     """
     ENDPOINT = "/sc/indigenous-coins"
-    SINGLE_MODEL = IndigenousCoin
+    SINGLE_MODEL = IndigenousCoins
 
 
 class PaperCurrencies(BaseAPICall):
@@ -1173,7 +1173,7 @@ class PaperCurrencies(BaseAPICall):
     >>> paper_currencies = PaperCurrencies(client)
     """
     ENDPOINT = "/sc/paper-currencies"
-    SINGLE_MODEL = PaperCurrency
+    SINGLE_MODEL = PaperCurrencies
 
 
 class Couriers(BaseAPICall):
@@ -1193,7 +1193,7 @@ class Couriers(BaseAPICall):
     >>> couriers = Couriers(client)
     """
     ENDPOINT = "/sc/couriers"
-    SINGLE_MODEL = Courier
+    SINGLE_MODEL = Couriers
 
 
 class PostalStations(BaseAPICall):
@@ -1214,7 +1214,7 @@ class PostalStations(BaseAPICall):
     >>> postal_stations = PostalStations(client)
     """
     ENDPOINT = "/sc/postal-stations"
-    SINGLE_MODEL = PostalStation
+    SINGLE_MODEL = PostalStations
 
 
 class GeneralPostalServices(BaseAPICall):
@@ -1235,7 +1235,7 @@ class GeneralPostalServices(BaseAPICall):
     >>> general_postal_services = GeneralPostalServices(client)
     """
     ENDPOINT = "/sc/general-postal-services"
-    SINGLE_MODEL = GeneralPostalService
+    SINGLE_MODEL = GeneralPostalServices
 
 
 class CommunalBuildings(BaseAPICall):
@@ -1256,7 +1256,7 @@ class CommunalBuildings(BaseAPICall):
     >>> communal_buildings = CommunalBuildings(client)
     """
     ENDPOINT = "/sc/communal-buildings"
-    SINGLE_MODEL = CommunalBuilding
+    SINGLE_MODEL = CommunalBuildings
 
 
 class UtilitarianPublicBuildings(BaseAPICall):
@@ -1277,7 +1277,7 @@ class UtilitarianPublicBuildings(BaseAPICall):
     >>> utilitarian_public_buildings = UtilitarianPublicBuildings(client)
     """
     ENDPOINT = "/sc/utilitarian-public-buildings"
-    SINGLE_MODEL = UtilitarianPublicBuilding
+    SINGLE_MODEL = UtilitarianPublicBuildings
 
 
 class SymbolicBuildings(BaseAPICall):
@@ -1298,7 +1298,7 @@ class SymbolicBuildings(BaseAPICall):
     >>> symbolic_buildings = SymbolicBuildings(client)
     """
     ENDPOINT = "/sc/symbolic-buildings"
-    SINGLE_MODEL = SymbolicBuilding
+    SINGLE_MODEL = SymbolicBuildings
 
 
 class EntertainmentBuildings(BaseAPICall):
@@ -1319,7 +1319,7 @@ class EntertainmentBuildings(BaseAPICall):
     >>> entertainment_buildings = EntertainmentBuildings(client)
     """
     ENDPOINT = "/sc/entertainment-buildings"
-    SINGLE_MODEL = EntertainmentBuilding
+    SINGLE_MODEL = EntertainmentBuildings
 
 
 class KnowledgeOrInformationBuildings(BaseAPICall):
@@ -1340,7 +1340,7 @@ class KnowledgeOrInformationBuildings(BaseAPICall):
     >>> knowledge_or_information_buildings = KnowledgeOrInformationBuildings(client)
     """
     ENDPOINT = "/sc/knowledge-or-information-buildings"
-    SINGLE_MODEL = KnowledgeOrInformationBuilding
+    SINGLE_MODEL = KnowledgeOrInformationBuildings
 
 
 class OtherUtilitarianPublicBuildings(BaseAPICall):
@@ -1361,7 +1361,7 @@ class OtherUtilitarianPublicBuildings(BaseAPICall):
     >>> other_utilitarian_public_buildings = OtherUtilitarianPublicBuildings(client)
     """
     ENDPOINT = "/sc/other-utilitarian-public-buildings"
-    SINGLE_MODEL = OtherUtilitarianPublicBuilding
+    SINGLE_MODEL = OtherUtilitarianPublicBuildings
 
 
 class SpecialPurposeSites(BaseAPICall):
@@ -1382,7 +1382,7 @@ class SpecialPurposeSites(BaseAPICall):
     >>> special_purpose_sites = SpecialPurposeSites(client)
     """
     ENDPOINT = "/sc/special-purpose-sites"
-    SINGLE_MODEL = SpecialPurposeSite
+    SINGLE_MODEL = SpecialPurposeSites
 
 
 class CeremonialSites(BaseAPICall):
@@ -1403,7 +1403,7 @@ class CeremonialSites(BaseAPICall):
     >>> ceremonial_sites = CeremonialSites(client)
     """
     ENDPOINT = "/sc/ceremonial-sites"
-    SINGLE_MODEL = CeremonialSite
+    SINGLE_MODEL = CeremonialSites
 
 
 class BurialSites(BaseAPICall):
@@ -1423,7 +1423,7 @@ class BurialSites(BaseAPICall):
     >>> burial_sites = BurialSites(client)
     """
     ENDPOINT = "/sc/burial-sites"
-    SINGLE_MODEL = BurialSite
+    SINGLE_MODEL = BurialSites
 
 
 class TradingEmporia(BaseAPICall):
@@ -1444,7 +1444,7 @@ class TradingEmporia(BaseAPICall):
     >>> trading_emporia = TradingEmporia(client)
     """
     ENDPOINT = "/sc/trading-emporia"
-    SINGLE_MODEL = TradingEmporium
+    SINGLE_MODEL = TradingEmporia
 
 
 class Enclosures(BaseAPICall):
@@ -1464,7 +1464,7 @@ class Enclosures(BaseAPICall):
     >>> enclosures = Enclosures(client)
     """
     ENDPOINT = "/sc/enclosures"
-    SINGLE_MODEL = Enclosure
+    SINGLE_MODEL = Enclosures
 
 
 class LengthMeasurementSystems(BaseAPICall):
@@ -1485,7 +1485,7 @@ class LengthMeasurementSystems(BaseAPICall):
     >>> length_measurement_systems = LengthMeasurementSystems(client)
     """
     ENDPOINT = "/sc/length-measurement-systems"
-    SINGLE_MODEL = LengthMeasurementSystem
+    SINGLE_MODEL = LengthMeasurementSystems
 
 
 class AreaMeasurementSystems(BaseAPICall):
@@ -1506,7 +1506,7 @@ class AreaMeasurementSystems(BaseAPICall):
     >>> area_measurement_systems = AreaMeasurementSystems(client)
     """
     ENDPOINT = "/sc/area-measurement-systems"
-    SINGLE_MODEL = AreaMeasurementSystem
+    SINGLE_MODEL = AreaMeasurementSystems
 
 
 class VolumeMeasurementSystems(BaseAPICall):
@@ -1527,7 +1527,7 @@ class VolumeMeasurementSystems(BaseAPICall):
     >>> volume_measurement_systems = VolumeMeasurementSystems(client)
     """
     ENDPOINT = "/sc/volume-measurement-systems"
-    SINGLE_MODEL = VolumeMeasurementSystem
+    SINGLE_MODEL = VolumeMeasurementSystems
 
 
 class WeightMeasurementSystems(BaseAPICall):
@@ -1548,7 +1548,7 @@ class WeightMeasurementSystems(BaseAPICall):
     >>> weight_measurement_systems = WeightMeasurementSystems(client)
     """
     ENDPOINT = "/sc/weight-measurement-systems"
-    SINGLE_MODEL = WeightMeasurementSystem
+    SINGLE_MODEL = WeightMeasurementSystems
 
 
 class TimeMeasurementSystems(BaseAPICall):
@@ -1569,7 +1569,7 @@ class TimeMeasurementSystems(BaseAPICall):
     >>> time_measurement_systems = TimeMeasurementSystems(client)
     """
     ENDPOINT = "/sc/time-measurement-systems"
-    SINGLE_MODEL = TimeMeasurementSystem
+    SINGLE_MODEL = TimeMeasurementSystems
 
 
 class GeometricalMeasurementSystems(BaseAPICall):
@@ -1590,7 +1590,7 @@ class GeometricalMeasurementSystems(BaseAPICall):
     >>> geometrical_measurement_systems = GeometricalMeasurementSystems(client)
     """
     ENDPOINT = "/sc/geometrical-measurement-systems"
-    SINGLE_MODEL = GeometricalMeasurementSystem
+    SINGLE_MODEL = GeometricalMeasurementSystems
 
 
 class OtherMeasurementSystems(BaseAPICall):
@@ -1611,7 +1611,7 @@ class OtherMeasurementSystems(BaseAPICall):
     >>> other_measurement_systems = OtherMeasurementSystems(client)
     """
     ENDPOINT = "/sc/other-measurement-systems"
-    SINGLE_MODEL = OtherMeasurementSystem
+    SINGLE_MODEL = OtherMeasurementSystems
 
 
 class DebtAndCreditStructures(BaseAPICall):
@@ -1632,7 +1632,7 @@ class DebtAndCreditStructures(BaseAPICall):
     >>> debt_and_credit_structures = DebtAndCreditStructures(client)
     """
     ENDPOINT = "/sc/debt-and-credit-structures"
-    SINGLE_MODEL = DebtAndCreditStructure
+    SINGLE_MODEL = DebtAndCreditStructures
 
 
 class StoresOfWealth(BaseAPICall):
@@ -1653,7 +1653,7 @@ class StoresOfWealth(BaseAPICall):
     >>> stores_of_wealth = StoresOfWealth(client)
     """
     ENDPOINT = "/sc/stores-of-wealth"
-    SINGLE_MODEL = StoreOfWealth
+    SINGLE_MODEL = StoresOfWealth
 
 
 class SourcesOfSupport(BaseAPICall):
@@ -1674,7 +1674,7 @@ class SourcesOfSupport(BaseAPICall):
     >>> sources_of_support = SourcesOfSupport(client)
     """
     ENDPOINT = "/sc/sources-of-support"
-    SINGLE_MODEL = SourceOfSupport
+    SINGLE_MODEL = SourcesOfSupport
 
 
 class OccupationalComplexities(BaseAPICall):
@@ -1695,7 +1695,7 @@ class OccupationalComplexities(BaseAPICall):
     >>> occupational_complexities = OccupationalComplexities(client)
     """
     ENDPOINT = "/sc/occupational-complexities"
-    SINGLE_MODEL = OccupationalComplexity
+    SINGLE_MODEL = OccupationalComplexities
 
 
 class SpecialPurposeHouses(BaseAPICall):
@@ -1716,7 +1716,7 @@ class SpecialPurposeHouses(BaseAPICall):
     >>> special_purpose_houses = SpecialPurposeHouses(client)
     """
     ENDPOINT = "/sc/special-purpose-houses"
-    SINGLE_MODEL = SpecialPurposeHouse
+    SINGLE_MODEL = SpecialPurposeHouses
 
 
 class OtherSpecialPurposeSites(BaseAPICall):
@@ -1737,7 +1737,7 @@ class OtherSpecialPurposeSites(BaseAPICall):
     >>> other_special_purpose_sites = OtherSpecialPurposeSites(client)
     """
     ENDPOINT = "/sc/other-special-purpose-sites"
-    SINGLE_MODEL = OtherSpecialPurposeSite
+    SINGLE_MODEL = OtherSpecialPurposeSites
 
 
 class LargestCommunicationDistances(BaseAPICall):
@@ -1758,7 +1758,7 @@ class LargestCommunicationDistances(BaseAPICall):
     >>> largest_communication_distances = LargestCommunicationDistances(client)
     """
     ENDPOINT = "/sc/largest-communication-distances"
-    SINGLE_MODEL = LargestCommunicationDistance
+    SINGLE_MODEL = LargestCommunicationDistances
 
 
 class FastestIndividualCommunications(BaseAPICall):
@@ -1779,4 +1779,4 @@ class FastestIndividualCommunications(BaseAPICall):
     >>> fastest_individual_communications = FastestIndividualCommunications(client)
     """
     ENDPOINT = "/sc/fastest-individual-communications"
-    SINGLE_MODEL = FastestIndividualCommunication
+    SINGLE_MODEL = FastestIndividualCommunications

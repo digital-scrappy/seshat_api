@@ -1,32 +1,32 @@
 from ..base_model import BaseAPICall
 
 from ..models import (
-    PolityResearchAssistant,
-    PolityOriginalName,
-    PolityAlternativeName,
-    PolityDuration,
-    PolityPeakYear,
-    PolityDegreeOfCentralization,
-    PolitySuprapolity,
-    PolityUTMTimezone,
-    PolityCapital,
-    PolityLanguage,
-    PolityLinguisticFamily,
-    PolityLanguageGenus,
-    PolityReligionGenus,
-    PolityReligionFamily,
-    PolityReligion,
-    PolityRelationshipToPrecedingEntity,
-    PolityPrecedingEntity,
-    PolitySucceedingEntity,
-    PolitySupraculturalEntity,
-    PolityScaleOfSupraculturalInteraction,
-    PolityAlternateReligionGenus,
-    PolityAlternateReligionFamily,
-    PolityAlternateReligion,
-    PolityExpert,
-    PolityEditor,
-    PolityReligiousTradition,
+    PolityResearchAssistants,
+    PolityOriginalNames,
+    PolityAlternativeNames,
+    PolityDurations,
+    PolityPeakYears,
+    PolityDegreeOfCentralizations,
+    PolitySuprapolities,
+    PolityUTMTimezones,
+    PolityCapitals,
+    PolityLanguages,
+    PolityLinguisticFamilies,
+    PolityLanguageGenuses,
+    PolityReligionGenuses,
+    PolityReligionFamilies,
+    PolityReligions,
+    PolityRelationshipToPrecedingEntities,
+    PolityPrecedingEntities,
+    PolitySucceedingEntities,
+    PolitySupraculturalEntities,
+    PolityScaleOfSupraculturalInteractions,
+    PolityAlternateReligionGenuses,
+    PolityAlternateReligionFamilies,
+    PolityAlternateReligions,
+    PolityExperts,
+    PolityEditors,
+    PolityReligiousTraditions,
 )
 
 __all__ = [
@@ -77,7 +77,7 @@ class PolityResearchAssistants(BaseAPICall):
     >>> polity_research_assistants = PolityResearchAssistants(client)
     """
     ENDPOINT = "/general/polity-research-assistants"
-    SINGLE_MODEL = PolityResearchAssistant
+    SINGLE_MODEL = PolityResearchAssistants
 
 
 class PolityOriginalNames(BaseAPICall):
@@ -98,7 +98,7 @@ class PolityOriginalNames(BaseAPICall):
     >>> polity_original_names = PolityOriginalNames(client)
     """
     ENDPOINT = "/general/polity-original-names"
-    SINGLE_MODEL = PolityOriginalName
+    SINGLE_MODEL = PolityOriginalNames
 
 
 class PolityAlternativeNames(BaseAPICall):
@@ -119,7 +119,7 @@ class PolityAlternativeNames(BaseAPICall):
     >>> polity_alternative_names = PolityAlternativeNames(client)
     """
     ENDPOINT = "/general/polity-alternative-names"
-    SINGLE_MODEL = PolityAlternativeName
+    SINGLE_MODEL = PolityAlternativeNames
 
 
 class PolityDurations(BaseAPICall):
@@ -140,7 +140,7 @@ class PolityDurations(BaseAPICall):
     >>> polity_durations = PolityDurations(client)
     """
     ENDPOINT = "/general/polity-durations"
-    SINGLE_MODEL = PolityDuration
+    SINGLE_MODEL = PolityDurations
 
 
 class PolityPeakYears(BaseAPICall):
@@ -161,7 +161,7 @@ class PolityPeakYears(BaseAPICall):
     >>> polity_peak_years = PolityPeakYears(client)
     """
     ENDPOINT = "/general/polity-peak-years"
-    SINGLE_MODEL = PolityPeakYear
+    SINGLE_MODEL = PolityPeakYears
 
 
 class PolityDegreeOfCentralizations(BaseAPICall):
@@ -182,7 +182,7 @@ class PolityDegreeOfCentralizations(BaseAPICall):
     >>> polity_degree_of_centralizations = PolityDegreeOfCentralizations(client)
     """
     ENDPOINT = "/general/polity-degree-of-centralizations"
-    SINGLE_MODEL = PolityDegreeOfCentralization
+    SINGLE_MODEL = PolityDegreeOfCentralizations
 
 
 class PolitySuprapolities(BaseAPICall):
@@ -203,7 +203,7 @@ class PolitySuprapolities(BaseAPICall):
     >>> polity_suprapolities = PolitySuprapolities(client)
     """
     ENDPOINT = "/general/polity-suprapolities"
-    SINGLE_MODEL = PolitySuprapolity
+    SINGLE_MODEL = PolitySuprapolities
 
 
 class PolityUTMTimezones(BaseAPICall):
@@ -224,7 +224,7 @@ class PolityUTMTimezones(BaseAPICall):
     >>> polity_utm_timezones = PolityUTMTimezones(client)
     """
     ENDPOINT = "/general/polity-utm-timezones"
-    SINGLE_MODEL = PolityUTMTimezone
+    SINGLE_MODEL = PolityUTMTimezones
 
 
 class PolityCapitals(BaseAPICall):
@@ -245,7 +245,7 @@ class PolityCapitals(BaseAPICall):
     >>> polity_capitals = PolityCapitals(client)
     """
     ENDPOINT = "/general/polity-capitals"
-    SINGLE_MODEL = PolityCapital
+    SINGLE_MODEL = PolityCapitals
 
 
 class PolityLanguages(BaseAPICall):
@@ -266,7 +266,7 @@ class PolityLanguages(BaseAPICall):
     >>> polity_languages = PolityLanguages(client)
     """
     ENDPOINT = "/general/polity-languages"
-    SINGLE_MODEL = PolityLanguage
+    SINGLE_MODEL = PolityLanguages
 
 
 class PolityLinguisticFamilies(BaseAPICall):
@@ -287,7 +287,7 @@ class PolityLinguisticFamilies(BaseAPICall):
     >>> polity_linguistic_families = PolityLinguisticFamilies(client)
     """
     ENDPOINT = "/general/polity-linguistic-families"
-    SINGLE_MODEL = PolityLinguisticFamily
+    SINGLE_MODEL = PolityLinguisticFamilies
 
 
 class PolityLanguageGenuses(BaseAPICall):
@@ -308,7 +308,7 @@ class PolityLanguageGenuses(BaseAPICall):
     >>> polity_language_genuses = PolityLanguageGenuses(client)
     """
     ENDPOINT = "/general/polity-language-genuses"
-    SINGLE_MODEL = PolityLanguageGenus
+    SINGLE_MODEL = PolityLanguageGenuses
 
 
 class PolityReligionGenuses(BaseAPICall):
@@ -329,7 +329,7 @@ class PolityReligionGenuses(BaseAPICall):
     >>> polity_religion_genuses = PolityReligionGenuses(client)
     """
     ENDPOINT = "/general/polity-religion-genuses"
-    SINGLE_MODEL = PolityReligionGenus
+    SINGLE_MODEL = PolityReligionGenuses
 
 
 class PolityReligionFamilies(BaseAPICall):
@@ -350,7 +350,7 @@ class PolityReligionFamilies(BaseAPICall):
     >>> polity_religion_families = PolityReligionFamilies(client)
     """
     ENDPOINT = "/general/polity-religion-families"
-    SINGLE_MODEL = PolityReligionFamily
+    SINGLE_MODEL = PolityReligionFamilies
 
 
 class PolityReligions(BaseAPICall):
@@ -371,7 +371,7 @@ class PolityReligions(BaseAPICall):
     >>> polity_religions = PolityReligions(client)
     """
     ENDPOINT = "/general/polity-religions"
-    SINGLE_MODEL = PolityReligion
+    SINGLE_MODEL = PolityReligions
 
 
 class PolityRelationshipToPrecedingEntities(BaseAPICall):
@@ -392,7 +392,7 @@ class PolityRelationshipToPrecedingEntities(BaseAPICall):
     >>> polity_relationship_to_preceding_entities = PolityRelationshipToPrecedingEntities(client)
     """
     ENDPOINT = "/general/polity-relationship-to-preceding-entities"
-    SINGLE_MODEL = PolityRelationshipToPrecedingEntity
+    SINGLE_MODEL = PolityRelationshipToPrecedingEntities
 
 
 class PolityPrecedingEntities(BaseAPICall):
@@ -413,7 +413,7 @@ class PolityPrecedingEntities(BaseAPICall):
     >>> polity_preceding_entities = PolityPrecedingEntities(client)
     """
     ENDPOINT = "/general/polity-preceding-entities"
-    SINGLE_MODEL = PolityPrecedingEntity
+    SINGLE_MODEL = PolityPrecedingEntities
 
 
 class PolitySucceedingEntities(BaseAPICall):
@@ -434,7 +434,7 @@ class PolitySucceedingEntities(BaseAPICall):
     >>> polity_succeeding_entities = PolitySucceedingEntities(client)
     """
     ENDPOINT = "/general/polity-succeeding-entities"
-    SINGLE_MODEL = PolitySucceedingEntity
+    SINGLE_MODEL = PolitySucceedingEntities
 
 
 class PolitySupraculturalEntities(BaseAPICall):
@@ -455,7 +455,7 @@ class PolitySupraculturalEntities(BaseAPICall):
     >>> polity_supracultural_entities = PolitySupraculturalEntities(client)
     """
     ENDPOINT = "/general/polity-supracultural-entities"
-    SINGLE_MODEL = PolitySupraculturalEntity
+    SINGLE_MODEL = PolitySupraculturalEntities
 
 
 class PolityScaleOfSupraculturalInteractions(BaseAPICall):
@@ -476,7 +476,7 @@ class PolityScaleOfSupraculturalInteractions(BaseAPICall):
     >>> polity_scale_of_supracultural_interactions = PolityScaleOfSupraculturalInteractions(client)
     """
     ENDPOINT = "/general/polity-scale-of-supracultural-interactions"
-    SINGLE_MODEL = PolityScaleOfSupraculturalInteraction
+    SINGLE_MODEL = PolityScaleOfSupraculturalInteractions
 
 
 class PolityAlternateReligionGenuses(BaseAPICall):
@@ -497,7 +497,7 @@ class PolityAlternateReligionGenuses(BaseAPICall):
     >>> polity_alternate_religion_genuses = PolityAlternateReligionGenuses(client)
     """
     ENDPOINT = "/general/polity-alternate-religion-genuses"
-    SINGLE_MODEL = PolityAlternateReligionGenus
+    SINGLE_MODEL = PolityAlternateReligionGenuses
 
 
 class PolityAlternateReligionFamilies(BaseAPICall):
@@ -518,7 +518,7 @@ class PolityAlternateReligionFamilies(BaseAPICall):
     >>> polity_alternate_religion_families = PolityAlternateReligionFamilies(client)
     """
     ENDPOINT = "/general/polity-alternate-religion-families"
-    SINGLE_MODEL = PolityAlternateReligionFamily
+    SINGLE_MODEL = PolityAlternateReligionFamilies
 
 
 class PolityAlternateReligions(BaseAPICall):
@@ -539,7 +539,7 @@ class PolityAlternateReligions(BaseAPICall):
     >>> polity_alternate_religions = PolityAlternateReligions(client)
     """
     ENDPOINT = "/general/polity-alternate-religions"
-    SINGLE_MODEL = PolityAlternateReligion
+    SINGLE_MODEL = PolityAlternateReligions
 
 
 class PolityExperts(BaseAPICall):
@@ -559,7 +559,7 @@ class PolityExperts(BaseAPICall):
     >>> polity_experts = PolityExperts(client)
     """
     ENDPOINT = "/general/polity-experts"
-    SINGLE_MODEL = PolityExpert
+    SINGLE_MODEL = PolityExperts
 
 
 class PolityEditors(BaseAPICall):
@@ -579,7 +579,7 @@ class PolityEditors(BaseAPICall):
     >>> polity_editors = PolityEditors(client)
     """
     ENDPOINT = "/general/polity-editors"
-    SINGLE_MODEL = PolityEditor
+    SINGLE_MODEL = PolityEditors
 
 
 class PolityReligiousTraditions(BaseAPICall):
@@ -600,4 +600,4 @@ class PolityReligiousTraditions(BaseAPICall):
     >>> polity_religious_traditions = PolityReligiousTraditions(client)
     """
     ENDPOINT = "/general/polity-religious-traditions"
-    SINGLE_MODEL = PolityReligiousTradition
+    SINGLE_MODEL = PolityReligiousTraditions

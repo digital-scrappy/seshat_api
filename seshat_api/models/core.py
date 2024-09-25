@@ -1,33 +1,32 @@
 from ._base import BaseModel
 
 __all__ = [
-    "Polity",
-    "PrivateComment",
-    "PrivateCommentPart",
-    "MacroRegion",
-    "Region",
-    "NGA",
-    "Polity",
-    "Capital",
-    "NGAPolityRelation",
-    "Country",
-    "Section",
-    "Subsection",
-    "VariableHierarchy",
-    "Reference",
-    "Citation",
-    "Comment",
-    "CommentPart",
-    "CommentPartThroughCitation",
-    "Religion",
-    "CliopatriaShapefile",
-    "GADMShapefile",
-    "GADMCountry",
-    "GADMProvince",
+    "Polities",
+    "PrivateComments",
+    "PrivateCommentsParts",
+    "MacroRegions",
+    "Regions",
+    "NGAs",
+    "Capitals",
+    "NGAPolityRelations",
+    "Countries",
+    "Sections",
+    "Subsections",
+    "VariableHierarchies",
+    "References",
+    "Citations",
+    "Comments",
+    "CommentParts",
+    "CommentPartThroughCitations",
+    "Religions",
+    "CliopatriaShapefiles",
+    "GADMShapefiles",
+    "GADMCountries",
+    "GADMProvinces",
 ]
 
 
-class Polity(BaseModel):
+class Polities(BaseModel):
     """
     A class representing a single Polity object in the Seshat API.
 
@@ -46,7 +45,7 @@ class Polity(BaseModel):
     pass
 
 
-class PrivateComment(BaseModel):
+class PrivateComments(BaseModel):
     """
     A class representing a single Private Comment object in the Seshat API.
 
@@ -65,7 +64,7 @@ class PrivateComment(BaseModel):
     pass
 
 
-class PrivateCommentPart(BaseModel):
+class PrivateCommentsParts(BaseModel):
     """
     A class representing a single Private Comment Part object in the Seshat API.
 
@@ -84,7 +83,7 @@ class PrivateCommentPart(BaseModel):
     pass
 
 
-class MacroRegion(BaseModel):
+class MacroRegions(BaseModel):
     """
     A class representing a single Macro Region object in the Seshat API.
 
@@ -103,7 +102,7 @@ class MacroRegion(BaseModel):
     pass
 
 
-class Region(BaseModel):
+class Regions(BaseModel):
     """
     A class representing a single Region object in the Seshat API.
 
@@ -122,7 +121,7 @@ class Region(BaseModel):
     pass
 
 
-class NGA(BaseModel):
+class NGAs(BaseModel):
     """
     A class representing a single NGA (Natural Geographic Area) object in the
     Seshat API.
@@ -142,26 +141,7 @@ class NGA(BaseModel):
     pass
 
 
-class Polity(BaseModel):
-    """
-    A class representing a single Polity object in the Seshat API.
-
-    Parameters
-    ----------
-    data : dict
-        The data to use in the model.
-    count : int, optional
-        The total count of items in the API.
-    name : str, optional
-        The name of the API.
-
-    ..
-        TODO: Add an example of how to create the object
-    """
-    pass
-
-
-class Capital(BaseModel):
+class Capitals(BaseModel):
     """
     A class representing a single Capital object in the Seshat API.
 
@@ -180,7 +160,7 @@ class Capital(BaseModel):
     pass
 
 
-class NGAPolityRelation(BaseModel):
+class NGAPolityRelations(BaseModel):
     """
     A class representing a single NGA–polity relation (relations between a
     Natural Geographic Area, NGA, and a polity) object in the Seshat API.
@@ -200,7 +180,7 @@ class NGAPolityRelation(BaseModel):
     pass
 
 
-class Country(BaseModel):
+class Countries(BaseModel):
     """
     A class representing a single Country object in the Seshat API.
 
@@ -219,7 +199,7 @@ class Country(BaseModel):
     pass
 
 
-class Section(BaseModel):
+class Sections(BaseModel):
     """
     A class representing a single Section object in the Seshat API.
 
@@ -238,7 +218,7 @@ class Section(BaseModel):
     pass
 
 
-class Subsection(BaseModel):
+class Subsections(BaseModel):
     """
     A class representing a single Subsection object in the Seshat API.
 
@@ -257,7 +237,7 @@ class Subsection(BaseModel):
     pass
 
 
-class VariableHierarchy(BaseModel):
+class VariableHierarchies(BaseModel):
     """
     A class representing a single Variable Hierarchy object in the Seshat API.
 
@@ -276,7 +256,7 @@ class VariableHierarchy(BaseModel):
     pass
 
 
-class Reference(BaseModel):
+class References(BaseModel):
     """
     A class representing a single Reference object in the Seshat API.
 
@@ -295,7 +275,7 @@ class Reference(BaseModel):
     pass
 
 
-class Citation(BaseModel):
+class Citations(BaseModel):
     """
     A class representing a single Citation object in the Seshat API.
 
@@ -314,7 +294,7 @@ class Citation(BaseModel):
     pass
 
 
-class Comment(BaseModel):
+class Comments(BaseModel):
     """
     A class representing a single Comment object in the Seshat API.
 
@@ -333,7 +313,7 @@ class Comment(BaseModel):
     pass
 
 
-class CommentPart(BaseModel):
+class CommentParts(BaseModel):
     """
     A class representing a single Comment Part object in the Seshat API.
 
@@ -352,7 +332,7 @@ class CommentPart(BaseModel):
     pass
 
 
-class CommentPartThroughCitation(BaseModel):
+class CommentPartThroughCitations(BaseModel):
     """
     A class representing a single Comment Part Through Citation object in the Seshat API.
 
@@ -371,7 +351,7 @@ class CommentPartThroughCitation(BaseModel):
     pass
 
 
-class Religion(BaseModel):
+class Religions(BaseModel):
     """
     A class representing a single Religion object in the Seshat API.
 
@@ -390,7 +370,7 @@ class Religion(BaseModel):
     pass
 
 
-class CliopatriaShapefile(BaseModel):
+class CliopatriaShapefiles(BaseModel):
     """
     A class representing a single Cliopatria Shapefile object in the Seshat API.
 
@@ -409,7 +389,7 @@ class CliopatriaShapefile(BaseModel):
     pass
 
 
-class GADMShapefile(BaseModel):
+class GADMShapefiles(BaseModel):
     """
     A class representing a single GADM Shapefile object in the Seshat API.
 
@@ -428,7 +408,7 @@ class GADMShapefile(BaseModel):
     pass
 
 
-class GADMCountry(BaseModel):
+class GADMCountries(BaseModel):
     """
     A class representing a single GADM Country object in the Seshat API.
 
@@ -447,7 +427,7 @@ class GADMCountry(BaseModel):
     pass
 
 
-class GADMProvince(BaseModel):
+class GADMProvinces(BaseModel):
     """
     A class representing a single GADM Province object in the Seshat API.
 

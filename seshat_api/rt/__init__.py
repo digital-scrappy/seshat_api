@@ -1,27 +1,27 @@
 from ..base_model import BaseAPICall
 
 from ..models import (
-    WidespreadReligion,
-    OfficialReligion,
-    ElitesReligion,
-    TheologicalSyncretismOfDifferentReligion,
-    SyncretismOfReligiousPracticesAtTheLevelOfIndividualBeliever,
-    ReligiousFragmentation,
-    FrequencyOfGovernmentalViolenceAgainstReligiousGroup,
-    GovernmentRestrictionsOnPublicWorship,
-    GovernmentRestrictionsOnPublicProselytizing,
-    GovernmentRestrictionsOnConversion,
-    GovernmentPressureToConvert,
-    GovernmentRestrictionsOnPropertyOwnershipForAdherentsOfAndReligiousGroup,
-    TaxesBasedOnReligiousAdherenceOrOnReligiousActivityAndInstitution,
-    GovernmentalObligationsForReligiousGroupToApplyForOfficialRecognition,
-    GovernmentRestrictionsOnConstructionOfReligiousBuilding,
-    GovernmentRestrictionsOnReligiousEducation,
-    GovernmentRestrictionsOnCirculationOfReligiousLiterature,
-    GovernmentDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunction,  # noqa
-    FrequencyOfSocietalViolenceAgainstReligiousGroup,
-    SocietalDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunction,  # noqa
-    SocietalPressureToConvertOrAgainstConversion,
+    WidespreadReligions,
+    OfficialReligions,
+    ElitesReligions,
+    TheologicalSyncretismOfDifferentReligions,
+    SyncretismOfReligiousPracticesAtTheLevelOfIndividualBelievers,
+    ReligiousFragmentations,
+    FrequencyOfGovernmentalViolenceAgainstReligiousGroups,
+    GovernmentRestrictionsOnPublicWorships,
+    GovernmentRestrictionsOnPublicProselytizings,
+    GovernmentRestrictionsOnConversions,
+    GovernmentPressureToConverts,
+    GovernmentRestrictionsOnPropertyOwnershipForAdherentsOfAndReligiousGroups,
+    TaxesBasedOnReligiousAdherenceOrOnReligiousActivitiesAndInstitutions,
+    GovernmentalObligationsForReligiousGroupsToApplyForOfficialRecognitions,
+    GovernmentRestrictionsOnConstructionOfReligiousBuildings,
+    GovernmentRestrictionsOnReligiousEducations,
+    GovernmentRestrictionsOnCirculationOfReligiousLiteratures,
+    GovernmentDiscriminationAgainstReligiousGroupsTakingUpCertainOccupationsOrFunctions,  # noqa
+    FrequencyOfSocietalViolenceAgainstReligiousGroups,
+    SocietalDiscriminationAgainstReligiousGroupsTakingUpCertainOccupationsOrFunctions,  # noqa
+    SocietalPressureToConvertOrAgainstConversions,
 )
 
 __all__ = [
@@ -67,7 +67,7 @@ class WidespreadReligions(BaseAPICall):
     >>> widespread_religions = WidespreadReligions(client)
     """
     ENDPOINT = "/rt/widespread-religions"
-    SINGLE_MODEL = WidespreadReligion
+    SINGLE_MODEL = WidespreadReligions
 
 
 class OfficialReligions(BaseAPICall):
@@ -88,7 +88,7 @@ class OfficialReligions(BaseAPICall):
     >>> official_religions = OfficialReligions(client)
     """
     ENDPOINT = "/rt/official-religions"
-    SINGLE_MODEL = OfficialReligion
+    SINGLE_MODEL = OfficialReligions
 
 
 class ElitesReligions(BaseAPICall):
@@ -109,7 +109,7 @@ class ElitesReligions(BaseAPICall):
     >>> elites_religions = ElitesReligions(client)
     """
     ENDPOINT = "/rt/elites-religions"
-    SINGLE_MODEL = ElitesReligion
+    SINGLE_MODEL = ElitesReligions
 
 
 class TheologicalSyncretismOfDifferentReligions(BaseAPICall):
@@ -130,14 +130,14 @@ class TheologicalSyncretismOfDifferentReligions(BaseAPICall):
     >>> theological_syncretism_of_different_religions = TheologicalSyncretismOfDifferentReligions(client)
     """
     ENDPOINT = "/rt/theological-syncretism-of-different-religions"
-    SINGLE_MODEL = TheologicalSyncretismOfDifferentReligion
+    SINGLE_MODEL = TheologicalSyncretismOfDifferentReligions
 
 
 class SyncretismOfReligiousPracticesAtTheLevelOfIndividualBelievers(
     BaseAPICall
 ):
     ENDPOINT = "/rt/syncretism-of-religious-practices-at-the-level-of-individual-believers"  # noqa
-    SINGLE_MODEL = SyncretismOfReligiousPracticesAtTheLevelOfIndividualBeliever
+    SINGLE_MODEL = SyncretismOfReligiousPracticesAtTheLevelOfIndividualBelievers
 
 
 class ReligiousFragmentations(BaseAPICall):
@@ -158,7 +158,7 @@ class ReligiousFragmentations(BaseAPICall):
     >>> religious_fragmentations = ReligiousFragmentations(client)
     """
     ENDPOINT = "/rt/religious-fragmentations"
-    SINGLE_MODEL = ReligiousFragmentation
+    SINGLE_MODEL = ReligiousFragmentations
 
 
 class FrequencyOfGovernmentalViolenceAgainstReligiousGroups(BaseAPICall):
@@ -181,7 +181,7 @@ class FrequencyOfGovernmentalViolenceAgainstReligiousGroups(BaseAPICall):
     ENDPOINT = (
         "/rt/frequency-of-governmental-violence-against-religious-groups"
     )
-    SINGLE_MODEL = FrequencyOfGovernmentalViolenceAgainstReligiousGroup
+    SINGLE_MODEL = FrequencyOfGovernmentalViolenceAgainstReligiousGroups
 
 
 class GovernmentRestrictionsOnPublicWorships(BaseAPICall):
@@ -202,7 +202,7 @@ class GovernmentRestrictionsOnPublicWorships(BaseAPICall):
     >>> government_restrictions_on_public_worships = GovernmentRestrictionsOnPublicWorships(client)
     """
     ENDPOINT = "/rt/government-restrictions-on-public-worships"
-    SINGLE_MODEL = GovernmentRestrictionsOnPublicWorship
+    SINGLE_MODEL = GovernmentRestrictionsOnPublicWorships
 
 
 class GovernmentRestrictionsOnPublicProselytizings(BaseAPICall):
@@ -223,7 +223,7 @@ class GovernmentRestrictionsOnPublicProselytizings(BaseAPICall):
     >>> government_restrictions_on_public_proselytizings = GovernmentRestrictionsOnPublicProselytizings(client)
     """
     ENDPOINT = "/rt/government-restrictions-on-public-proselytizings"
-    SINGLE_MODEL = GovernmentRestrictionsOnPublicProselytizing
+    SINGLE_MODEL = GovernmentRestrictionsOnPublicProselytizings
 
 
 class GovernmentRestrictionsOnConversions(BaseAPICall):
@@ -244,7 +244,7 @@ class GovernmentRestrictionsOnConversions(BaseAPICall):
     >>> government_restrictions_on_conversions = GovernmentRestrictionsOnConversions(client)
     """
     ENDPOINT = "/rt/government-restrictions-on-conversions"
-    SINGLE_MODEL = GovernmentRestrictionsOnConversion
+    SINGLE_MODEL = GovernmentRestrictionsOnConversions
 
 
 class GovernmentPressureToConverts(BaseAPICall):
@@ -265,14 +265,14 @@ class GovernmentPressureToConverts(BaseAPICall):
     >>> government_pressure_to_converts = GovernmentPressureToConverts(client)
     """
     ENDPOINT = "/rt/government-pressure-to-converts"
-    SINGLE_MODEL = GovernmentPressureToConvert
+    SINGLE_MODEL = GovernmentPressureToConverts
 
 
 class GovernmentRestrictionsOnPropertyOwnershipForAdherentsOfAndReligiousGroups(  # noqa
     BaseAPICall
 ):
     ENDPOINT = "/rt/government-restrictions-on-property-ownership-for-adherents-of-and-religious-groups"
-    SINGLE_MODEL = GovernmentRestrictionsOnPropertyOwnershipForAdherentsOfAndReligiousGroup  # noqa
+    SINGLE_MODEL = GovernmentRestrictionsOnPropertyOwnershipForAdherentsOfAndReligiousGroups  # noqas
 
 
 class TaxesBasedOnReligiousAdherenceOrOnReligiousActivitiesAndInstitutions(
@@ -280,7 +280,7 @@ class TaxesBasedOnReligiousAdherenceOrOnReligiousActivitiesAndInstitutions(
 ):
     ENDPOINT = "/rt/taxes-based-on-religious-adherence-or-on-religious-activities-and-institutions"  # noqa
     SINGLE_MODEL = (
-        TaxesBasedOnReligiousAdherenceOrOnReligiousActivityAndInstitution
+        TaxesBasedOnReligiousAdherenceOrOnReligiousActivitiesAndInstitutions
     )
 
 
@@ -289,7 +289,7 @@ class GovernmentalObligationsForReligiousGroupsToApplyForOfficialRecognitions(
 ):
     ENDPOINT = "/rt/governmental-obligations-for-religious-groups-to-apply-for-official-recognitions"  # noqa
     SINGLE_MODEL = (
-        GovernmentalObligationsForReligiousGroupToApplyForOfficialRecognition
+        GovernmentalObligationsForReligiousGroupsToApplyForOfficialRecognitions
     )
 
 
@@ -313,7 +313,7 @@ class GovernmentRestrictionsOnConstructionOfReligiousBuildings(BaseAPICall):
     ENDPOINT = (
         "/rt/government-restrictions-on-construction-of-religious-buildings"
     )
-    SINGLE_MODEL = GovernmentRestrictionsOnConstructionOfReligiousBuilding
+    SINGLE_MODEL = GovernmentRestrictionsOnConstructionOfReligiousBuildings
 
 
 class GovernmentRestrictionsOnReligiousEducations(BaseAPICall):
@@ -334,7 +334,7 @@ class GovernmentRestrictionsOnReligiousEducations(BaseAPICall):
     >>> government_restrictions_on_religious_educations = GovernmentRestrictionsOnReligiousEducations(client)
     """
     ENDPOINT = "/rt/government-restrictions-on-religious-educations"
-    SINGLE_MODEL = GovernmentRestrictionsOnReligiousEducation
+    SINGLE_MODEL = GovernmentRestrictionsOnReligiousEducations
 
 
 class GovernmentRestrictionsOnCirculationOfReligiousLiteratures(BaseAPICall):
@@ -357,14 +357,14 @@ class GovernmentRestrictionsOnCirculationOfReligiousLiteratures(BaseAPICall):
     ENDPOINT = (
         "/rt/government-restrictions-on-circulation-of-religious-literatures"
     )
-    SINGLE_MODEL = GovernmentRestrictionsOnCirculationOfReligiousLiterature
+    SINGLE_MODEL = GovernmentRestrictionsOnCirculationOfReligiousLiteratures
 
 
 class GovernmentDiscriminationAgainstReligiousGroupsTakingUpCertainOccupationsOrFunctions(  # noqa
     BaseAPICall
 ):
     ENDPOINT = "/rt/government-discrimination-against-religious-groups-taking-up-certain-occupations-or-functions"
-    SINGLE_MODEL = GovernmentDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunction  # noqa
+    SINGLE_MODEL = GovernmentDiscriminationAgainstReligiousGroupsTakingUpCertainOccupationsOrFunctions  # noqas
 
 
 class FrequencyOfSocietalViolenceAgainstReligiousGroups(BaseAPICall):
@@ -385,14 +385,14 @@ class FrequencyOfSocietalViolenceAgainstReligiousGroups(BaseAPICall):
     >>> frequency_of_societal_violence_against_religious_groups = FrequencyOfSocietalViolenceAgainstReligiousGroups(client)
     """
     ENDPOINT = "/rt/frequency-of-societal-violence-against-religious-groups"
-    SINGLE_MODEL = FrequencyOfSocietalViolenceAgainstReligiousGroup
+    SINGLE_MODEL = FrequencyOfSocietalViolenceAgainstReligiousGroups
 
 
 class SocietalDiscriminationAgainstReligiousGroupsTakingUpCertainOccupationsOrFunctions(  # noqa
     BaseAPICall
 ):
     ENDPOINT = "/rt/societal-discrimination-against-religious-groups-taking-up-certain-occupations-or-functions"  # noqa
-    SINGLE_MODEL = SocietalDiscriminationAgainstReligiousGroupTakingUpCertainOccupationOrFunction  # noqa
+    SINGLE_MODEL = SocietalDiscriminationAgainstReligiousGroupsTakingUpCertainOccupationsOrFunctions  # noqas
 
 
 class SocietalPressureToConvertOrAgainstConversions(BaseAPICall):
@@ -413,4 +413,4 @@ class SocietalPressureToConvertOrAgainstConversions(BaseAPICall):
     >>> societal_pressure_to_convert_or_against_conversions = SocietalPressureToConvertOrAgainstConversions(client)
     """
     ENDPOINT = "/rt/societal-pressure-to-convert-or-against-conversions"
-    SINGLE_MODEL = SocietalPressureToConvertOrAgainstConversion
+    SINGLE_MODEL = SocietalPressureToConvertOrAgainstConversions
