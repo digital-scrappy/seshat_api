@@ -1,12 +1,5 @@
 # Seshat API
 
-> [!CAUTION]
-> ⚠️ **This package is currently in the very early stages of development and is not yet functional. We are actively working on building and testing the core features, and many components are either incomplete or subject to significant changes.**
->
-> Please do not use this package in any production environment as it may contain numerous bugs, lack essential features, and undergo frequent breaking changes. We welcome contributions and feedback, but users should proceed with caution and understand the current limitations.
->
-> Thank you for your understanding and patience as we work towards a stable release.
-
 This is the Python binding for the Seshat API. The Seshat API is a RESTful API
 that allows you to interact with the Seshat database. The Seshat database is a
 database of historical and archaeological data. The Seshat API allows you to
