@@ -23,7 +23,6 @@ from ..models import (
     PolityAlternateReligionGenuses,
     PolityAlternateReligionFamilies,
     PolityAlternateReligions,
-    PolityEditors,
     PolityReligiousTraditions,
 )
 
@@ -50,7 +49,6 @@ __all__ = [
     "PolityAlternateReligionGenuses",
     "PolityAlternateReligionFamilies",
     "PolityAlternateReligions",
-    "PolityEditors",
     "PolityReligiousTraditions",
 ]
 
@@ -514,26 +512,6 @@ class PolityAlternateReligions(BaseAPICall):
     """
     ENDPOINT = "/general/polity-alternate-religions"
     SINGLE_MODEL = PolityAlternateReligions
-
-
-class PolityEditors(BaseAPICall):
-    """
-    A class for interacting with the polity editors endpoint of the Seshat API.
-
-    Parameters
-    ----------
-    client : SeshatAPI
-        The API client to use for requests.
-
-    Example
-    -------
-    >>> from seshat_api import SeshatAPI
-    >>> from seshat_api.general import PolityEditors
-    >>> client = SeshatAPI()
-    >>> polity_editors = PolityEditors(client)
-    """
-    ENDPOINT = "/general/polity-editors"
-    SINGLE_MODEL = PolityEditors
 
 
 class PolityReligiousTraditions(BaseAPICall):

@@ -23,7 +23,6 @@ __all__ = [
     "PolityAlternateReligionGenuses",
     "PolityAlternateReligionFamilies",
     "PolityAlternateReligions",
-    "PolityEditors",
     "PolityReligiousTraditions",
 ]
 
@@ -445,25 +444,6 @@ class PolityAlternateReligions(BaseModel):
     """
     A class representing a single Polity Alternate Religion object in the
     Seshat API.
-
-    Parameters
-    ----------
-    data : dict
-        The data to use in the model.
-    count : int, optional
-        The total count of items in the API.
-    name : str, optional
-        The name of the API.
-
-    ..
-        TODO: Add an example of how to create the object
-    """
-    pass
-
-
-class PolityEditors(BaseModel):
-    """
-    A class representing a single Polity Editor object in the Seshat API.
 
     Parameters
     ----------

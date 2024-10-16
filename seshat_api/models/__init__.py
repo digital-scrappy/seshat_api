@@ -1,6 +1,4 @@
 from .core import (
-    PrivateComments,
-    PrivateCommentsParts,
     MacroRegions,
     Regions,
     NGAs,
@@ -13,9 +11,6 @@ from .core import (
     VariableHierarchies,
     References,
     Citations,
-    Comments,
-    CommentParts,
-    CommentPartThroughCitations,
     Religions,
     CliopatriaShapefiles,
     GADMShapefiles,
@@ -70,7 +65,6 @@ from .general import (
     PolityAlternateReligionGenuses,
     PolityAlternateReligionFamilies,
     PolityAlternateReligions,
-    PolityEditors,
     PolityReligiousTraditions,
 )
 
@@ -232,8 +226,6 @@ from .wf import (
 
 __all__ = [
     # core
-    "PrivateComments",
-    "PrivateCommentsParts",
     "MacroRegions",
     "Regions",
     "NGAs",
@@ -246,9 +238,6 @@ __all__ = [
     "VariableHierarchies",
     "References",
     "Citations",
-    "Comments",
-    "CommentParts",
-    "CommentPartThroughCitations",
     "Religions",
     "CliopatriaShapefiles",
     "GADMShapefiles",
@@ -299,7 +288,6 @@ __all__ = [
     "PolityAlternateReligionGenuses",
     "PolityAlternateReligionFamilies",
     "PolityAlternateReligions",
-    "PolityEditors",
     "PolityReligiousTraditions",
     # rt
     "WidespreadReligions",
