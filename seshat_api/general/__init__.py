@@ -1,7 +1,6 @@
 from ..base_model import BaseAPICall
 
 from ..models import (
-    PolityResearchAssistants,
     PolityOriginalNames,
     PolityAlternativeNames,
     PolityDurations,
@@ -30,7 +29,6 @@ from ..models import (
 )
 
 __all__ = [
-    "PolityResearchAssistants",
     "PolityOriginalNames",
     "PolityAlternativeNames",
     "PolityDurations",
@@ -57,28 +55,6 @@ __all__ = [
     "PolityEditors",
     "PolityReligiousTraditions",
 ]
-
-
-class PolityResearchAssistants(BaseAPICall):
-    """
-    A class for interacting with the polity research assistants endpoint of the
-    Seshat API.
-
-    Parameters
-    ----------
-    client : SeshatAPI
-        The API client to use for requests.
-
-    Example
-    -------
-    >>> from seshat_api import SeshatAPI
-    >>> from seshat_api.general import PolityResearchAssistants
-    >>> client = SeshatAPI()
-    >>> polity_research_assistants = PolityResearchAssistants(client)
-    """
-    ENDPOINT = "/general/polity-research-assistants"
-    SINGLE_MODEL = PolityResearchAssistants
-
 
 class PolityOriginalNames(BaseAPICall):
     """

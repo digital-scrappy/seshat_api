@@ -48,7 +48,6 @@ from .crisisdb import (
 )
 
 from .general import (
-    PolityResearchAssistants,
     PolityOriginalNames,
     PolityAlternativeNames,
     PolityDurations,
@@ -101,7 +100,6 @@ from .rt import (
 )
 
 from .sc import (
-    ResearchAssistants,
     PolityTerritories,
     PolityPopulations,
     PopulationOfTheLargestSettlements,
@@ -280,7 +278,6 @@ __all__ = [
     "FamineEvents",
     "DiseaseOutbreaks",
     # general
-    "PolityResearchAssistants",
     "PolityOriginalNames",
     "PolityAlternativeNames",
     "PolityDurations",
@@ -329,7 +326,6 @@ __all__ = [
     "SocietalDiscriminationAgainstReligiousGroupsTakingUpCertainOccupationsOrFunctions",  # noqa
     "SocietalPressureToConvertOrAgainstConversions",
     # sc
-    "ResearchAssistants",
     "PolityTerritories",
     "PolityPopulations",
     "PopulationOfTheLargestSettlements",
