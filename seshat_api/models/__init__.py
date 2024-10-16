@@ -70,7 +70,6 @@ from .general import (
     PolityAlternateReligionGenuses,
     PolityAlternateReligionFamilies,
     PolityAlternateReligions,
-    PolityExperts,
     PolityEditors,
     PolityReligiousTraditions,
 )
@@ -300,7 +299,6 @@ __all__ = [
     "PolityAlternateReligionGenuses",
     "PolityAlternateReligionFamilies",
     "PolityAlternateReligions",
-    "PolityExperts",
     "PolityEditors",
     "PolityReligiousTraditions",
     # rt
