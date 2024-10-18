@@ -1,7 +1,9 @@
 from .constants import BASE_URL, TOKEN_ENDPOINT
 from .exceptions import SeshatAPIException
 
+import importlib
 import requests
+import pandas as pd
 
 from typing import Optional
 from json import JSONDecodeError
@@ -160,3 +162,37 @@ class SeshatAPI:
             The count of items in the API.
         """
         return self.get(endpoint, params)["count"]
+
+
+def get_frequencies(client, variables, years):
+    def get_class_names(variables):
+        class_names = []
+        for v in variables:
+            # Make camel case variable name
+            v = v.replace('_', ' ').title().replace(' ', '')
+            # Then capitalize the first letter
+            v = v[0].upper() + v[1:]
+            # Then pluralize
+            v = v + 's'
+            class_names.append(v)
+        return class_names
+    class_names = get_class_names(variables)
+    dataframes = []
+    for var, class_name in zip(variables, class_names):
+        module = __import__('seshat_api.sc', fromlist=[class_name])
+        globals()[var] = module
+        class_ = getattr(module, class_name)
+        instance = class_(client)
+        df = pd.DataFrame(instance.get_all())
+        polities_with_var_df = pd.DataFrame(df['polity'].tolist())
+        polities_with_var_df[var] = df[var]
+        dataframes.append(polities_with_var_df)
+    frequency_df = pd.DataFrame(index=years, columns=variables).fillna(0)
+    for year in years:
+        for df, var in zip(dataframes, variables):
+            frequency_df.loc[year, var] = len(df[
+                (df['start_year'] <= year) &
+                (df['end_year'] >= year) &
+                (df[var] == 'present')
+            ])
+    return frequency_df
