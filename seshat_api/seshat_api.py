@@ -173,7 +173,10 @@ def get_frequencies(client, variables, years):
             # Then capitalize the first letter
             v = v[0].upper() + v[1:]
             # Then pluralize
-            v = v + 's'
+            if v[-1] == 'y':
+                v = v[:-1] + 'ies'
+            else:
+                v += 's'
             class_names.append(v)
         return class_names
     class_names = get_class_names(variables)
