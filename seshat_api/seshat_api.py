@@ -179,7 +179,22 @@ def get_frequencies(client, variables, years):
     class_names = get_class_names(variables)
     dataframes = []
     for var, class_name in zip(variables, class_names):
-        module = __import__('seshat_api.sc', fromlist=[class_name])
+        module_paths = ['seshat_api.sc',
+                        'seshat_api.core',
+                        'seshat_api.general',
+                        'seshat_api.wf',
+                        'seshat_api.rt',
+                        'seshat_api.crisisdb',
+                        ]
+        module = None
+        for path in module_paths:
+            try:
+                module = __import__(path, fromlist=[class_name])
+                break
+            except ImportError:
+                continue
+        if module is None:
+            raise ImportError(f"Module '{class_name}' cannot be found in any of these paths: {', '.join(module_paths)}")
         globals()[var] = module
         class_ = getattr(module, class_name)
         instance = class_(client)
