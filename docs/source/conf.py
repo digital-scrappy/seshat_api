@@ -18,8 +18,8 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Seshat API'
-copyright = '2024, Kalle Westerling'
-author = 'Kalle Westerling'
+copyright = '2024, Kalle Westerling, Ed Chalstrey'
+author = 'Kalle Westerling, Ed Chalstrey'
 
 # The full version, including alpha/beta/rc tags
 release = '0.1.1'
