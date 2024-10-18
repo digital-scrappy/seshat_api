@@ -193,13 +193,13 @@ def get_frequencies(client, variables, years):
         for path in module_paths:
             try:
                 module = __import__(path, fromlist=[class_name])
+                globals()[var] = module
+                class_ = getattr(module, class_name)
                 break
-            except ImportError:
+            except (ImportError, AttributeError):
                 continue
         if module is None:
             raise ImportError(f"Module '{class_name}' cannot be found in any of these paths: {', '.join(module_paths)}")
-        globals()[var] = module
-        class_ = getattr(module, class_name)
         instance = class_(client)
         df = pd.DataFrame(instance.get_all())
         polities_with_var_df = pd.DataFrame(df['polity'].tolist())
