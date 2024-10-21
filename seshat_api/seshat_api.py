@@ -2,6 +2,7 @@ from .constants import BASE_URL, TOKEN_ENDPOINT
 from .exceptions import SeshatAPIException
 
 import importlib
+import inspect
 import requests
 import pandas as pd
 
@@ -214,3 +215,21 @@ def get_frequencies(client, variables, years):
                 (df[var] == 'present')
             ])
     return frequency_df
+
+
+def get_variable_classes():
+    module_paths = [
+        'seshat_api.sc',
+        'seshat_api.core',
+        'seshat_api.general',
+        'seshat_api.wf',
+        'seshat_api.rt',
+        'seshat_api.crisisdb',
+    ]
+    all_classes = []
+    for module_path in module_paths:
+        module = importlib.import_module(module_path)
+        members = inspect.getmembers(module)
+        classes = [member[0] for member in members if inspect.isclass(member[1])]
+        all_classes.extend(classes)
+    return all_classes
