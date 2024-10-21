@@ -165,22 +165,20 @@ class SeshatAPI:
         return self.get(endpoint, params)["count"]
 
 
-def get_frequencies(client, variables, years):
-    def get_class_names(variables):
-        class_names = []
-        for v in variables:
-            # Make camel case variable name
-            v = v.replace('_', ' ').title().replace(' ', '')
-            # Then capitalize the first letter
-            v = v[0].upper() + v[1:]
-            # Then pluralize
-            if v[-1] == 'y':
-                v = v[:-1] + 'ies'
+def get_frequencies(client, class_names, years):
+    def get_variable_names(class_names):
+        variable_names = []
+        for c in class_names:
+            # Convert from plural to singular
+            if c.endswith('ies'):
+                c = c[:-3] + 'y'
             else:
-                v += 's'
-            class_names.append(v)
-        return class_names
-    class_names = get_class_names(variables)
+                c = c[:-1]
+            # Convert from CamelCase to snake_case
+            c = ''.join(['_' + i.lower() if i.isupper() else i for i in c]).lstrip('_')
+            variable_names.append(c)
+        return variable_names
+    variables = get_variable_names(class_names)
     dataframes = []
     for var, class_name in zip(variables, class_names):
         module_paths = ['seshat_api.sc',
