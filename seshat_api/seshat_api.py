@@ -165,7 +165,7 @@ class SeshatAPI:
         return self.get(endpoint, params)["count"]
 
 
-def get_frequencies(client, class_names, years):
+def get_frequencies(client, class_names, years, value='present'):
     def get_variable_names(class_names):
         variable_names = []
         for c in class_names:
@@ -210,7 +210,7 @@ def get_frequencies(client, class_names, years):
             frequency_df.loc[year, var] = len(df[
                 (df['start_year'] <= year) &
                 (df['end_year'] >= year) &
-                (df[var] == 'present')
+                (df[var] == value)
             ])
     return frequency_df
 
