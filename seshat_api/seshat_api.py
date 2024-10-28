@@ -226,6 +226,7 @@ def seshat_class_instance(class_name, var):
         raise ImportError(f"Module '{class_name}' cannot be found in any of these paths: {', '.join(module_paths)}")
     return class_
 
+
 def get_frequencies(client, class_names, years, value='present'):
     """
     Get the number of polities (frequency) recorded as having a particular value recorded for a set of variables over a year range.
@@ -249,14 +250,30 @@ def get_frequencies(client, class_names, years, value='present'):
     dataframes = []
     variables = []
     for class_name in class_names:
+
+        # Get the variable name for the class
         var = get_variable_name(class_name)
         variables.append(var)
+
+        # Get the class instance
         instance = seshat_class_instance(class_name, var)(client)
+
+        # Get all data for the class and create a DataFrame
         df = pd.DataFrame(instance.get_all())
+
+        # Extract the polity column as a new DataFrame
+        # This gives you the polity data for all polities with the variable
         polities_with_var_df = pd.DataFrame(df['polity'].tolist())
+
+        # Add the variable column to the new polities DataFrame
         polities_with_var_df[var] = df[var]
+
         dataframes.append(polities_with_var_df)
+
+    # Create a DataFrame to store the frequency of each variable having the value across polities over time
     frequency_df = pd.DataFrame(index=years, columns=variables).fillna(0)
+
+    # Count the number of polities with the value for each variable for each year
     for year in years:
         for df, var in zip(dataframes, variables):
             frequency_df.loc[year, var] = len(df[
