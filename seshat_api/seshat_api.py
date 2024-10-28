@@ -189,6 +189,43 @@ def get_variable_name(class_name):
     return ''.join(['_' + i.lower() if i.isupper() else i for i in class_name]).lstrip('_')
 
 
+def seshat_class_instance(class_name, var):
+    """
+    Get an instance of a Seshat class by its name.
+
+    Parameters
+    ----------
+    class_name : str
+        The name of the class to get an instance of.
+    var : str
+        The variable name for the class
+
+    Returns
+    -------
+    object
+        An instance of the class.
+    """
+    var = get_variable_name(class_name)
+    module_paths = ['seshat_api.sc',
+                    'seshat_api.core',
+                    'seshat_api.general',
+                    'seshat_api.wf',
+                    'seshat_api.rt',
+                    'seshat_api.crisisdb',
+                    ]
+    module = None
+    for path in module_paths:
+        try:
+            module = __import__(path, fromlist=[class_name])
+            globals()[var] = module
+            class_ = getattr(module, class_name)
+            break
+        except (ImportError, AttributeError):
+            continue
+    if module is None:
+        raise ImportError(f"Module '{class_name}' cannot be found in any of these paths: {', '.join(module_paths)}")
+    return class_
+
 def get_frequencies(client, class_names, years, value='present'):
     """
     Get the number of polities (frequency) recorded as having a particular value recorded for a set of variables over a year range.
@@ -210,27 +247,11 @@ def get_frequencies(client, class_names, years, value='present'):
         A DataFrame with the frequency of each variable having the value across polities over time.
     """
     dataframes = []
+    variables = []
     for class_name in class_names:
         var = get_variable_name(class_name)
-        module_paths = ['seshat_api.sc',
-                        'seshat_api.core',
-                        'seshat_api.general',
-                        'seshat_api.wf',
-                        'seshat_api.rt',
-                        'seshat_api.crisisdb',
-                        ]
-        module = None
-        for path in module_paths:
-            try:
-                module = __import__(path, fromlist=[class_name])
-                globals()[var] = module
-                class_ = getattr(module, class_name)
-                break
-            except (ImportError, AttributeError):
-                continue
-        if module is None:
-            raise ImportError(f"Module '{class_name}' cannot be found in any of these paths: {', '.join(module_paths)}")
-        instance = class_(client)
+        variables.append(var)
+        instance = seshat_class_instance(class_name, var)(client)
         df = pd.DataFrame(instance.get_all())
         polities_with_var_df = pd.DataFrame(df['polity'].tolist())
         polities_with_var_df[var] = df[var]
