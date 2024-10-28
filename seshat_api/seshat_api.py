@@ -235,6 +235,14 @@ def get_frequencies(client, class_names, years, value='present'):
 
 
 def get_variable_classes():
+    """
+    Get the names of all classes in the API.
+
+    Returns
+    -------
+    list
+        A list of all classes in the API.
+    """
     module_paths = [
         'seshat_api.sc',
         'seshat_api.core',
