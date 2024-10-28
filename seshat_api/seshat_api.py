@@ -230,4 +230,5 @@ def get_variable_classes():
         members = inspect.getmembers(module)
         classes = [member[0] for member in members if inspect.isclass(member[1])]
         all_classes.extend(classes)
+    all_classes.sort()
     return all_classes
