@@ -209,11 +209,9 @@ def get_frequencies(client, class_names, years, value='present'):
     DataFrame
         A DataFrame with the frequency of each variable having the value across polities over time.
     """
-    variables = []
-    for class_name in class_names:
-        variables.append(get_variable_name(class_name))
     dataframes = []
-    for var, class_name in zip(variables, class_names):
+    for class_name in class_names:
+        var = get_variable_name(class_name)
         module_paths = ['seshat_api.sc',
                         'seshat_api.core',
                         'seshat_api.general',
