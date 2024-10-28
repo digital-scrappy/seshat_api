@@ -166,6 +166,25 @@ class SeshatAPI:
 
 
 def get_frequencies(client, class_names, years, value='present'):
+    """
+    Get the number of polities (frequency) recorded as having a particular value recorded for a set of variables over a year range.
+
+    Parameters
+    ----------
+    client : SeshatAPI
+        The client to use for the API.
+    class_names : list
+        The names of the classes to get data from for each variable.
+    years : Range
+        The range of years to get data for.
+    value : str, optional
+        The value to get the frequency for. Default is 'present'.
+
+    Returns
+    -------
+    DataFrame
+        A DataFrame with the frequency of each variable having the value across polities over time.
+    """
     def get_variable_names(class_names):
         variable_names = []
         for c in class_names:
