@@ -165,32 +165,28 @@ class SeshatAPI:
         return self.get(endpoint, params)["count"]
     
 
-def get_variable_names(class_names):
+def get_variable_name(class_name):
     """
-    Get the variable names for a set of Seshat classes, which follow the naming convention of the API.
+    Get the variable name for a Seshat class, which is singular snake case.
 
     Parameters
     ----------
 
-    class_names : list
-        A list of the classes to get variable names for.
+    class_name : str
+        The class name to get variable name for.
 
     Returns
     -------
-    list
-        A list of variable names for the classes.
+    str
+        The variable name for the class.
     """    
-    variable_names = []
-    for c in class_names:
-        # Convert from plural to singular
-        if c.endswith('ies'):
-            c = c[:-3] + 'y'
-        else:
-            c = c[:-1]
-        # Convert from CamelCase to snake_case
-        c = ''.join(['_' + i.lower() if i.isupper() else i for i in c]).lstrip('_')
-        variable_names.append(c)
-    return variable_names
+    # Convert from plural to singular
+    if class_name.endswith('ies'):
+        class_name = class_name[:-3] + 'y'
+    else:
+        class_name = class_name[:-1]
+    # Convert from CamelCase to snake_case
+    return ''.join(['_' + i.lower() if i.isupper() else i for i in class_name]).lstrip('_')
 
 
 def get_frequencies(client, class_names, years, value='present'):
@@ -213,7 +209,9 @@ def get_frequencies(client, class_names, years, value='present'):
     DataFrame
         A DataFrame with the frequency of each variable having the value across polities over time.
     """
-    variables = get_variable_names(class_names)
+    variables = []
+    for class_name in class_names:
+        variables.append(get_variable_name(class_name))
     dataframes = []
     for var, class_name in zip(variables, class_names):
         module_paths = ['seshat_api.sc',
