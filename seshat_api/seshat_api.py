@@ -205,7 +205,6 @@ def seshat_class_instance(class_name, var):
     object
         An instance of the class.
     """
-    var = get_variable_name(class_name)
     module_paths = ['seshat_api.sc',
                     'seshat_api.core',
                     'seshat_api.general',
