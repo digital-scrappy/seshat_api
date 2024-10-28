@@ -54,6 +54,16 @@ for polity in polities:
 For more information on how to use the Seshat API, please refer to the
 [documentation](docs).
 
+## Developers
+
+Install the developer requirements with pip:
+
+```bash
+pip install -r requirements-dev.txt
+nbstripout --install
+pre-commit install
+```
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE)
