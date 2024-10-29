@@ -1,5 +1,5 @@
 from pytest import raises
-from seshat_api import get_variable_classes, get_variable_name, seshat_class_instance
+from seshat_api import SeshatAPI, get_variable_classes, get_variable_name, seshat_class_instance, get_frequencies
 
 
 def test_get_variable_name():
@@ -24,3 +24,13 @@ def test_get_variable_classes():
     assert "ProfessionalSoldiers" in vc
     assert "Judges" in vc
     assert "BigPonies" not in vc
+
+
+def test_get_frequencies():
+    client = SeshatAPI(base_url="https://seshatdata.com/api")
+    class_names = ['Roads', 'ProfessionalSoldiers']
+    years = range(0, 10)
+    value = 'absent'
+    df = get_frequencies(client, class_names, years, value)
+    # Assert the df has 10 rows and 2 columns
+    assert df.shape == (10, 2)
