@@ -167,7 +167,7 @@ class SeshatAPI:
 
 def get_variable_name(class_name):
     """
-    Get the variable name for a Seshat class, which is singular snake case.
+    Get the variable name for a Seshat class by converting from plural camel case to singular snake case.
 
     Parameters
     ----------
@@ -183,6 +183,8 @@ def get_variable_name(class_name):
     # Convert from plural to singular
     if class_name.endswith('ies'):
         class_name = class_name[:-3] + 'y'
+    elif class_name.endswith('es'):
+        class_name = class_name[:-2]
     else:
         class_name = class_name[:-1]
     # Convert from CamelCase to snake_case
