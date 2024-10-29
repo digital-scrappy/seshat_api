@@ -164,7 +164,34 @@ class SeshatAPI:
             The count of items in the API.
         """
         return self.get(endpoint, params)["count"]
-    
+
+
+def get_variable_classes():
+    """
+    Get the names of all classes in the API.
+
+    Returns
+    -------
+    list
+        A list of all classes in the API.
+    """
+    module_paths = [
+        'seshat_api.sc',
+        'seshat_api.core',
+        'seshat_api.general',
+        'seshat_api.wf',
+        'seshat_api.rt',
+        'seshat_api.crisisdb',
+    ]
+    all_classes = []
+    for module_path in module_paths:
+        module = importlib.import_module(module_path)
+        members = inspect.getmembers(module)
+        classes = [member[0] for member in members if inspect.isclass(member[1])]
+        all_classes.extend(classes)
+    all_classes.sort()
+    return all_classes
+
 
 def get_variable_name(class_name):
     """
@@ -281,30 +308,3 @@ def get_frequencies(client, class_names, years, value='present'):
                 (df[var] == value)
             ])
     return frequency_df
-
-
-def get_variable_classes():
-    """
-    Get the names of all classes in the API.
-
-    Returns
-    -------
-    list
-        A list of all classes in the API.
-    """
-    module_paths = [
-        'seshat_api.sc',
-        'seshat_api.core',
-        'seshat_api.general',
-        'seshat_api.wf',
-        'seshat_api.rt',
-        'seshat_api.crisisdb',
-    ]
-    all_classes = []
-    for module_path in module_paths:
-        module = importlib.import_module(module_path)
-        members = inspect.getmembers(module)
-        classes = [member[0] for member in members if inspect.isclass(member[1])]
-        all_classes.extend(classes)
-    all_classes.sort()
-    return all_classes
