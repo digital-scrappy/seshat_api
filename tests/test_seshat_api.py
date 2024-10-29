@@ -1,4 +1,5 @@
 from pytest import raises
+import requests
 from seshat_api import SeshatAPI, get_variable_classes, get_variable_name, seshat_class_instance, get_frequencies
 
 
@@ -27,7 +28,16 @@ def test_get_variable_classes():
 
 
 def test_get_frequencies():
-    client = SeshatAPI(base_url="https://seshatdata.com/api")
+    # Only run this test if we can access the API url
+    base_url = "https://seshatdata.com/api"
+    # base_url = "https://seshat-db.com/api"
+    try:
+        response = requests.get(base_url)
+        response.raise_for_status()
+    except requests.RequestException:
+        pytest.skip(f"Cannot access {base_url}")
+
+    client = SeshatAPI(base_url=base_url)
     class_names = ['Roads', 'ProfessionalSoldiers']
     years = range(0, 10)
     value = 'absent'
