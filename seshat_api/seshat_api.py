@@ -2,6 +2,7 @@ from .constants import BASE_URL, TOKEN_ENDPOINT
 from .exceptions import SeshatAPIException
 
 import importlib
+import inflect
 import inspect
 import requests
 import pandas as pd
@@ -179,14 +180,10 @@ def get_variable_name(class_name):
     -------
     str
         The variable name for the class.
-    """    
-    # Convert from plural to singular
-    if class_name.endswith('ies'):
-        class_name = class_name[:-3] + 'y'
-    elif class_name.endswith('es'):
-        class_name = class_name[:-2]
-    elif class_name.endswith('s'):
-        class_name = class_name[:-1]
+    """
+    p = inflect.engine()
+    # Convert from plural to singular if plural
+    class_name = p.singular_noun(class_name) or class_name
     # Convert from CamelCase to snake_case
     return ''.join(['_' + i.lower() if i.isupper() else i for i in class_name]).lstrip('_')
 
