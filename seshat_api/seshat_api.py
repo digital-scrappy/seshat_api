@@ -212,6 +212,7 @@ def seshat_class_instance(class_name, var):
                     'seshat_api.crisisdb',
                     ]
     module = None
+    class_ = None
     for path in module_paths:
         try:
             module = __import__(path, fromlist=[class_name])
@@ -220,7 +221,7 @@ def seshat_class_instance(class_name, var):
             break
         except (ImportError, AttributeError):
             continue
-    if module is None:
+    if module is None or class_ is None:
         raise ImportError(f"Module '{class_name}' cannot be found in any of these paths: {', '.join(module_paths)}")
     return class_
 

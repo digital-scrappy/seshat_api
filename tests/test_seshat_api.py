@@ -1,5 +1,5 @@
+from pytest import raises
 from seshat_api import get_variable_name, seshat_class_instance
-from seshat_api.wf import Camels
 
 
 def test_get_variable_name():
@@ -10,6 +10,10 @@ def test_get_variable_name():
     assert get_variable_name("Judges") == "judge"
 
 
-# def test_seshat_class_instance():
-#     class_instance = seshat_class_instance("Camels", "camel")
-#     assert isinstance(class_instance, Camels)
+def test_seshat_class_instance():
+    # Assert this does not raise an error
+    seshat_class_instance("ProfessionalSoldiers", "professional_soldier")
+    
+    # Assert this raises an ImportError
+    with raises(ImportError):
+        seshat_class_instance("FakeClasses", "fake_class")
