@@ -185,7 +185,7 @@ def get_variable_name(class_name):
         class_name = class_name[:-3] + 'y'
     elif class_name.endswith('es'):
         class_name = class_name[:-2]
-    else:
+    elif class_name.endswith('s'):
         class_name = class_name[:-1]
     # Convert from CamelCase to snake_case
     return ''.join(['_' + i.lower() if i.isupper() else i for i in class_name]).lstrip('_')
