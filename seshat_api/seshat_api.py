@@ -297,7 +297,7 @@ def get_frequencies(client, class_names, years, value='present'):
         dataframes.append(polities_with_var_df)
 
     # Create a DataFrame to store the frequency of each variable having the value across polities over time
-    frequency_df = pd.DataFrame(index=years, columns=variables).fillna(0)
+    frequency_df = pd.DataFrame(index=years, columns=variables).infer_objects(copy=False).fillna(0)
 
     # Count the number of polities with the value for each variable for each year
     for year in years:
