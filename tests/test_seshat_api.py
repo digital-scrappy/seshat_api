@@ -1,5 +1,5 @@
 from pytest import raises
-from seshat_api import get_variable_name, seshat_class_instance
+from seshat_api import get_variable_classes, get_variable_name, seshat_class_instance
 
 
 def test_get_variable_name():
@@ -17,3 +17,10 @@ def test_seshat_class_instance():
     # Assert this raises an ImportError
     with raises(ImportError):
         seshat_class_instance("FakeClasses", "fake_class")
+
+
+def test_get_variable_classes():
+    vc = get_variable_classes()
+    assert "ProfessionalSoldiers" in vc
+    assert "Judges" in vc
+    assert "BigPonies" not in vc
