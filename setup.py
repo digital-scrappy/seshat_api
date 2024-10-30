@@ -1,8 +1,12 @@
 from setuptools import setup
 
+# Read the requirements from requirements.txt
+with open('requirements.txt') as f:
+    install_requires = f.read().splitlines()
+
 setup(
     name='seshat_api',
-    version='0.1.1',
+    version='0.1.2',
     description='A Python package for interacting with the Seshat API.',
     url='https://github.com/Seshat-Global-History-Databank/seshat_api',
     author='Kalle Westerling, Ed Chalstrey',
@@ -16,5 +20,5 @@ setup(
               'seshat_api.sc',
               'seshat_api.wf',
               'seshat_api.models'],
-    install_requires=['requests'],
+    install_requires=install_requires,
 )
