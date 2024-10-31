@@ -27,6 +27,7 @@ def test_get_variable_classes():
     assert "BigPonies" not in vc
 
 
+# TODO: Use mocking instead of relying on the API
 def test_get_frequencies():
     # Only run this test if we can access the API url
     base_url = "https://seshatdata.com/api"
