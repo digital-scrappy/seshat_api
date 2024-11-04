@@ -51,8 +51,9 @@ for polity in polities:
 
 ## Documentation
 
-For more information on how to use the Seshat API, please refer to the
-[documentation](docs).
+Documentation for the Seshat project can be found at [seshat-global-history-databank.github](https://seshat-global-history-databank.github.io/).
+
+*🚧 Documentation specific to the Seshat API has not yet been built (a [documentation](docs) folder exists). Try one of our [example notebooks](examples/), which demo how to use the package.🚧*
 
 ## Developers
 
