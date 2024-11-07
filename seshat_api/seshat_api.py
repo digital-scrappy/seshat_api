@@ -183,13 +183,13 @@ def get_variable_classes():
         'seshat_api.rt',
         'seshat_api.crisisdb',
     ]
-    all_classes = []
+    all_classes = {}
     for module_path in module_paths:
         module = importlib.import_module(module_path)
         members = inspect.getmembers(module)
         classes = [member[0] for member in members if inspect.isclass(member[1])]
-        all_classes.extend(classes)
-    all_classes.sort()
+        classes.sort()
+        all_classes[module_path.split('.')[-1]] = classes
     return all_classes
 
 
