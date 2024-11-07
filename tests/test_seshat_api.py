@@ -22,9 +22,13 @@ def test_seshat_class_instance():
 
 def test_get_variable_classes():
     vc = get_variable_classes()
-    assert "ProfessionalSoldiers" in vc
-    assert "Judges" in vc
-    assert "BigPonies" not in vc
+    assert "Coppers" in vc["wf"]
+    assert "Roads" in vc["sc"]
+    assert "PolitySuprapolities" in vc["general"]
+    assert "Polities" in vc["core"]
+    assert "ExternalConflictSides" in vc["crisisdb"]
+    assert "OfficialReligions" in vc["rt"]
+    assert "BigPonies" not in vc["wf"]
 
 
 # TODO: Use mocking instead of relying on the API
