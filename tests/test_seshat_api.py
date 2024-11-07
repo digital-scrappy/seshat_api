@@ -22,7 +22,7 @@ def test_seshat_class_instance():
 
 def test_get_variable_classes():
     vc = get_variable_classes()
-    assert "ProfessionalSoldiers" in vc["wf"]
+    assert "Coppers" in vc["wf"]
     assert "Roads" in vc["sc"]
     assert "PolitySuprapolities" in vc["general"]
     assert "Polities" in vc["core"]
