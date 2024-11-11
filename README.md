@@ -30,7 +30,7 @@ Here is an example of how to set up a client:
 from seshat_api import SeshatAPI
 
 # Set up a client
-client = SeshatAPI(username="<USERNAME>", password="<PASSWORD>")
+client = SeshatAPI(username="<USERNAME>", password="<PASSWORD>", base_url="https://seshatdata.com/api")
 ```
 
 Here is an example of how to use the API to retrieve data from the database:
